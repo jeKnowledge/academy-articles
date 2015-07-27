@@ -42,7 +42,6 @@ Falta apenas um pormenor para podermos prosseguir para a concretização do void
 
 ```c++
 	randomSeed(analogRead(0));
-}
 ```
 
 Este tipo de pormenores são conhecidos através da consulta da documentação acima citada.
