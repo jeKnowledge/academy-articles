@@ -26,14 +26,12 @@ Ainda precisamos, no entanto, de saber como vamos gerar os números aleatoriamen
 
 ```c++
 	random(valor menor inclusive, valor maior exclusive);
-}
 ```
 
 Ou seja,
 
 ```c++
 	random(1, 7);
-}
 ```
 
 Esta instrução vai gerar números aleatórios entre 1 e 6 (já que o 7 não está incluído). A grande vantagem de usar estas funções pré-definidas é que não precisamos de saber como foram criadas para as utilizarmos. A este conceito damos o nome de *abstração*.
