@@ -8,7 +8,7 @@ O objetivo deste projeto é criar um dado virtual. Para isso, vamos recorrer à 
 
 O display de 7 segmentos e o botão são montados de um modo semelhante ao que seguimos no workshop. Para ajudar à montagem, criou-se o seguinte esquema de ligações usando o programa *Fritzing*.
 
-<!-- Inserir esquema elétrico-->
+![alt text](Article1_Dice/dado.png)
 
 ## Desenvolvimento do programa
 
@@ -18,7 +18,7 @@ Antes de avançarmos, precisamos de saber que funções temos de criar para este
 
 Para facilitar, associou-se a cada pin digital (de 2 a 8), uma letra que consta do seguinte diagrama. Isto é opcional.
 
-<!-- Inserir diagrama 7 segmentos-->
+![alt text](Article1_Dice/7 segments.PNG)
 
 Estas variáveis são definidas fora do void setup() e do void loop().
 
