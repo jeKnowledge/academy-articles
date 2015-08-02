@@ -201,7 +201,7 @@ void seis() {
   digitalWrite(e, LOW);
   digitalWrite(d, LOW);
 }
-}
+
 ```
 
 ## Done!
