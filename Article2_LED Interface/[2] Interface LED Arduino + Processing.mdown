@@ -310,7 +310,7 @@ Quando tiveres tanto o código em Processing como o código do Arduino pronto, e
 
 ## Código completo de Processing
 
-´´´processing
+```processing
 // Importar biblioteca comunicacao serie
 import processing.serial.*;
 
@@ -453,11 +453,11 @@ void mouseClicked() {
   }
 }
 
-´´´
+```
 
 ## Código completo Arduino
 
-´´´c++
+```c++
 char valor;
 int ledVerde = 8;
 int ledAmarelo = 9;
@@ -516,7 +516,6 @@ void loop() {
   }
 }
 
-
-´´´
+```
 
 
