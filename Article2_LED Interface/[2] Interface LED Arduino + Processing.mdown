@@ -26,13 +26,13 @@ Quando abrirem o Processing, vão provavelmente ter a sensação que já viram a
 
 ![alt text](https://github.com/jeKnowledge/academy-articles/blob/master/Article2_LED%20Interface/processing.PNG)
 
-Agora já temos tudo o que precisamos para trabalhar. Quando abrem uma nova janela no *Processing*, esta está em branco. No entanto, e há semelhança do Arduino, em *Processing* temos duas estruturas: ´void setup()´ e ´void draw()´ que são em tudo semelhantes ao ´void setup()´ e ao ´void loop()´ que já conhecemos do Arduino! A lógica também é transversal: utilizamos o ´void setup()´ para definir as condições iniciais e o ´void draw()´ para tudo o que se irá alterar à medida que o programa corre.
+Agora já temos tudo o que precisamos para trabalhar. Quando abrem uma nova janela no *Processing*, esta está em branco. No entanto, e há semelhança do Arduino, em *Processing* temos duas estruturas: `void setup()` e `void draw()` que são em tudo semelhantes ao `void setup()` e ao `void loop()` que já conhecemos do Arduino! A lógica também é transversal: utilizamos o `void setup()` para definir as condições iniciais e o `void draw()` para tudo o que se irá alterar à medida que o programa corre.
 
-O nosso objetivo aqui é criar uma interface com 3 botões nos quais podemos clicar para acender os LEDs que quisermos. O primeiro passo em qualquer programa de *Processing* é criar a janela onde vamos desenhar (no nosso caso, a nossa interface gráfica). Usamos o método ´size()´ que toma como argumentos o comprimento e a largura da janela em pixels. 
+O nosso objetivo aqui é criar uma interface com 3 botões nos quais podemos clicar para acender os LEDs que quisermos. O primeiro passo em qualquer programa de *Processing* é criar a janela onde vamos desenhar (no nosso caso, a nossa interface gráfica). Usamos o método `size()` que toma como argumentos o comprimento e a largura da janela em pixels. 
 
 Devemos também definir a cor do fundo da nossa interface. Neste caso, escolhi o preto mas essa escolha fica a vossa critério. Para representar uma cor em *Processing*, é usado o sistema RGB (Red Green Blue). De certeza que já viram esta sigla algures. Basicamente, todas as cores são uma qualquer combinação destas três cores base. Por exemplo, o vermelho mais vivo representa-se como (255, 0, 0). Se prestarmos atenção, isto faz sentido. Suprimimos qualquer expressão do Green e do Blue e colocámos o Red no seu valor máximo. 
 
-Para evitar confusões, estas combinações são para a cor relacionada com a luz, não com os pigmentos (tintas) que é talvez o que conhecemos melhor. Mas porque é que 255 é o valor máximo e 0 o valor mínimo? Ora o valor de cada cor é guardado numa variável que ocupa 1 byte, ou seja, 8 bits. Sabemos que 2^8 = 256. Como em programação, contamos a partir do zero, o valor máximo é então 255 e não 256.
+Para evitar confusões, estas combinações são para a cor relacionada com a luz, não com os pigmentos (tintas) que é talvez o que conhecemos melhor. Mas porque é que 255 é o valor máximo e 0 o valor mínimo? Ora o valor de cada cor é guardado numa variável que ocupa 1 byte, ou seja, 8 bits. Sabemos que 2^8 = 256. Como em programação contamos a partir do zero, o valor máximo é então 255 e não 256.
 
 Pensemos agora nos extremos do espetro: o branco e o preto. Ora, sabemos que o preto é a ausência de cor, ou seja, (0, 0, 0). Isto pode ser simplificado, escrevendo apenas (0). Já o branco, é a combinação de todas as cores, logo a sua representação RGB é então (255, 255, 255).
 
@@ -50,7 +50,7 @@ Se correrem o vosso sketch, carregando no botão Play vão ver uma janela preta 
 
 ![alt text](https://github.com/jeKnowledge/academy-articles/blob/master/Article2_LED%20Interface/janela1.PNG)
 
-Agora que temos a nossa interface, vamos adicionar uma String de texto que diz "Arduino LED Interface" no fundo da nossa janela. Ora, esta String será branca (ou outra cor qualquer que escolhas), estará alinhada no fundo e centrada e estará escrita com tamanho de letra 24. Começamos então por definir o tamanho do texto com o método ´textSize()´ que toma como argumento o tamanho da letra. De seguida, alinhamos o texto no centro com o método ´textAlign()´ e passamos CENTER como argumento do mesmo. Também poderíamos passar como argumentos LEFT ou RIGHT. De seguida, escolhemos a cor das letras com o método ´fill()´ passando a cor em formato RGB como argumento e, finalmente, passamos a String com o método ´text()´ onde passamos como argumento a string e as coordenadas do ponto onde queremos começar a escrever o nosso texto. 
+Agora que temos a nossa interface, vamos adicionar uma String de texto que diz "Arduino LED Interface" no fundo da nossa janela. Ora, esta String será branca (ou outra cor qualquer que escolhas), estará alinhada no fundo e centrada e estará escrita com tamanho de letra 24. Começamos então por definir o tamanho do texto com o método `textSize()` que toma como argumento o tamanho da letra. De seguida, alinhamos o texto no centro com o método `textAlign()` e passamos CENTER como argumento do mesmo. Também poderíamos passar como argumentos LEFT ou RIGHT. De seguida, escolhemos a cor das letras com o método `fill()` passando a cor em formato RGB como argumento e, finalmente, passamos a String com o método `text()` onde passamos como argumento a string e as coordenadas do ponto onde queremos começar a escrever o nosso texto. 
 
 Ao bloco de código anterior adicionamos,
 
@@ -65,9 +65,9 @@ Ao bloco de código anterior adicionamos,
 
 NOTA: Em *Processing*, as coordenadas têm como origem o campo superior esquerdo da janela criada. Apesar de isto equivaler ao quarto quadrante de um referencial cartesiano, não existem coordenadas negativas.
 
-Temos agora o nome da interface escrito e estamos prontos para avançar para o ´void draw()´. Vamos agora criar os botões da interface.
+Temos agora o nome da interface escrito e estamos prontos para avançar para o `void draw()`. Vamos agora criar os botões da interface.
 
-A razão pela qual estes são criados nesta secção tem a haver com o facto destes irem mudar de cor sempre que clicamos nos mesmos. Para criar um botão, desenhamos um rectângulo (neste caso, um quadrado). Começamos por indicar as coordenadas do vértice superior esquerdo e depois o comprimento e a altura do mesmo em pixels. Portanto, 4 argumentos no total. Devemos ainda especificar a cor que queremos para o botão com o método ´fill()´ assim como o texto que vai aparecer nele.
+A razão pela qual estes são criados nesta secção tem a haver com o facto destes irem mudar de cor sempre que clicamos nos mesmos. Para criar um botão, desenhamos um rectângulo (neste caso, um quadrado). Começamos por indicar as coordenadas do vértice superior esquerdo e depois o comprimento e a altura do mesmo em pixels. Portanto, 4 argumentos no total. Devemos ainda especificar a cor que queremos para o botão com o método `fill()` assim como o texto que vai aparecer nele.
 
 O botão verde, o primeiro da nossa sequência, é então criado da seguinte forma:
 
@@ -90,7 +90,7 @@ void draw() {
 } 
 ```
 
-Em *Processing*, definimos a cor da forma, neste caso, um retângulo, antes de definirmos a forma em si. Quando chamamos o método fill() atribuímos a componente do verde como um inteiro (trataremos disso mais tarde). A razão porque fizemos isto será clara rapidamente. Entretanto, podem substituir Verde por 255 e ver um botão verde alface na vossa interface.
+Em *Processing*, definimos a cor da forma, neste caso, um retângulo, antes de definirmos a forma em si. Quando chamamos o método `fill()` atribuímos a componente do verde como um inteiro (trataremos disso mais tarde). A razão porque fizemos isto será clara rapidamente. Entretanto, podem substituir Verde por 255 e ver um botão verde alface na vossa interface.
 
 Agora já sabemos como criar os restantes botões. Para encontrarem os códigos das cores podem procurar por "RGB color table" no Google e encontram todos os códigos, para todas as cores, possíveis e imaginárias. O código para o amarelo é (255, 255, 0) e o código para o vermelho é (255, 0, 0). Para colocar os botões no sítio certo, basta ir adicionando a coordenada inicial do quadrado anterior com o comprimento do mesmo. Coloquem os códigos das cores por enquanto. Deverão ter algo semelhante à seguinte interface.
 
@@ -139,7 +139,7 @@ Ok, temos quase a nossa interface pronta! Só falta que os botões mudem de cor 
 
 ![alt text](https://github.com/jeKnowledge/academy-articles/blob/master/Article2_LED%20Interface/janela4.PNG)
 
-Para que a cor dos botões possa mudar, os códigos de cores dos mesmos não podem ser fixos, i.e., têm de ser substituídos por uma variável. Por exemplo. no caso do verde, em vez de ´fill(0, 255, 0)´ teríamos ´fill(0, verde, 0)´ onde verde seria uma variável do tipo int que alternaria entre 255 e 150. Temos então de criar um conjunto de variáveis que guardem os valores das cores e dar-lhes um valor inicial (150, já que a nossa interface começa com os LEDs todos desligados). Estes devem ser inseridos antes do ´void setup()´ por uma questão de clareza e organização. Não podem nunca ser introduzidos dentro do ´void setup()´ ou do ´void draw()´.
+Para que a cor dos botões possa mudar, os códigos de cores dos mesmos não podem ser fixos, i.e., têm de ser substituídos por uma variável. Por exemplo. no caso do verde, em vez de `fill(0, 255, 0)` teríamos `fill(0, verde, 0)` onde verde seria uma variável do tipo int que alternaria entre 255 e 150. Temos então de criar um conjunto de variáveis que guardem os valores das cores e dar-lhes um valor inicial (150, já que a nossa interface começa com os LEDs todos desligados). Estes devem ser inseridos antes do `void setup()` por uma questão de clareza e organização. Não podem nunca ser introduzidos dentro do `void setup()` ou do `void draw()`.
 
 Teremos então algo do género:
 
@@ -151,7 +151,7 @@ int amarelo2 = 150;
 ``` 
 O amarelo tem duas componentes (o vermelho e o verde) daí que tenhamos de ter duas variáveis diferentes.
 
-Agora, como fazemos com que o Processing reconheça um clique? Ora, essa função já está de certa forma implementada. A única coisa que temos de fazer é personalizá-la para que esta faça o que queremos. Este método chama-se ´void mouseClicked()´ e é definido fora do ´void setup()´ e do ´void draw()´.
+Agora, como fazemos com que o Processing reconheça um clique? Ora, essa função já está de certa forma implementada. A única coisa que temos de fazer é personalizá-la para que esta faça o que queremos. Este método chama-se `void mouseClicked()` e é definido fora do `void setup()` e do `void draw()`.
 
 Basicamente, queremos que:
 
@@ -159,7 +159,7 @@ Basicamente, queremos que:
 2. Seja reconhecido um clique na área corresponde a cada botão
 3. Queremos que a cor mude
 
-Tomemos o botão verde como exemplo. Como podemos saber onde é que o ponteiro do rato estava quando fizemos o clique? Felizmente para nós, existem duas variáveis que guardam a posição atualizada do rato em relação ao sistema de coordenadas da janela. Estas variáveis chamam-se ´mouseX´ e ´mouseY´ e já vêm implementadas no *Processing*. Para o botão verde, sabemos que, 20 < mouseX < 160 e que 20 < mouseY < 160. Mas como introduzir esta condição no nosso código? Vamos criar 4 condições (duas para cada coordenada) e utilizar o operador ´&&´ também conhecido como operador e, isto quer dizer que, a condição só se cumpre se todas as condições forem cumpridas. Assim, temos:
+Tomemos o botão verde como exemplo. Como podemos saber onde é que o ponteiro do rato estava quando fizemos o clique? Felizmente para nós, existem duas variáveis que guardam a posição atualizada do rato em relação ao sistema de coordenadas da janela. Estas variáveis chamam-se `mouseX` e `mouseY` e já vêm implementadas no *Processing*. Para o botão verde, sabemos que, 20 < mouseX < 160 e que 20 < mouseY < 160. Mas como introduzir esta condição no nosso código? Vamos criar 4 condições (duas para cada coordenada) e utilizar o operador `&&` também conhecido como operador AND, isto quer dizer que, a condição só se cumpre se todas as condições forem cumpridas. Assim, temos:
 
  ```processing
 void mouseClicked() {
@@ -176,7 +176,7 @@ Além da condição que escrevemos, adicionei um comentário de como fazer o bot
 
 Agora também já sabem como completar o código para os botões amarelo e vermelho. Tenta fazer por ti e vê apenas o exemplo depois. Se tudo correr bem, quando clicares num dos botões, ele muda para a sua cor mais viva e se voltares a clicar, ele muda para a sua cor mais escura. 
 
-O código final será disponibilizado no final do tutorial.
+O código completo será disponibilizado no final do tutorial.
 
 Agora que já temos a nossa interface a funcionar, precisamos de enviar informação do *Processing* para o Arduino. Felizmente, alguém escreveu uma biblioteca (*library* em inglês) que nos permite fazer a comunicação de uma forma relativamente simples. As bibliotecas são uma ferramenta muito importante para um programador e introduzem o conceito de *abstração*. Ou seja, o programador não necessita de saber como as funções disponibilizadas na biblioteca foram escritas, apenas precisa de as saber usar.
 
@@ -184,13 +184,13 @@ Agora que já temos a nossa interface a funcionar, precisamos de enviar informa�
 
 Vamos agora abrir o Arduino IDE. Queria só alertar que entretanto saiu a versão 1.6.5 e que, para quem tiver o Windows 10 e estiver a ter alguns problemas a executar, basta abrir o programa em Modo de Administrador (clicar com o botão do lado direito do rato e selecionar "Run as Administrator").
 
-Ok, então o que precisamos de programar no nosso Arduino? Primeiro, vamos definir os nossos 3 LEDs como OUTPUTS. Para facilitar, podemos usar variáveis com nomes sugestivos para ser mais fácil identificar os LEDs tais como ´ledVermelho´, por exemplo. Mais uma vez, relembro que estas variáveis devem ser criadas fora do ´void setup()´e do ´void loop()´. Precisamos também de declarar uma variável do tipo ´char´ (character) que vamos usar para guardar o valor que vamos enviar do *Processing* e que nos vai permitir ligar e desligar os LEDs.
+Ok, então o que precisamos de programar no nosso Arduino? Primeiro, vamos definir os nossos 3 LEDs como OUTPUTS. Para facilitar, podemos usar variáveis com nomes sugestivos para ser mais fácil identificar os LEDs tais como `ledVermelho`, por exemplo. Mais uma vez, relembro que estas variáveis devem ser criadas fora do `void setup()` e do `void loop()`. Precisamos também de declarar uma variável do tipo `char` (character) que vamos usar para guardar o valor que vamos enviar do *Processing* e que nos vai permitir ligar e desligar os LEDs.
 
 Precisamos ainda de iniciar a comunicação série. No workshop, falei muito brevemente deste tópico mas gostaria de falar um pouco mais sobre ele aqui. Basicamente, o Arduino possui dois pinos que lhe permitem comunicar com o computador ou qualquer outra plataforma ou software. Se olharem com atenção para o vosso Arduino, vão reparar que junto aos pinos digitais 0 e 1, existem duas siglas: TX (transmitir) e RX (receber). Existem, igualmente, dois LEDs com as mesmas siglas localizados na direção do pino digital 13. Ora quando estamos a usar comunicação série, como é o nosso caso, não devemos usar os pinos 0 e 1 já que eles já estão ocupados a comunicar.
 
 Quando estivermos a enviar informação para o Arduino a partir do Processing, vão ver o LED do RX a piscar. Esta é uma boa maneira de nos assegurarmos que está a correr tudo bem com a comunicação.
 
-Para utilizarmos a comunicação série, primeiro precisamos de a iniciar dentro do ´void setup()´ com o método ´Serial.begin()´.
+Para utilizarmos a comunicação série, primeiro precisamos de a iniciar dentro do `void setup()` com o método `Serial.begin()`.
 
 Até agora, do lado do Arduino, temos então o seguinte código:
 
@@ -209,9 +209,9 @@ void setup() {
 ```  
 Os pinos digitais escolhidos estão de acordo com o esquema elétrico apresentado no início deste tutorial. 
 
-O método ´Serial.begin()´ toma como argumento a *baud rate*, isto é, a rapidez da comunicação em bits por segundo. Por convenção, usa-se 9600.
+O método `Serial.begin()` toma como argumento a *baud rate*, isto é, a rapidez da comunicação em bits por segundo. Por convenção, usa-se 9600.
 
-Falta-nos agora escrever, no ´void loop()´ o que fazer quando o Arduino recebe informação. Quando queremos ler informação que está a ser enviada para o Arduino, temos sempre de usar o método ´Serial.available()´. Ou seja,
+Falta-nos agora escrever, no `void loop()` o que fazer quando o Arduino recebe informação. Quando queremos ler informação que está a ser enviada para o Arduino, temos sempre de usar o método `Serial.available()`. Ou seja,
 
  ```c++
 void loop() {
@@ -223,7 +223,7 @@ void loop() {
   }
 }
 ``` 
-Agora já temos o valor enviado pelo *Processing* guardado na variável valor.Como se trata de um variável do tipo ´char´, só é possível guardar um caracter. Neste caso, usamos números como códigos para representar as 6 ações possíveis. Por exemplo, associamos o número 1 a ligar o LED Verde e o número 2 a desligar o LED Verde. A lista restante segue abaixo:
+Agora já temos o valor enviado pelo *Processing* guardado na variável valor.Como se trata de um variável do tipo `char`, só é possível guardar um caracter. Neste caso, usamos números como códigos para representar as 6 ações possíveis. Por exemplo, associamos o número 1 a ligar o LED Verde e o número 2 a desligar o LED Verde. A lista restante segue abaixo:
 
 - [1] Ligar LED verde
 - [2] Desligar LED verde
@@ -241,7 +241,7 @@ if (valor == '1')
 }
 ``` 
 
-Completa este bloco de código com os restantes cinco casos. Não te esqueças da diferença entre colocar um if seguido de else if's ou só if's. O código final para o Arduino estará disponível no final deste tutorial.
+Completa este bloco de código com os restantes cinco casos. Não te esqueças da diferença entre colocar um if seguido de else if's ou só if's. O código completo para o Arduino estará disponível no final deste tutorial.
 
 ## Enviar informação do Processing para o Arduino
 
@@ -263,7 +263,7 @@ import processing.serial.*;
 Serial myPort;
 ```
 
-Vamos agora definir o objeto myPort dentro do ´void setup()´. Para isso adicionamos a seguinte linha:
+Vamos agora definir o objeto myPort dentro do `void setup()`. Para isso adicionamos a seguinte linha:
 
 ```processing
 void setup() {
@@ -271,9 +271,9 @@ void setup() {
   myPort = new Serial(this, Serial.list()[1], 9600);
 }
 ```
-O primeiro argumento refere-se ao objeto já criado daí a denominação ´this´, o segundo argumento é a porta série que estamos a utilizar (geralmente é a 0 ou a 1). O último parâmetro diz respeito à *Baud Rate* que temos de fazer coincidir com aquela que estabelecemos para o Arduino, ou seja, 9600.
+O primeiro argumento refere-se ao objeto já criado daí a denominação `this`, o segundo argumento é a porta série que estamos a utilizar (geralmente é a 0 ou a 1). O último parâmetro diz respeito à *Baud Rate* que temos de fazer coincidir com aquela que estabelecemos para o Arduino, ou seja, 9600.
 
-Agora, basta enviar os códigos que já definimos no sketch do Arduino quando clicamos em cada um dos botões. Fazemos isto no ´void draw()´. Vamos usar o botão verde como exemplo. Existe uma variável chamada ´mousePressed´ que é um *boolean* que deteta se houve algum clique do rato.
+Agora, basta enviar os códigos que já definimos no sketch do Arduino quando clicamos em cada um dos botões. Fazemos isto no `void draw()`. Vamos usar o botão verde como exemplo. Existe uma variável chamada ´mousePressed´ que é um *boolean* que deteta se houve algum clique do rato.
 
 Vamos ver então o exemplo para o botão verde.
 
