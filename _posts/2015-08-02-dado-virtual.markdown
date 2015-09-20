@@ -5,8 +5,6 @@ date:   2015-08-02 01:32:13
 categories:
 ---
 
-### [Arduino Project 1] Dado Virtual
-
 O objetivo deste projeto é criar um dado virtual. Para isso, vamos recorrer à função `random()` e a algum *hardware* que já conhecemos, um *display* de 7 segmentos e um botão. No final, sempre que carregarmos no botão, um número aleatório é gerado e mostrado no *display*.
 
 ## Hardware
@@ -23,37 +21,29 @@ O objetivo deste projeto é criar um dado virtual. Para isso, vamos recorrer à 
 
 O display de 7 segmentos e o botão são montados de um modo semelhante ao que seguimos no _workshop_. Para ajudar à montagem, criamos o seguinte esquema de ligações usando o programa [Fritzing](http://fritzing.org/).
 
-![alt text](https://raw.githubusercontent.com/jeKnowledge/academy-articles/master/Article1_Dice/dado.png)
+![](/img/dado.png)
 
 ## Desenvolvimento do programa
 
-Nesta fase, procuramos entender o que queremos que o nosso código faça. O primeiro passo é configurar o `void setup()`. Configuramos os pins digitais de 2 a 8 como `OUTPUT` (já que estamos a enviar informação para os LEDs dos segmentos) e o pin digital 9 como `INPUT` (já que está a receber informação do botão). 
+Nesta fase, procuramos entender o que queremos que o nosso código faça. O primeiro passo é configurar o `void setup()`. Configuramos os pins digitais de 2 a 8 como `OUTPUT` (já que estamos a enviar informação para os LEDs dos segmentos) e o pin digital 9 como `INPUT` (já que está a receber informação do botão).
 
 Antes de avançarmos, precisamos de saber que funções temos de criar para este projeto. As funções são sempre seguidas de parênteses para serem facilmente identificadas. Começamos pela função `clear()` que limpa o *display*. Seguimos depois para as funções representativas de cada número a que se deram os nomes de `um()`, `dois()`, `tres()`, `quatro()`, `cinco()` e `seis()`. Temos assim representados os seis números presentes num dado. Todas estas funções estão definidas no exemplo depois do `void loop()`.
 
 Para facilitar, associou-se a cada pin digital (de 2 a 8), uma letra que consta do seguinte diagrama (isto é opcional).
 
-![alt text](https://raw.githubusercontent.com/jeKnowledge/academy-articles/master/Article1_Dice/7%20segments.PNG)
+![](/img/7segments.png)
 
 Estas variáveis são definidas fora do `void setup()` e do `void loop()`.
 
-Ainda precisamos, no entanto, de saber como vamos gerar os números aleatoriamente. A função `random()` que vem incluída no Arduino IDE permite gerar números inteiros aleatoriamente desde que lhe sejam passados os argumentos corretos. 
+Ainda precisamos, no entanto, de saber como vamos gerar os números aleatoriamente. A função `random()` que vem incluída no Arduino IDE permite gerar números inteiros aleatoriamente desde que lhe sejam passados os argumentos corretos.
 
-
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
-
-```c++
+```
 random(valor menor inclusive, valor maior exclusive);
 ```
 
 Ou seja,
 
-```c++
+```
 random(1, 7);
 ```
 
@@ -63,7 +53,7 @@ Para usarmos este valor, temos de o associar a uma variável e, neste caso, usam
 
 Falta apenas um pormenor para podermos prosseguir para a concretização do `void loop()`. A função `random()` precisa de gerar um número diferente a cada iteração do `void loop()`. Para isto, usamos a função `randomSeed()` para ler um valor aleatório dos pins analógicos. Para isto, basta incluir a seguinte instrução no void setup():
 
-```c++
+```
 randomSeed(analogRead(0));
 ```
 
@@ -71,13 +61,13 @@ Este tipo de pormenores são conhecidos através da consulta da documentação a
 
 Feito isto, falta-nos apenas pensar o que queremos que aconteça no `void loop()`.
 
-Queremos que, sempre que carregarmos no botão, seja gerado num novo número aleatório que é mostrado no ecrã. Usamos, portanto, uma condição `if()` para descrever o que vai acontecer quando o botão é premido. 
+Queremos que, sempre que carregarmos no botão, seja gerado num novo número aleatório que é mostrado no ecrã. Usamos, portanto, uma condição `if()` para descrever o que vai acontecer quando o botão é premido.
 
 Criamos a variável que vai guardar o valor que é gerado aleatoriamente fora de qualquer função. No exemplo, esta variável chama-se *aleatorio*.
 
 Dentro do `if()` criado anteriormente, atribuimos o valor da variável *aleatorio* à função `random()` com os argumentos usados acima.
 
-Gerado o número aleatoriamente, queremos exibir no *display* o número gerado. Usamos outra condição `if()` para fazer esta correspondência. No exemplo, usamos uma estrutura começada por `if()` e seguida por cinco `else if()`. Isto acontece porque só existem as possibilidades: sair 1, 2, 3, 4, 5 ou 6. Se usássemos seis condições `if()`, o programa iria avaliar todas as condições. Apesar de não estar errado, não há necessidade disto e, por isso, devemos tentar sempre otimizar o nosso código. 
+Gerado o número aleatoriamente, queremos exibir no *display* o número gerado. Usamos outra condição `if()` para fazer esta correspondência. No exemplo, usamos uma estrutura começada por `if()` e seguida por cinco `else if()`. Isto acontece porque só existem as possibilidades: sair 1, 2, 3, 4, 5 ou 6. Se usássemos seis condições `if()`, o programa iria avaliar todas as condições. Apesar de não estar errado, não há necessidade disto e, por isso, devemos tentar sempre otimizar o nosso código.
 
 E é isto. Tenta **sempre** escrever o teu próprio código baseado nesta explicação antes de veres a secção abaixo. Só tentanto e fazendo alguns erros é que se aprende verdadeiramente.
 
@@ -85,7 +75,7 @@ E é isto. Tenta **sempre** escrever o teu próprio código baseado nesta explic
 
 Abaixo apresenta-se o programa relativo ao dado virtual.
 
-```c++
+{% highlight c++ %}
 // Definir pins por letras de acordo com o esquema
 int a = 2;
 int b = 3;
@@ -115,10 +105,10 @@ void setup() {
 }
 
 void loop() {
-  
+
   // Se o botão for pressionado...
   if (digitalRead(9) == HIGH) {
-  
+
   	// Gerar numero aleatoriamente e guardá-lo na variável aleatorio
     aleatorio = random(1, 7);
 
@@ -217,7 +207,8 @@ void seis() {
   digitalWrite(d, LOW);
 }
 
-```
+{% endhighlight %}
+
 
 ## Done!
 
