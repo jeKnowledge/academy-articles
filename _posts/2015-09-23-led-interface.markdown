@@ -21,7 +21,7 @@ Mas, perguntam vocês, o que tem tudo isto a ver com Arduino? Ora, tudo! Neste p
 
 Para ajudar à montagem, criou-se o seguinte esquema de ligações usando o programa *Fritzing*.
 
-![](/img/esquema.png)
+![]({{ site.baseurl}}/img/esquema.png)
 
 ## Introdução ao Processing
 
@@ -29,7 +29,7 @@ Para começarmos, precisamos de fazer download da versão mais recente do *Proce
 
 Quando abrirem o Processing, vão provavelmente ter a sensação que já viram aquilo algures. Na verdade, o IDE do Arduino é baseado no do Processing e são visualmente e funcionalmente muito semelhantes. Existe, no entanto, uma diferença importante. O IDE do Processing é um compilador incremental o que significa que, à medida que vocês escrevem, o IDE relata os erros que vão aparecendo. Muitas vezes isto acontece enquanto vocês ainda estão a escrever o código, por isso, não se preocupem!
 
-![](/img/processing.PNG)
+![]({{ site.baseurl}}/img/processing.PNG)
 
 Agora já temos tudo o que precisamos para trabalhar. Quando se abre uma nova janela no *Processing*, esta está em branco. No entanto, e à semelhança do Arduino, em *Processing* temos duas estruturas: `void setup()` e `void draw()` que são em tudo semelhantes ao `void setup()` e ao `void loop()` que já conhecemos do Arduino! A lógica também é transversal: utilizamos o `void setup()` para definir as condições iniciais e o `void draw()` para tudo o que se irá alterar à medida que o programa corre.
 
@@ -54,7 +54,7 @@ void setup()
 
 Se correrem o vosso sketch, carregando no botão "Play" vão ver uma janela preta como a representada abaixo.
 
-![](/img/janela1.PNG)
+![]({{ site.baseurl}}/img/janela1.PNG)
 
 Agora que temos a nossa janela, vamos adicionar uma String de texto que diz "Arduino LED Interface" no fundo da nossa janela. Ora, esta String será branca (ou outra cor qualquer que escolhas), estará alinhada no fundo e centrada e estará escrita com tamanho de letra 24. Começamos então por definir o tamanho do texto com o método `textSize()` que toma como argumento o tamanho da letra. De seguida, alinhamos o texto no centro com o método `textAlign()` e passamos CENTER como argumento do mesmo. Também poderíamos passar como argumentos LEFT ou RIGHT. De seguida, escolhemos a cor das letras com o método `fill()` passando a cor em formato RGB como argumento e, finalmente, passamos a String com o método `text()` onde passamos como argumento a string e as coordenadas do ponto onde queremos começar a escrever o nosso texto.
 
@@ -68,7 +68,7 @@ Ao bloco de código anterior adicionamos,
   text("Arduino LED Interface", 230, 210);
 {% endhighlight %}
 
-![](/img/janela2.PNG)
+![]({{ site.baseurl}}/img/janela2.PNG)
 
 NOTA: Em *Processing*, as coordenadas têm como origem o campo superior esquerdo da janela criada. Apesar de isto equivaler ao quarto quadrante de um referencial cartesiano, não existem coordenadas negativas.
 
@@ -101,7 +101,7 @@ Em *Processing*, definimos a cor da forma, neste caso, um retângulo, antes de d
 
 Agora já sabemos como criar os restantes botões. Para encontrarem os códigos das cores podem procurar por "RGB color table" no Google e encontram todos os códigos, para todas as cores, possíveis e imaginárias. O código para o amarelo é (255, 255, 0) e o código para o vermelho é (255, 0, 0). Para colocar os botões no sítio certo, basta ir adicionando a coordenada inicial do quadrado anterior com o comprimento do mesmo. Coloquem os códigos das cores por enquanto. Deverão ter algo semelhante à seguinte interface.
 
-![](/img/janela3.PNG)
+![]({{ site.baseurl}}/img/janela3.PNG)
 
 Podes dar uma vista de olhos ao código que originou esta interface mas não sem antes tentares fazer por ti mesmo!
 
@@ -144,7 +144,7 @@ void draw() {
 
 Ok, temos quase a nossa interface pronta! Só falta que os botões mudem de cor quando clicamos neles, para sabermos se os LEDs estão ligados ou desligados. Para isso, fazemos com que o default da nossa interface seja a versão escurecida dos nossos botões. Para isso basta substituir os 255 por um valor mais baixo, por exemplo, 150. Se fizermos a troca, vamos ver como a interface fica quando os botões estão desligados.
 
-![](/img/janela4.PNG)
+![]({{ site.baseurl}}/img/janela4.PNG)
 
 Para que a cor dos botões possa mudar, os códigos de cores dos mesmos não podem ser fixos, i.e., têm de ser substituídos por uma variável. Por exemplo, no caso do verde, em vez de `fill(0, 255, 0)` teríamos `fill(0, verde, 0)` onde verde seria uma variável do tipo `int` que alternaria entre 255 e 150. Temos então de criar um conjunto de variáveis que guardem os valores das cores e dar-lhes um valor inicial (150, já que a nossa interface começa com os LEDs todos desligados). Estes devem ser inseridos antes do `void setup()` por uma questão de clareza e organização. Não podem nunca ser introduzidos dentro do `void setup()` ou do `void draw()`.
 
@@ -318,9 +318,9 @@ O que este código faz é o seguinte: se o botão verde for premido e estiver a 
 
 Quando tiveres tanto o código em Processing como o código do Arduino pronto, estamos prontos a testar. Não te esqueças de montar os LEDs de acordo com o esquema elétrico no início deste tutorial! Para pormos a nossa interface a funcionar, começamos por ligar o nosso Arduino ao computador e fazer upload do sketch. Depois de fazermos isto, basta fazer "Play" do nosso sketch de *Processing* e a nossa interface irá aparecer. Se tudo correr bem, quando clicares num dos botões, o LED da cor corresponde irá acender! Se estiveres a obter um erro da parte do *Processing* tem provavelmente a haver com a porta que está definida. Se tiveres 1 coloca um 0 e vice-versa. Abaixo, algumas imagens da interface a funcionar!
 
-![](/img/20150912_145232.jpg)
+![]({{ site.baseurl}}/img/20150912_145232.jpg)
 
-![](/img/20150912_145238.jpg)
+![]({{ site.baseurl}}/img/20150912_145238.jpg)
 
 ## Código completo de Processing
 

@@ -31,7 +31,7 @@ Antes de avançarmos, precisamos de saber que funções temos de criar para este
 
 Para facilitar, associou-se a cada pin digital (de 2 a 8), uma letra que consta do seguinte diagrama (isto é opcional).
 
-![](/img/7segments.png)
+![]({{ site.baseurl}}/img/7segments.png)
 
 Estas variáveis são definidas fora do `void setup()` e do `void loop()`.
 
