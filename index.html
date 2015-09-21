@@ -6,18 +6,20 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
+  <ul class="entries">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    	<li class="entry group">
+    		<div class="entry-date">
+    			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    		</div>
+    		<div class="entry-title">
+    			<h2>
+    			<a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+    			</h2>
+    		</div>
+    	</li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <br>
 
 </div>

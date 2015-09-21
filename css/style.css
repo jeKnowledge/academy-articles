@@ -44,16 +44,16 @@ html {
 }
 
 body {
-	max-width: 33.33em;
+	max-width: 40em;
 	margin: 3em auto;
 	padding: .5em;
 }
 
-::-moz-selection { 
+::-moz-selection {
 	background: #06a;
 	color: #fff;
 }
-::selection { 
+::selection {
 	background: #06a;
 	color: #fff;
 }
@@ -91,7 +91,7 @@ h3 {
 
 a {
 	background-color: transparent;
-	color: #06a;
+	color: #008EC4;
 	text-decoration: none;
 	transition: color .2s ease;
 }
@@ -335,8 +335,9 @@ img {
 }
 
 .content {
-	margin: 0 0 2em 2em;
+	margin: 0 0 2em -1em;
 	position: relative;
+	min-height: 60vh;
 }
 
 .content:after {
@@ -347,17 +348,23 @@ img {
 	content: '}';
 	font-family: "Sanchez", sans-serif;
 	font-size: 3em;
-	margin: 0em 0 0em -32px;
+	margin: 0em 0 0em -25px;
 }
 
 /* header ********************************************************************/
 
 .site-header {
 	margin-bottom: 2.5em;
+	margin-left: -2.5em;
 }
 
 .site-header h1 {
 	font-size: 1em;
+}
+
+.site-header img{
+	width: 80px;
+	margin-bottom: -20px;
 }
 
 .site-title {
@@ -365,8 +372,8 @@ img {
 	display: inline-block;
 	font-family: "Sanchez", sans-serif;
 	font-size: 3em;
-	letter-spacing: .25em;
-	margin-bottom: 0em;
+	letter-spacing: .15em;
+	margin-bottom: 0.5em;
 	text-transform: uppercase;
 }
 
@@ -385,12 +392,12 @@ img {
 
 .entries {
 	list-style: none;
-	margin: 0;
+	margin: 3em 0;
 	padding: 0;
 }
 
 .entry {
-	margin: 0 0 1.5em 0;
+	margin: 0 0 2em 0;
 	line-height: 1;
 }
 
@@ -400,9 +407,9 @@ img {
 }
 
 .entry-date {
-	line-height: 1.75;
+	line-height: 2.2;
 	color: #999;
-	font-size: .75em;
+	font-size: 0.8em;
 	text-align: right;
 	text-transform: uppercase;
 	width: 20%;
@@ -422,7 +429,7 @@ img {
 	display: inline;
 	line-height: 1.25;
 	font-family: "Roboto", sans-serif;
-	font-size: 1em;
+	font-size: 1.2em;
 	margin: 0;
 }
 
@@ -463,14 +470,18 @@ img {
 /* footer ********************************************************************/
 
 .site-footer {
-	margin: 2.5em 0;
+	margin-top: 4.5em;
 	text-align: center;
 }
 
 .copyright {
 	color: #666;
 	display: block;
-	margin: 2em 0;
+	margin: 0.5em 0;
+}
+
+.site-footer p{
+	font-size: 0.7em;
 }
 
 /* syntax highligth **********************************************************/
