@@ -21,7 +21,7 @@ O objetivo deste projeto é criar um dado virtual. Para isso, vamos recorrer à 
 
 O display de 7 segmentos e o botão são montados de um modo semelhante ao que seguimos no _workshop_. Para ajudar à montagem, criamos o seguinte esquema de ligações usando o programa [Fritzing](http://fritzing.org/).
 
-![](/img/dado.png)
+![]({{ site.baseurl}}/img/dado.png)
 
 ## Desenvolvimento do programa
 
