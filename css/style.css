@@ -91,7 +91,7 @@ h3 {
 
 a {
 	background-color: transparent;
-	color: #008EC4;
+	color: #0293C9;
 	text-decoration: none;
 	transition: color .2s ease;
 }
@@ -355,7 +355,7 @@ img {
 
 .site-header {
 	margin-bottom: 2.5em;
-	margin-left: -2.5em;
+	margin-left: -3em;
 }
 
 .site-header h1 {
@@ -363,7 +363,7 @@ img {
 }
 
 .site-header img{
-	width: 80px;
+	height: 80px;
 	margin-bottom: -20px;
 }
 
