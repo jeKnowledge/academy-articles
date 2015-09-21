@@ -29,7 +29,7 @@ Para começarmos, precisamos de fazer download da versão mais recente do *Proce
 
 Quando abrirem o Processing, vão provavelmente ter a sensação que já viram aquilo algures. Na verdade, o IDE do Arduino é baseado no do Processing e são visualmente e funcionalmente muito semelhantes. Existe, no entanto, uma diferença importante. O IDE do Processing é um compilador incremental o que significa que, à medida que vocês escrevem, o IDE relata os erros que vão aparecendo. Muitas vezes isto acontece enquanto vocês ainda estão a escrever o código, por isso, não se preocupem!
 
-![]({{ site.baseurl}}/img/processing.PNG)
+![]({{ site.baseurl}}/img/processing.png)
 
 Agora já temos tudo o que precisamos para trabalhar. Quando se abre uma nova janela no *Processing*, esta está em branco. No entanto, e à semelhança do Arduino, em *Processing* temos duas estruturas: `void setup()` e `void draw()` que são em tudo semelhantes ao `void setup()` e ao `void loop()` que já conhecemos do Arduino! A lógica também é transversal: utilizamos o `void setup()` para definir as condições iniciais e o `void draw()` para tudo o que se irá alterar à medida que o programa corre.
 
@@ -68,7 +68,7 @@ Ao bloco de código anterior adicionamos,
   text("Arduino LED Interface", 230, 210);
 {% endhighlight %}
 
-![]({{ site.baseurl}}/img/janela2.PNG)
+![]({{ site.baseurl}}/img/janela2.png)
 
 NOTA: Em *Processing*, as coordenadas têm como origem o campo superior esquerdo da janela criada. Apesar de isto equivaler ao quarto quadrante de um referencial cartesiano, não existem coordenadas negativas.
 
@@ -101,7 +101,7 @@ Em *Processing*, definimos a cor da forma, neste caso, um retângulo, antes de d
 
 Agora já sabemos como criar os restantes botões. Para encontrarem os códigos das cores podem procurar por "RGB color table" no Google e encontram todos os códigos, para todas as cores, possíveis e imaginárias. O código para o amarelo é (255, 255, 0) e o código para o vermelho é (255, 0, 0). Para colocar os botões no sítio certo, basta ir adicionando a coordenada inicial do quadrado anterior com o comprimento do mesmo. Coloquem os códigos das cores por enquanto. Deverão ter algo semelhante à seguinte interface.
 
-![]({{ site.baseurl}}/img/janela3.PNG)
+![]({{ site.baseurl}}/img/janela3.png)
 
 Podes dar uma vista de olhos ao código que originou esta interface mas não sem antes tentares fazer por ti mesmo!
 
@@ -144,7 +144,7 @@ void draw() {
 
 Ok, temos quase a nossa interface pronta! Só falta que os botões mudem de cor quando clicamos neles, para sabermos se os LEDs estão ligados ou desligados. Para isso, fazemos com que o default da nossa interface seja a versão escurecida dos nossos botões. Para isso basta substituir os 255 por um valor mais baixo, por exemplo, 150. Se fizermos a troca, vamos ver como a interface fica quando os botões estão desligados.
 
-![]({{ site.baseurl}}/img/janela4.PNG)
+![]({{ site.baseurl}}/img/janela4.png)
 
 Para que a cor dos botões possa mudar, os códigos de cores dos mesmos não podem ser fixos, i.e., têm de ser substituídos por uma variável. Por exemplo, no caso do verde, em vez de `fill(0, 255, 0)` teríamos `fill(0, verde, 0)` onde verde seria uma variável do tipo `int` que alternaria entre 255 e 150. Temos então de criar um conjunto de variáveis que guardem os valores das cores e dar-lhes um valor inicial (150, já que a nossa interface começa com os LEDs todos desligados). Estes devem ser inseridos antes do `void setup()` por uma questão de clareza e organização. Não podem nunca ser introduzidos dentro do `void setup()` ou do `void draw()`.
 
