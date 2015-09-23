@@ -54,7 +54,7 @@ void setup()
 
 Se correrem o vosso *sketch*, carregando no botão "Play" vão ver uma janela preta como a representada abaixo.
 
-![]({{ site.baseurl}}/img/janela1.PNG)
+![]({{ site.baseurl}}/img/janela1.png)
 
 Agora que temos a nossa janela, vamos adicionar uma String de texto que diz "Arduino LED Interface" no fundo da nossa janela. Ora, esta String será branca (ou outra cor qualquer que escolhas), estará alinhada no fundo centrada e estará escrita com tamanho de letra 24 pixeis. Começamos então por definir o tamanho do texto com o método `textSize()` que toma como argumento o tamanho da letra. De seguida, alinhamos o texto no centro com o método `textAlign()` e passamos `CENTER` como argumento do mesmo. Também poderíamos passar como argumentos `LEFT` ou `RIGHT`. De seguida, escolhemos a cor das letras com o método `fill()` passando a cor em formato RGB como argumento e, finalmente, passamos a String com o método `text()` onde passamos como argumento a string e as coordenadas do ponto onde queremos começar a escrever o nosso texto.
 
