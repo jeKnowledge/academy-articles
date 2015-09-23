@@ -25,7 +25,7 @@ Para ajudar à montagem, criou-se o seguinte esquema de ligações usando o prog
 
 ## Introdução ao Processing
 
-Para começarmos, precisamos de fazer download da versão mais recente do *Processing* IDE que neste momento é a versão 3. Para isso, basta aceder a https://processing.org/download/ e fazer download da versão adequada. O que estão a descarregar é um ficheiro .zip da versão portátil do *Processing* (não requer instalação). Para poderem usar o programa, basta descompactá-lo para uma localização à vossa escolha. Logo que acabarem de o fazer, vão encontrar o atalho para o executável do programa e basta fazer duplo clique para o abrir.
+Para começarmos, precisamos de fazer download da versão mais recente do *Processing* IDE que neste momento é a versão 3. Para isso, basta aceder a [https://processing.org/](https://processing.org/ "Processing") e fazer download da versão adequada. O que estão a descarregar é um ficheiro .zip da versão portátil do *Processing* (não requer instalação). Para poderem usar o programa, basta descompactá-lo para uma localização à vossa escolha. Logo que acabarem de o fazer, vão encontrar o atalho para o executável do programa e basta fazer duplo clique para o abrir.
 
 Quando abrirem o Processing, provavelmente vão ter a sensação que já o viram algures. Na verdade, o IDE do Arduino é baseado no do Processing e são visualmente e funcionalmente muito semelhantes. Existe, no entanto, uma diferença importante. O IDE do Processing, à medida que vocês escrevem, o IDE relata os erros que vão aparecendo. Muitas vezes isto acontece enquanto vocês ainda estão a escrever o código, por isso, não se preocupem!
 
