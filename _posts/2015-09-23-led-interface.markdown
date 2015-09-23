@@ -2,12 +2,12 @@
 layout: post
 title:  "Interface LED com Arduino e Processing"
 date:   2015-09-23 01:32:13
-categories:
+categories: arduino led processing interface
 ---
 
 Antes de começarmos a falar acerca deste projeto, vou responder ao desafio que tinha deixado no primeiro tutorial. Uma forma fácil de identificar se nos saiu um *double* no lançamento é colocar um LED a acender no caso dos dois números aleatórios serem iguais.
 
-Agora que já resolvemos esse ponto, venho então apresentar-vos este segundo tutorial que é um pouco diferente já que se baseia praticamente todo em software. Apresento-vos então o *Processing*. Criado no MIT em 2001, o Processing é uma linguagem de programação em contexto visual, isto é, vocês programam o que aparece no ecrã. Basicamente, desenhar com código. Escolhi dois vídeos de projetos que achei muito interessantes e que provavelmente vão gostar de ver.
+Agora que já resolvemos esse ponto, venho então apresentar-vos este segundo tutorial que é um pouco diferente já que se baseia praticamente todo em software. Apresento-vos então o [Processing](https://processing.org/ "Processing"). Criado no MIT em 2001, o Processing é uma linguagem de programação em contexto visual, isto é, vocês programam o que aparece no ecrã. Basicamente, desenhar com código. Escolhi dois vídeos de projetos que achei muito interessantes e que provavelmente vão gostar de ver.
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/658158' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
@@ -19,21 +19,21 @@ Mas, perguntam vocês, o que tem tudo isto a ver com Arduino? Ora, tudo! Neste p
 
 **Material necessário:** 3 LEDs (um verde, um amarelo e um vermelho), 3 resistências de 220 Ohms e alguns fios de montagem.
 
-Para ajudar à montagem, criou-se o seguinte esquema de ligações usando o programa *Fritzing*.
+Para ajudar à montagem, criou-se o seguinte esquema de ligações usando o programa [Fritzing](http://fritzing.org/home/ "Fritzing").
 
 ![]({{ site.baseurl}}/img/esquema.png)
 
 ## Introdução ao Processing
 
-Para começarmos, precisamos de fazer download da versão mais recente do *Processing* IDE que neste momento é a 3. Para isso, basta aceder a https://processing.org/download/ e fazer download da versão adequada. O que estão a descarregar é um ficheiro .zip da versão portátil do *Processing* (não requer instalação). Para poderem usar o programa, basta descompactá-lo para uma localização à vossa escolha. Logo que terminarem de o fazer, vão encontrar o atalho do executável do programa e basta fazer duplo clique.
+Para começarmos, precisamos de fazer download da versão mais recente do *Processing* IDE que neste momento é a versão 3. Para isso, basta aceder a https://processing.org/download/ e fazer download da versão adequada. O que estão a descarregar é um ficheiro .zip da versão portátil do *Processing* (não requer instalação). Para poderem usar o programa, basta descompactá-lo para uma localização à vossa escolha. Logo que acabarem de o fazer, vão encontrar o atalho para o executável do programa e basta fazer duplo clique para o abrir.
 
-Quando abrirem o Processing, vão provavelmente ter a sensação que já viram aquilo algures. Na verdade, o IDE do Arduino é baseado no do Processing e são visualmente e funcionalmente muito semelhantes. Existe, no entanto, uma diferença importante. O IDE do Processing é um compilador incremental o que significa que, à medida que vocês escrevem, o IDE relata os erros que vão aparecendo. Muitas vezes isto acontece enquanto vocês ainda estão a escrever o código, por isso, não se preocupem!
+Quando abrirem o Processing, provavelmente vão ter a sensação que já o viram algures. Na verdade, o IDE do Arduino é baseado no do Processing e são visualmente e funcionalmente muito semelhantes. Existe, no entanto, uma diferença importante. O IDE do Processing, à medida que vocês escrevem, o IDE relata os erros que vão aparecendo. Muitas vezes isto acontece enquanto vocês ainda estão a escrever o código, por isso, não se preocupem!
 
 ![]({{ site.baseurl}}/img/processing.png)
 
 Agora já temos tudo o que precisamos para trabalhar. Quando se abre uma nova janela no *Processing*, esta está em branco. No entanto, e à semelhança do Arduino, em *Processing* temos duas estruturas: `void setup()` e `void draw()` que são em tudo semelhantes ao `void setup()` e ao `void loop()` que já conhecemos do Arduino! A lógica também é transversal: utilizamos o `void setup()` para definir as condições iniciais e o `void draw()` para tudo o que se irá alterar à medida que o programa corre.
 
-O nosso objetivo aqui é criar uma interface com 3 botões nos quais podemos clicar para acender os LEDs que quisermos. O primeiro passo em qualquer programa de *Processing* é criar a janela onde vamos desenhar (no nosso caso, a nossa interface gráfica). Usamos o método `size()` que toma como argumentos o comprimento e a largura da janela em pixeís.
+O nosso objetivo aqui é criar uma interface com 3 botões nos quais podemos clicar para acender os LEDs que quisermos. O primeiro passo em qualquer programa de *Processing* é criar a janela onde vamos desenhar (no nosso caso, a nossa interface gráfica). Usamos o método `size()` que toma como argumentos o comprimento e a largura da janela em pixeis, nesta mesma ordem.
 
 Devemos também definir a cor do fundo da nossa interface. Neste caso, escolhi o preto mas essa escolha fica a vossa critério. Para representar uma cor em *Processing*, é usado o sistema RGB (Red Green Blue). De certeza que já viram esta sigla. Basicamente, todas as cores são uma qualquer combinação destas três cores base. Por exemplo, o vermelho mais vivo representa-se como (255, 0, 0). Se prestarmos atenção, isto faz sentido. Suprimimos qualquer expressão do Green e do Blue e colocamos o Red no seu valor máximo.
 
@@ -52,11 +52,11 @@ void setup()
 }
 {% endhighlight %}
 
-Se correrem o vosso sketch, carregando no botão "Play" vão ver uma janela preta como a representada abaixo.
+Se correrem o vosso *sketch*, carregando no botão "Play" vão ver uma janela preta como a representada abaixo.
 
 ![]({{ site.baseurl}}/img/janela1.PNG)
 
-Agora que temos a nossa janela, vamos adicionar uma String de texto que diz "Arduino LED Interface" no fundo da nossa janela. Ora, esta String será branca (ou outra cor qualquer que escolhas), estará alinhada no fundo e centrada e estará escrita com tamanho de letra 24. Começamos então por definir o tamanho do texto com o método `textSize()` que toma como argumento o tamanho da letra. De seguida, alinhamos o texto no centro com o método `textAlign()` e passamos CENTER como argumento do mesmo. Também poderíamos passar como argumentos LEFT ou RIGHT. De seguida, escolhemos a cor das letras com o método `fill()` passando a cor em formato RGB como argumento e, finalmente, passamos a String com o método `text()` onde passamos como argumento a string e as coordenadas do ponto onde queremos começar a escrever o nosso texto.
+Agora que temos a nossa janela, vamos adicionar uma String de texto que diz "Arduino LED Interface" no fundo da nossa janela. Ora, esta String será branca (ou outra cor qualquer que escolhas), estará alinhada no fundo centrada e estará escrita com tamanho de letra 24 pixeis. Começamos então por definir o tamanho do texto com o método `textSize()` que toma como argumento o tamanho da letra. De seguida, alinhamos o texto no centro com o método `textAlign()` e passamos `CENTER` como argumento do mesmo. Também poderíamos passar como argumentos `LEFT` ou `RIGHT`. De seguida, escolhemos a cor das letras com o método `fill()` passando a cor em formato RGB como argumento e, finalmente, passamos a String com o método `text()` onde passamos como argumento a string e as coordenadas do ponto onde queremos começar a escrever o nosso texto.
 
 Ao bloco de código anterior adicionamos,
 
