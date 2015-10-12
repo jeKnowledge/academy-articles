@@ -638,6 +638,7 @@ ul#menu {
 
 ul#menu li {
 	display: inline;
+	font-size: 1.5em;
 }
 
 ul#menu li a {
