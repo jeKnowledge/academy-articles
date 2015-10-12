@@ -81,6 +81,10 @@ h1 {
 	margin: .5em 0;
 }
 
+h1#home{
+	color: #0293C9;
+}
+
 h2 {
 	font-size: 1.5em;
 }
