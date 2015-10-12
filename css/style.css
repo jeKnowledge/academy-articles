@@ -639,12 +639,13 @@ ul#menu {
 ul#menu li {
 	display: inline;
 	font-size: 1.5em;
+	margin-left: .5em;
 }
-
+/*
 ul#menu li a {
 
 }
 
 ul#menu li a:hover {
     
-}
+}*/
