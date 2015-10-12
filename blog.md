@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Academy Blog
 permalink: /blog/
 ---
