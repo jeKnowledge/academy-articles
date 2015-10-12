@@ -631,9 +631,13 @@ img {
 }
 
 /* menu *********************************************************/
+#homeimage{
+	float:left;
+}
 
 ul#menu {
-	 
+	float: left;
+	margin-top: 25px;
 }
 
 ul#menu li {
