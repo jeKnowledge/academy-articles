@@ -382,6 +382,7 @@ img {
 	color: #999;
 	content: '{';
 	letter-spacing: normal;
+	margin-left: 15px;
 }
 
 .tagline {
