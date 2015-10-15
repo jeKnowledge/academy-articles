@@ -4,7 +4,7 @@ title: Academy Blog
 permalink: /blog/
 ---
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading site-title">Posts</h1>
 
   <ul class="entries">
     {% for post in site.posts %}
