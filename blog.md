@@ -4,8 +4,8 @@ title: Academy Blog
 permalink: /blog/
 ---
 
-  <div class="site-title"><h1 class="page-heading">Posts</h1></div>
-
+  <h1 class="page-heading">Posts</h1><div class="site-title"></div>
+<div>
   <ul class="entries">
     {% for post in site.posts %}
     	<li class="entry group">
@@ -21,3 +21,4 @@ permalink: /blog/
     {% endfor %}
   </ul>
   <br>
+</div>
