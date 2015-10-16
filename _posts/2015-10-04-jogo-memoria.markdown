@@ -2,7 +2,7 @@
 layout: post
 title:  "Jogo da Memória"
 date:   2015-10-04 01:32:13
-categories: arduino led memory game
+categories: arduino led random serial memory game
 ---
 
 Neste tutorial, vamos fazer um jogo da memória recorrendo ao nosso Arduino. Vamos usar 3 LEDs como indicadores luminosos (e fica, desde já, o desafio de quem quiser adicionar mais LEDs para tornar o desafio mais complicado!) que deveremos posteriormente replicar no Serial Monitor do Arduino. Esta é a primeira vez que vamos usar o Serial Monitor diretamente embora já tenhamos usado a comunicação série no tutorial da Interface LED com Arduino e Processing.
@@ -109,6 +109,10 @@ Como podemos ver, este código é redundante (repete-se desnecessariamente). No 
 As outras instruções serão dadas no `void loop()` que será a última coisa a ser escrita já que vai juntar todas as componentes do jogo.
 
 ### Gerar sequência aleatória
+
+O nosso jogo vai gerar uma sequência aleatória que a cada número gerado tem um LED associado. A ordem proposta é a que se encontra na imagem abaixo.
+
+![]({{ site.baseurl}}/img/id_led.jpg)
 
 Para gerarmos a nossa sequência aleatória vamos definir uma função só para este efeito. Neste caso, é a função `void generateSequence (int tempo, int sequencia)`. A primeira coisa a fazer é chamar a função `blinkTwice()` e dar um delay de 1 segundo antes da sequência começar.
 
