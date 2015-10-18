@@ -355,6 +355,16 @@ img {
 .colorBlue{
 	color: #0293C9;
 }
+.partners .logos-container .partner-logo:first-child {
+    margin-left: 0px;
+}
+
+.partners .partner-logo {
+    overflow: hidden;
+    max-width: 400px;
+    display: inline-block;
+    margin: 0px 30px 55px 30px;
+}
 
 /* header ********************************************************************/
 
