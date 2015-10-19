@@ -352,6 +352,21 @@ img {
 	margin: 0em 0 0em -25px;
 }
 
+.colorBlue{
+	color: #0293C9;
+}
+.partners .logos-container .partner-logo:first-child {
+    margin-left: 0px;
+    text-align: center;
+}
+
+.partner-logo {
+    overflow: hidden;
+    max-width: 400px;
+    display: inline-block;
+    margin: 0px 30px 55px 30px;
+}
+
 /* header ********************************************************************/
 
 .site-header {
@@ -382,6 +397,7 @@ img {
 	color: #999;
 	content: '{';
 	letter-spacing: normal;
+	margin-left: 15px;
 }
 
 .tagline {
@@ -629,3 +645,27 @@ img {
 	}
 
 }
+
+/* menu *********************************************************/
+#homeimage{
+	float:left;
+}
+
+ul#menu {
+	float: left;
+	margin-top: 25px;
+}
+
+ul#menu li {
+	display: inline;
+	font-size: 1.2em;
+	margin-right: .5em;
+}
+/*
+ul#menu li a {
+
+}
+
+ul#menu li a:hover {
+    
+}*/
