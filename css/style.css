@@ -336,7 +336,7 @@ img {
 }
 
 .content {
-	margin: 0 0 2em -1em;
+/*	margin: 0 0 2em -1em; */
 	position: relative;
 	min-height: 60vh;
 }
@@ -371,7 +371,7 @@ img {
 
 .site-header {
 	margin-bottom: 2.5em;
-	margin-left: -3em;
+	/*margin-left: -3em;*/
 }
 
 .site-header h1 {
