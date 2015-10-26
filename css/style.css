@@ -379,8 +379,8 @@ img {
 }
 
 .site-header img{
-	height: 80px;
-	margin-bottom: -20px;
+	height: 5em;
+	/*margin-bottom: -20px;*/
 }
 
 .site-title {
