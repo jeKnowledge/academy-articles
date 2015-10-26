@@ -36,5 +36,6 @@ permalink: /blog/
   {% when '12' %}Dezembro
   {% endcase %}
 {{ page.date | date: "%Y" }}
+<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
   <br>
 </div>
