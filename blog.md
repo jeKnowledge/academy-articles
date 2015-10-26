@@ -10,7 +10,8 @@ permalink: /blog/
     	<li class="entry group">
     		<div class="entry-date">
     			<!--<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>-->
-    			<!--<time datetime="{{ post.date | date_to_xmlschema }}">{% include date-pt.html %}</time>-->
+    			{% include date-pt.html %}
+    			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
     		</div>
     		<div class="entry-title">
     			<h2>
@@ -20,22 +21,5 @@ permalink: /blog/
     	</li>
     {% endfor %}
   </ul>
-  {% assign m = page.date | date: "%-m" %}
-{% case m %}
-  {% when '1' %}Janeiro
-  {% when '2' %}Fevereiro
-  {% when '3' %}Março
-  {% when '4' %}Abril
-  {% when '5' %}Maio
-  {% when '6' %}Junho
-  {% when '7' %}Julho
-  {% when '8' %}Agosto
-  {% when '9' %}Setembro
-  {% when '10' %}Outubro
-  {% when '11' %}Novembro
-  {% when '12' %}Dezembro
-  {% endcase %}
-{{ page.date | date: "%Y" }}
-<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
   <br>
 </div>
