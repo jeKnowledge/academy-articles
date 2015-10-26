@@ -9,7 +9,8 @@ permalink: /blog/
     {% for post in site.posts %}
     	<li class="entry group">
     		<div class="entry-date">
-    			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    			<!--<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>-->
+    			<time datetime="{{ post.date | date_to_xmlschema }}">{% include disqus.html %}</time>
     		</div>
     		<div class="entry-title">
     			<h2>
