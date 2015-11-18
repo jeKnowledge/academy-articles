@@ -158,12 +158,12 @@ nav .applink:hover {
 
 nav .appstore-link,
 nav .appstore-link:hover{
-  background-image: url('academy-articles/img/jklogo.svg');
+  background-image: url('{{ site.url }}/img/jklogo.svg');
   background-size: 40px;
 }
 nav .playstore-link,
 nav .playstore-link:hover {
-  background-image: url('academy-articles/img/github.svg');
+  background-image: url('{{ site.url }}/img/github.svg');
   background-size: 40px;
 }
 
@@ -174,14 +174,14 @@ section#header {
   color:white;
   height: initial;
   
-  background: url('academy-articles/img/stars.svg'),radial-gradient(450px circle at 50% 35%, rgb(4, 23, 76), rgba(255,255,255,0)),linear-gradient(#000104, #061E56);
+  background: url('{{ site.url }}/img/stars.svg'),radial-gradient(450px circle at 50% 35%, rgb(4, 23, 76), rgba(255,255,255,0)),linear-gradient(#000104, #061E56);
   
 }
 section#header h3.logo {
   float:left;
   width: 450px;
   height:115px;
-  background-image:url('academy-articles/img/jkacademylogo.svg');
+  background-image:url('{{ site.url }}/img/jkacademylogo.svg');
   background-size:contain;
   background-repeat:no-repeat;
   text-indent:-9000px;
