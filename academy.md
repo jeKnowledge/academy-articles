@@ -1,10 +1,26 @@
 ---
 layout: default
 title: Academy
-permalink: /academy/
 ---
 
-<h1 class="page-heading" style="display:inline">jeKnowledge Academy Event</h1><div class="site-title"></div>
+<section id="header">
+
+  {% include headerMain.html %}
+  
+  <section id="about">
+  <div class="width">
+   <!-- <h4>Quem somos</h4> -->
+    <!--<span class="subhead">NOSSA HISTÓRIA</span>-->
+    <p>
+    Aqui poderás encontrar uma série de tutoriais que pretendem ser uma introdução ao Arduino. Cada artigo tem por base um kit de eletrónica.
+    </p>
+  </div>
+</section>
+  
+</section>
+
+<section id="article">
+<h1>jeKnowledge Academy Event</h1>
 
 <div id="home">
 <article>
@@ -61,6 +77,8 @@ permalink: /academy/
 <p><br></p>
 <!-- Parceiros ************************ -->
 <h1 class="colorBlue">Parceiros</h1>
+<br>
+
 <div class="logos-container" style="text-align:center">
 <section class="partner-logo">
   <a href="http://www.uc.pt/fctuc" target="_blank"><img src="https://github.com/SimaoDias/academy-articles/blob/gh-pages/img/jkapoio1.png?raw=true" alt="Faculdade de Ciências e Tecnologia da UC">
@@ -96,3 +114,4 @@ permalink: /academy/
 
 </article>
 
+</section>
