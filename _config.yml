@@ -3,8 +3,8 @@ title: jeKnowledge Academy Blog
 email: geral@jeknowledge.com
 description: > # this means to ignore newlines until "baseurl:"
   O propósito deste blog é divulgar uma série de tutoriais que pretendem ser uma continuação do trabalho desenvolvido no workshop de Arduino no jeKnowledge Academy.
-baseurl: "http://simaodias.github.io/academy-articles/" # the subpath of your site, e.g. /blog/
-url: "http://simaodias.github.io/academy-articles/" # the base hostname & protocol for your site
+baseurl: "http://simaodias.github.io/academy-articles" # the subpath of your site, e.g. /blog/
+url: "http://simaodias.github.io/academy-articles" # the base hostname & protocol for your site
 # url: "http://0.0.0.0:4000"
 # Build settings
 markdown: kramdown
