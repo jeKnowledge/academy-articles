@@ -2,17 +2,44 @@
 layout: default
 title: Blog
 ---
- {% include headerMain.html %}
-<h1 class="page-heading" style="display:inline">Posts</h1><div class="site-title"></div>
-<div>
+<!--
+<style>
+    teste para imagem nos artigos
+    .entries{
+        width:auto;
+        height:300px;
+        background:url('/img/stars.svg'),linear-gradient(#000104, #061E56)
+        
+    }
+    
+    
+</style>
+-->
+
+<section id="header">
+
+  {% include headerMain.html %}
   
-  <p>
-    Aqui poderás encontrar uma série de tutoriais que pretendem ser uma introdução ao Arduino.
-  </p>
+  <section id="about">
+  <div class="width">
+   <!-- <h4>Quem somos</h4> -->
+    <!--<span class="subhead">NOSSA HISTÓRIA</span>-->
+    <p>
+    Aqui poderás encontrar uma série de tutoriais que pretendem ser uma introdução ao Arduino. Cada artigo tem por base um kit de eletrónica.
+    </p>
+  </div>
+</section>
   
-  <ul class="entries">
+</section>
+
+<section id="article">
+    
+    <h1>Artigos</h1>
+    
+    <ul class="entries">
     {% for post in site.posts %}
     	<li class="entry group">
+    	    <!--<img src="{{post.image}}">-->
     		<div class="entry-date">
     			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
     		</div>
@@ -24,5 +51,4 @@ title: Blog
     	</li>
     {% endfor %}
   </ul>
-  <br>
-</div>
+</section>
