@@ -178,9 +178,8 @@ section#header {
   
 }
 section#header h3.logo {
-  float:left;
-  width: 450px;
-  height:115px;
+  width: 20em;
+  height: 7em;
   background-image:url('/academy-articles/img/jkacademylogo.svg');
   background-size:contain;
   background-repeat:no-repeat;
