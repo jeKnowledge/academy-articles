@@ -129,8 +129,8 @@ nav a {
   nav a {
     font-size:1em;
     padding:10px 0px;
-    /*margin: 0 8px;
-    margin-bottom: 10px;*/
+    margin: 0 8px;
+    margin-bottom: 10px;
   }
 }
 nav a:hover {
