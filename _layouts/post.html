@@ -2,19 +2,27 @@
 layout: default
 ---
 <style>
-	nav {
-      margin: 25px 0 10px 0;
+.tags, li{
+    color: white;
+    float: left;
+    background-color: #2e9fff;
+    padding: 3px 5px 3px 5px;
+    margin: 3px;
+    float: left;
+    list-style-type: none;
+}
+
+nav {
+  margin: 25px 0 10px 0;
 }
 
 /* ====== Header Section */
 section#header {
-	/*small fix for background image*/
+  /*small fix for background image*/
   padding-top: 300px;
   margin-top: -300px;
   
   url('/img/stars.png'),radial-gradient(450px circle at 20% 35%, rgb(4, 23, 76), rgba(255,255,255,0)),linear-gradient(#020B29, #091940);
-	
-	
 }
 
 section#header h3.logo {
@@ -75,7 +83,7 @@ section#header h3.logo {
 	</header>
 	{{ content }}
 </article>
-<ul>
+<ul class='tags'>
   {% for tags in page.tags %}
     <li>{{ tags }}</li>
   {% endfor %}
