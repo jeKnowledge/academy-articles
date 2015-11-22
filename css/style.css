@@ -573,7 +573,8 @@ pre {
 }
 
 code {
-	color: #a60;
+       color: #E49A2A;
+       font-weight: bold;
 }
 
 pre code {
