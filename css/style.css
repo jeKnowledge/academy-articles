@@ -206,7 +206,12 @@ section#header h3.logo {
 /*}*/
 
 @media all and (max-width : 720px){
-	
+#article {
+    margin-top: 0px;
+}
+.width{
+    padding: 0;
+}
 section#header {
     padding-top: 0px;
 }
