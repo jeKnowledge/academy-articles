@@ -316,11 +316,13 @@ O que este código faz é o seguinte: se o botão verde for premido e estiver a 
 
 ## Finalmente, vamos testar a nossa interface!
 
-Quando tiveres tanto o código em Processing como o código do Arduino pronto, estamos prontos a testar. Não te esqueças de montar os LEDs de acordo com o esquema elétrico no início deste tutorial! Para pormos a nossa interface a funcionar, começamos por ligar o nosso Arduino ao computador e fazer upload do sketch. Depois de fazermos isto, basta fazer "Play" do nosso sketch de *Processing* e a nossa interface irá aparecer. Se tudo correr bem, quando clicares num dos botões, o LED da cor corresponde irá acender! Se estiveres a obter um erro da parte do *Processing* tem provavelmente a haver com a porta que está definida. Se tiveres 1 coloca um 0 e vice-versa. Abaixo, algumas imagens da interface a funcionar!
+Quando tiveres tanto o código em Processing como o código do Arduino pronto, estamos prontos a testar. Não te esqueças de montar os LEDs de acordo com o esquema elétrico no início deste tutorial! Para pormos a nossa interface a funcionar, começamos por ligar o nosso Arduino ao computador e fazer upload do sketch. Depois de fazermos isto, basta fazer "Play" do nosso sketch de *Processing* e a nossa interface irá aparecer. Se tudo correr bem, quando clicares num dos botões, o LED da cor corresponde irá acender! Se estiveres a obter um erro da parte do *Processing* tem provavelmente a haver com a porta que está definida. Se tiveres 1 coloca um 0 e vice-versa. Abaixo, algumas imagens da interface a funcionar e também um vídeo!
 
 ![]({{ site.baseurl}}/img/20150912_145232.jpg)
 
 ![]({{ site.baseurl}}/img/20150912_145238.jpg)
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/146688640' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 ## Código completo de Processing
 
