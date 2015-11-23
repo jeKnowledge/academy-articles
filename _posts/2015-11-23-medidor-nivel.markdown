@@ -278,7 +278,7 @@ Vamos agora escrever a função `void serialEvent (Serial myPort)`que recebe com
 
 É nesta função que escrevemos o que queremos que apareça em função do número recebido pelo Processing e que o Arduino está a enviar.
 
-Vamos começar por criar uma variável do tipo *char* que nos vai guardar o valor que estará a ser enviado pela porta série. Reparem que quando programámos o Arduino, enviámos também uma variável do tipo *char*. Daí termos definido `Serial.println('0');`, por exemplo, onde '0' é um char por estar dentro de ''. Se estivesse dentro de aspas, seria uma *String* e não um *char*. Aqui não faz sentido usar uma *String*, já que o número a enviar cabe perfeitamente numa variável do tipo *char*. Se quisessemos enviar uma palavra ou uma frase, aí sim, teriamos de usar uma variável do tipo *String*.
+Vamos começar por criar uma variável do tipo *char* que nos vai guardar o valor que estará a ser enviado pela porta série. Reparem que quando programámos o Arduino, enviámos também uma variável do tipo *char*. Daí termos definido `Serial.println('0');`, por exemplo, onde '0' é um char por estar dentro de ''. Se estivesse dentro de aspas, seria uma *String* e não um *char*. Aqui não faz sentido usar uma *String*, já que o número a enviar cabe perfeitamente numa variável do tipo *char*. Se quiséssemos enviar uma palavra ou uma frase, aí sim, teríamos de usar uma variável do tipo *String*.
 
 {% highlight c++ %}
 void serialEvent (Serial myPort)
