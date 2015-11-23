@@ -126,6 +126,9 @@ nav a {
   transition: all .1s ease-out;
 }
 @media all and (max-width : 500px) {
+section#about p {
+    margin: 0 auto;
+}
   nav a {
     font-size:1em;
     padding:10px 0px;
@@ -850,10 +853,6 @@ img {
 /* media queries *************************************************************/
 
 @media only screen and (max-device-width: 640px) {
-	
-	section#about p {
-    margin: 0;
-}
 
 	body {
 		margin: 0;
