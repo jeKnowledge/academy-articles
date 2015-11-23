@@ -852,7 +852,7 @@ img {
 @media only screen and (max-device-width: 640px) {
 
 	body {
-		margin: .5em;
+		margin: 0;
 		padding: 0;
 	}
 
