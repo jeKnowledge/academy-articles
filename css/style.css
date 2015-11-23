@@ -126,9 +126,6 @@ nav a {
   transition: all .1s ease-out;
 }
 @media all and (max-width : 500px) {
-section#about p {
-    margin: 0 auto;
-}
   nav a {
     font-size:1em;
     padding:10px 0px;
@@ -261,6 +258,11 @@ section#about p {
   padding:10px;
   text-align: center;
   color: rgba(255, 255, 255, 0.74);
+}
+@media all and (max-width : 720px) {
+section#about p {
+    margin: 0px auto;
+}
 }
 
 /* ====== Footer */
