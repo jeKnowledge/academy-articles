@@ -168,6 +168,12 @@ nav .playstore-link:hover {
   background-size: 40px;
 }
 
+@media all and (max-width : 860px) {
+  #article {
+	margin-top: 0px;
+}
+}
+
 /* ====== Header Section */
 section#header {
   /*background:#40A4C4;*/
