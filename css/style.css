@@ -850,6 +850,10 @@ img {
 /* media queries *************************************************************/
 
 @media only screen and (max-device-width: 640px) {
+	
+	section#about p {
+    margin: 0;
+}
 
 	body {
 		margin: 0;
