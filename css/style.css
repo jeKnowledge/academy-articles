@@ -168,12 +168,6 @@ nav .playstore-link:hover {
   background-size: 40px;
 }
 
-@media all and (max-width : 860px) {
-  #article {
-	margin-top: 0px;
-}
-}
-
 /* ====== Header Section */
 section#header {
   /*background:#40A4C4;*/
@@ -212,9 +206,6 @@ section#header h3.logo {
 /*}*/
 
 @media all and (max-width : 720px){
-#article {
-    margin-top: 0px;
-}
 .width{
     padding: 0;
     padding-bottom: 30px;
@@ -363,6 +354,12 @@ html {
 	margin: 3em auto;
 	padding: 1.5em;
 	
+}
+
+@media all and (max-width : 860px) {
+  #article {
+	margin-top: 0px;
+}
 }
 /*########################*/
 
