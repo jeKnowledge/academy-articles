@@ -25,9 +25,9 @@ Vai adicionando água para fazeres as marcações dos 0.4L, dos 0.6L e dos 0.8L.
 
 ## Como é que o nosso medidor de nível funciona? 
 
-O nosso medidor de nível irá ser capaz de detetar cinco estados diferentes: vazio, 0.2L, 0.4L, 0.6L e 0.8L. Este medidor é um modelo em pequena escala de um medidor de nível de varetas que é bastante usado a nível industrial. Este medidor não nos diz exatamente a capacidade contida no recipiente mas é capaz de nos dar uma ideia bastante razoável do líquido que contém, na forma de um intervalo.
+O nosso medidor de nível irá ser capaz de detetar cinco estados diferentes: vazio, 0.2L, 0.4L, 0.6L e 0.8L. Este medidor é um modelo em pequena escala de um medidor de nível de varetas que é bastante usado a nível industrial. Este medidor não nos diz exatamente a capacidade contida no recipiente, mas é capaz de nos dar uma ideia bastante razoável do líquido que contém, na forma de um intervalo.
 
-Assim, se o nosso medidor mostrar 0.4L, então sabemos que o medidor contém entre 0.4L e 0.6L, exclusive. Tudo isto funciona porque a água conduz eletricidade devido às caraterísticas polares das moléculas que a compõem. Iremos colocar um fio no fundo do recipiente a fornecer uma tensão de +5V. Depois, teremos quatro fios colados à parede do recipiente, em cada uma das marcações. Estes fios serão INPUTS, logo o seu estado estará a ser lido, no nosso caso, de 3 em 3 segundos. Esse estado será depois enviado pelo Arduino para o nosso programa de Processing que nos irá mostrar uma representação gráfica do nível de água na garrafa.
+Assim, se o nosso medidor mostrar 0.4L, então sabemos que o medidor contém entre 0.4L e 0.6L, exclusive. Tudo isto funciona porque a água conduz eletricidade devido às caraterísticas polares das moléculas que a compõem. Iremos colocar um fio no fundo do recipiente a fornecer uma tensão de +5V. Depois, teremos quatro fios colados à parede do recipiente, em cada uma das marcações. Estes fios serão _INPUTS_, logo o seu estado estará a ser lido, no nosso caso, de 3 em 3 segundos. Esse estado será depois enviado pelo Arduino para o nosso programa de Processing que nos irá mostrar uma representação gráfica do nível de água na garrafa.
 
 ## Fazer as ligações!
 
@@ -65,7 +65,7 @@ void setup() {
 }
 {% endhighlight %}
 
-Uma vez que vamos obter valores analógicos, não digitais, vamos precisar de os converter para booleanos, isto é, *true* ou *false*. E tudo isto porque temos dois estados possíveis, com ou sem água. Começamos por criar, então, quatro variáveis do tipo *boolean*.
+Uma vez que vamos obter valores analógicos, não digitais, vamos precisar de os converter para booleanos, isto é, `true` ou `false`. E tudo isto porque temos dois estados possíveis, com ou sem água. Começamos por criar, então, quatro variáveis do tipo `boolean`.
 
 > FUN FACT: Estas variáveis têm o nome de *boolean* em homenagem ao matemático George Boole que inventou a lógica booleana, extremamente útil na computação.
 
@@ -78,9 +78,9 @@ void loop() {
 }
 {% endhighlight %}
 
-A razão pela qual estas variáveis são inicializadas a *false* é porque, só se houver água, é que estas passam a *true*. A próxima secção de código pretende exatamente fazer isso.
+A razão pela qual estas variáveis são inicializadas a `false` é porque, só se houver água, é que estas passam a `true`. A próxima secção de código pretende exatamente fazer isso.
 
-Portanto, se houver água, a variável passa a *true*. Se não houver, mantém-se a *false*. Para isto, temos de criar uma condição onde, a partir de uma leitura, seja feita esta decisão.
+Portanto, se houver água, a variável passa a `true`. Se não houver, mantém-se a `false`. Para isto, temos de criar uma condição onde, a partir de uma leitura, seja feita esta decisão.
 
 Nesta parte, recomenda-se que seja feita uma pequena experiência, fazendo print dos valores lidos pelos pinos analógicos no *Serial Monitor*. Aquando do teste, obteve-se 0 quando não existia água e valores acima de 15 quando havia. Mas sistemas diferentes podem ter leituras diferentes, por isso, é recomendável que se faça este tipo de calibração.
 
@@ -100,7 +100,7 @@ void loop() {
 }
 {% endhighlight %}
  
-Completa os outros três casos para as restantes três variáveis! A vantagem deste tipo de estrutura é que a cada iteração do loop, as variáveis voltam a ter o valor inicial de *false*.
+Completa os outros três casos para as restantes três variáveis! A vantagem deste tipo de estrutura é que a cada iteração do loop, as variáveis voltam a ter o valor inicial de `false`.
 
 > PRO TIP: Se o teu código começar a ficar com uma indentação estranha 
 (espaçamento das várias secções de código), prime Ctrl+T e o IDE do Arduino organiza o teu código por ti!
@@ -136,18 +136,18 @@ Depois disto, o teu `void loop()` deve ser semelhante ao código que se segue.
     }
 {% endhighlight %}
 
-E estamos quase a terminar! Já só falta determinarmos os cinco estados possíveis do nosso medidor. Vamos fazer isso através de condições *if* e de operadores && (AND).
+E estamos quase a terminar! Já só falta determinarmos os cinco estados possíveis do nosso medidor. Vamos fazer isso através de condições `if` e de operadores `&&` (AND).
 
 Por exemplo, para o nível 4 que corresponde aos 0.8L, ou seja, todas as leituras devem estar a positivo, fazemos:
 
 {% highlight c++ %}
-    if (leitura4 && leitura3 && leitura2 && leitura1)
-    {
-      Serial.println('4');
-    } 
+if (leitura4 && leitura3 && leitura2 && leitura1)
+{
+  Serial.println('4');
+} 
 {% endhighlight %}
 
-Ou seja, se *leitura4*, *leitura3*, *leitura2* e *leitura1* forem *true*, então a condição é satisfeita e o Arduino faz print do número 4 para o *Serial Monitor*. É isto que o operador && faz. Se todas as condições forem cumpridas, então o resultado total é *true*. Bastaria que uma das leituras fosse *false* para a condição não se verificar.
+Ou seja, se `leitura4`, `leitura3`, `leitura2` e `leitura1` forem `true`, então a condição é satisfeita e o Arduino faz print do número 4 para o *Serial Monitor*. É isto que o operador `&&` faz. Se todas as condições forem cumpridas, então o resultado total é `true`. Bastaria que uma das leituras fosse `false` para a condição não se verificar.
 
 Agora podes completar o resto do código para os estados 3, 2, 1 e 0 (vazio). Para estes estados, podes usar condições `else if()` uma vez que só vamos querer selecionar um deles. No fim, vamos ainda acrescentar um delay de 3 segundos que ajuda a que os valores sejam enviados na ordem correta. Para além disto, 3 segundos é mais do que suficiente para se verificar qual é o novo nível.
 
@@ -278,7 +278,7 @@ Vamos agora escrever a função `void serialEvent (Serial myPort)`que recebe com
 
 É nesta função que escrevemos o que queremos que apareça em função do número recebido pelo Processing e que o Arduino está a enviar.
 
-Vamos começar por criar uma variável do tipo *char* que nos vai guardar o valor que estará a ser enviado pela porta série. Reparem que quando programámos o Arduino, enviámos também uma variável do tipo *char*. Daí termos definido `Serial.println('0');`, por exemplo, onde '0' é um char por estar dentro de ''. Se estivesse dentro de aspas, seria uma *String* e não um *char*. Aqui não faz sentido usar uma *String*, já que o número a enviar cabe perfeitamente numa variável do tipo *char*. Se quiséssemos enviar uma palavra ou uma frase, aí sim, teríamos de usar uma variável do tipo *String*.
+Vamos começar por criar uma variável do tipo `char` que nos vai guardar o valor que estará a ser enviado pela porta série. Reparem que quando programámos o Arduino, enviámos também uma variável do tipo `char`. Daí termos definido `Serial.println('0');`, por exemplo, onde `'0'` é um char por estar dentro de `''`. Se estivesse dentro de aspas, seria uma `String` e não um `char`. Aqui não faz sentido usar uma `String`, já que o número a enviar cabe perfeitamente numa variável do tipo `char`. Se quiséssemos enviar uma palavra ou uma frase, aí sim, teríamos de usar uma variável do tipo `String`.
 
 {% highlight c++ %}
 void serialEvent (Serial myPort)
