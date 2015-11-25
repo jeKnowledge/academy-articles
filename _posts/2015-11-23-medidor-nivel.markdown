@@ -5,7 +5,9 @@ date:   2015-11-23 18:32:13
 categories: arduino processing sensing water interface
 ---
 
-Neste tutorial, vamos fazer um medidor de nível que mostra a informação em tempo real através de uma interface em Processing. Recomenda-se que já tenham feito o tutorial "Interface LED com Arduino e Processing", uma vez que não irei explicar tão pormenorizadamente certos aspetos relacionados com o Processing.
+Neste tutorial, vamos fazer um medidor de nível que mostra a informação em tempo real através de uma interface em Processing. Recomenda-se que já tenham feito o tutorial "Interface LED com Arduino e Processing", uma vez que não irei explicar tão pormenorizadamente certos aspetos relacionados com o Processing. Podes ver como irá ser a nossa interface, e o que nos propomos a fazer neste tutorial, no vídeo abaixo!
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/146691549' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 ## Hardware
 
@@ -311,7 +313,7 @@ Logo quando o Arduino estiver a enviar um 1, então sabemos que a marca dos 0.2L
 
 Ainda não podes correr o teu código, mas se tudo correr bem no final, para 0.2L a representação será esta.
 
-![]({{ site.baseurl}}/img/monitorNivel/level1.jpg) 
+![]({{ site.baseurl}}/img/monitorNivel/level1.PNG) 
 
 Agora que já sabes como fazer, basta preencheres o código que falta para os estados 2, 3 e 4. Para o indicador de status, podes usar verde para o estado 4 (0.8L), amarelo para o estado 3 (0.6L) e laranja para o estado 2 (0.4L). Repara que para desenharmos um círculo, usamos a função `ellipse()` já que uma circunferência é uma elipse cuja altura e largura são iguais. Não te esqueças de usar `else if()` para exprimires as outras condições. Afinal de contas, só queres escolher um dos estados.
 
@@ -333,7 +335,7 @@ void serialEvent (Serial myPort)
 
 Deves visualizar algo deste género quando tiveres tudo pronto.
 
-![]({{ site.baseurl}}/img/monitorNivel/nolevel.jpg) 
+![]({{ site.baseurl}}/img/monitorNivel/nolevel.PNG) 
 
 Podes ver como fica a função `void serialEvent()` no final deste tutorial. E pronto, estamos quase no fim! Agora que já escrevemos toda a função `void serialEvent()`, basta chamá-la para o objeto que criámos inicialmente.
 
@@ -353,13 +355,7 @@ Ou seja, enquanto o Processing estiver a receber dados, chama a função `void s
 
 Verifica se o teu código está conforme o que eu disponibilizo abaixo e vamos pôr as coisas a funcionar! Faz upload do programa para o teu Arduino. Podes ver se está tudo a funcionar bem abrindo o *Serial Monitor*. Se estiveres a receber os códigos corretos, ótimo! Fecha o *Serial Monitor* (isto porque, se o deixares aberto, o Processing vai-te dizer que a porta já está a ser utilizada, o que é bem verdade!), abre o Processing e mete o *sketch* a correr!
 
-
-
-Podes ver a interface a funcionar no vídeo abaixo. Esta interface pode não parecer muito útil mas a verdade é que é possível enviar os dados pela Internet e teres acesso à interface em qualquer parte do mundo. Infelizmente, não temos o material para fazer isso, mas fica a saber que sim, é possível!
-
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/146691549' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-
-
+Esta interface pode não parecer muito útil mas a verdade é que é possível enviar os dados pela Internet e teres acesso à interface em qualquer parte do mundo. Infelizmente, não temos o material para fazer isso, mas fica a saber que sim, é possível!
 
 ## Código do Arduino
 
