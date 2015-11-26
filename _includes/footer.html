@@ -1,21 +1,10 @@
-<footer class="site-footer">
-  <small class="copyright">Copyright &copy; <a href="http://jeknowledge.pt/">jeKnowledge</a></small>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<footer>
+<div class="width">
+	<ul id="contactInfo">
+	  		<li><a href="mailto:mail@jeknowledge.com">Contacto</a></li>
+        <!--<li><a href="https:google.com">FAQ</a></li>-->
+        <li><a href={{ site.url }}/academy>Academy 2015</a></li>
+	</ul>
+	<span class="copyright">©2015 jeKnowledge</span> <div class="clear"></div>
+</div>
 </footer>
-<script>
-  document.body.onscroll = function() {
-    var e = document.getElementById('go-top');
-    if (document.body.scrollTop !=0 || document.documentElement.scrollTop != 0) {
-      e.style.right = '.5em';
-    }
-    else e.style.right = '-1em';
-  }
-  var timeOut;
-  function scrollToTop() {
-    if (document.body.scrollTop !=0 || document.documentElement.scrollTop != 0) {
-      window.scrollBy(0,-50);
-      timeOut=setTimeout('scrollToTop()',5);
-    }
-    else clearTimeout(timeOut);
-  }
-</script>
