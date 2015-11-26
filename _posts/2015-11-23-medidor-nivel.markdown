@@ -17,8 +17,7 @@ Neste tutorial, vamos fazer um medidor de nível que mostra a informação em te
 
 Este projeto envolve um pouco de bricolage. Vamos começar por cortar a nossa garrafa de 1.5L como se mostra na imagem.
 
-<img style="-webkit-user-select: none; cursor: zoom-in;" src="http://jeknowledge.github.io/academy-articles/img/monitorNivel/garrafaCortada.jpg" width="375" height="667">
-//![]({{ site.baseurl}}/img/monitorNivel/garrafaCortada.jpg)
+![]({{ site.baseurl}}/img/monitorNivel/garrafaCortada.jpg)
 
 Com um copo medidor, ou se não tiveres um, um copo de plástico de 0.2L (dos mais comuns que geralmente toda a gente tem em casa), adiciona água à garrafa já cortada. Se tiveres um copo medidor então enche até aos 0.2L, se tiveres um copo de plástico, enche mesmo até ao topo. Depois de fazeres isto, faz uma marcação com a caneta de acetato a dizer 0.2. Isto ajuda-nos a colocar os fios, posteriormente, e a ter uma indicação visual da capacidade do recipiente.
 
