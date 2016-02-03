@@ -18,7 +18,7 @@ Para ajudar à montagem, criou-se o seguinte esquema de ligações usando o prog
 
 Acaba por ser exatamente o mesmo esquema do tutorial anterior mas com um fim totalmente diferente.
 
->PRO TIP: Se os teus LEDs tiverem com pouco brilho, isso deve-se ao facto das resistências terem um valor demasiado alto. Podes usar resistências menores ou mesmo não colocar nenhuma. Apesar de isto não ser a melhor prática, com correntes tão pequenas como a dos LEDs não há grande problema.
+>PRO TIP: Se os teus LEDs tiverem com pouco brilho, isso deve-se ao facto das resistências terem um valor demasiado alto. Podes usar resistências menores ou colocar duas que tenhas em paralelo (a resistência resultante será menor que a menor das duas). Não colocar uma resistência não é recomendado, já que uma variação mínima de tensão se irá traduzir numa grande variação de corrente que poderá fundir o teu LED.
 
 ## Desenvolvimento do programa
 
