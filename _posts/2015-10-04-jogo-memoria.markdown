@@ -6,7 +6,7 @@ categories: arduino led random serial memory game
 tags: Arduino LED Serial Jogo
 ---
 
-Neste tutorial, vamos fazer um jogo da memória recorrendo ao nosso Arduino. Vamos usar 3 LEDs como indicadores luminosos (e fica, desde já, o desafio de quem quiser adicionar mais LEDs para tornar o desafio mais complicado!) que deveremos posteriormente replicar no Serial Monitor do Arduino. Esta é a primeira vez que vamos usar o Serial Monitor diretamente embora já tenhamos usado a comunicação série no tutorial da Interface LED com Arduino e Processing.
+Neste tutorial, vamos fazer um jogo da memória recorrendo ao nosso Arduino. Vamos usar 3 LEDs como indicadores luminosos (e fica, desde já, o desafio para quem quiser adicionar mais LEDs para tornar a tarefa mais complicada!) que deveremos posteriormente replicar no Serial Monitor do Arduino. Esta é a primeira vez que vamos usar o Serial Monitor diretamente embora já tenhamos usado a comunicação série no tutorial da Interface LED com Arduino e Processing.
 
 ## Hardware
 
@@ -18,11 +18,11 @@ Para ajudar à montagem, criou-se o seguinte esquema de ligações usando o prog
 
 Acaba por ser exatamente o mesmo esquema do tutorial anterior mas com um fim totalmente diferente.
 
->PRO TIP: Se os teus LEDs tiverem com pouco brilho, isso deve-se ao facto das resistências terem um valor demasiado alto. Podes usar resistências menores ou colocar duas que tenhas em paralelo (a resistência resultante será menor que a menor das duas). Não colocar uma resistência não é recomendado, já que uma variação mínima de tensão se irá traduzir numa grande variação de corrente que poderá fundir o teu LED.
+>PRO TIP: Se os teus LEDs tiverem com pouco brilho, isso deve-se ao facto das resistências terem um valor demasiado alto. Podes usar resistências menores ou colocar duas que tenhas em paralelo (a resistência resultante será menor que a menor das duas). Não colocar uma resistência não é recomendado, já que uma pequena variação de tensão se irá traduzir numa grande variação de corrente que poderá fundir o teu LED.
 
 ## Desenvolvimento do programa
 
-Este jogo envolve vários conceitos/etapas que vamos abordando ao longo do tutorial. A primeira coisa a fazer é definir os nosso três LEDs ligados nos pins 8, 9 e 10 como outputs.
+Este jogo envolve vários conceitos/etapas que vamos abordando ao longo do tutorial. A primeira coisa a fazer é definir os nosso três LEDs ligados aos pins 8, 9 e 10 como outputs.
 
 {% highlight c++ %}
 void setup()
