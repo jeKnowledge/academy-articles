@@ -6,7 +6,9 @@ categories: arduino led random serial memory game
 tags: Arduino LED Serial Jogo
 ---
 
-Neste tutorial, vamos fazer um jogo da memória recorrendo ao nosso Arduino. Vamos usar 3 LEDs como indicadores luminosos (e fica, desde já, o desafio para quem quiser adicionar mais LEDs para tornar a tarefa mais complicada!) que deveremos posteriormente replicar no Serial Monitor do Arduino. Esta é a primeira vez que vamos usar o Serial Monitor diretamente embora já tenhamos usado a comunicação série no tutorial da Interface LED com Arduino e Processing.
+Neste tutorial, vamos fazer um jogo da memória recorrendo ao nosso Arduino. Vamos usar 3 LEDs como indicadores luminosos (e fica, desde já, o desafio para quem quiser adicionar mais LEDs para tornar a tarefa mais complicada!) que deveremos posteriormente replicar no Serial Monitor do Arduino. Esta é a primeira vez que vamos usar o Serial Monitor diretamente embora já tenhamos usado a comunicação série no tutorial da Interface LED com Arduino e Processing. Vê abaixo o vídeo do jogo em ação!
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/142503173' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 ## Hardware
 
@@ -374,9 +376,7 @@ if (Serial.available())
 
 {% endhighlight %}
 
-Fazemos isto sucessivamente até termos tantos níveis quanto os desejados. Podes fazer imensas combinações diferentes e adicionar mais LEDs para tornares o jogo mais desafiante! Abaixo, podes ver um vídeo do jogo em ação!
-
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/142503173' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+Fazemos isto sucessivamente até termos tantos níveis quanto os desejados. Podes fazer imensas combinações diferentes e adicionar mais LEDs para tornares o jogo mais desafiante! 
 
 ### Código Completo
 
