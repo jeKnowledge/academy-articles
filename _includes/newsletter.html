@@ -1,11 +1,31 @@
-
 <!-- Begin MailChimp Signup Form -->
 <!-- para o ç funcionar-->
-<head>
-    <!-- para o ç funcionar-->
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<style>
+    
+<style type="text/css">
+	#mc_embed_signup input.mce_inline_error {
+        border: 2px solid #C32929 !important;
+    }   
+    
+    #mc_embed_signup div.mce_inline_error {
+    font-family: lato,sans-serif;
+    border-radius: 4px !important ;
+        background-color: inherit !important;
+    color: #C32929 !important;
+    margin: 1em 0 1em 0 !important;
+}
+    
+    #mce-success-response{
+    font-family: lato,sans-serif;
+    background-color: #F1F1F1;
+    max-width: 30em;
+    margin-top: 1em;
+}
+    .response{
+        font-family: lato,sans-serif;
+        
+    }
 	.btn-sub{
     display: inline-block;
     background: #1F3871;
@@ -17,7 +37,7 @@
 		 opacity: .8;
 	}
 
-#inline_input {
+#mce-EMAIL {
     text-align: left;
     width: 15pc;
     outline: 0;
@@ -27,7 +47,7 @@
     -webkit-appearance: none;
 }
 
-#newsletter {
+#mc_embed_signup {
     text-align: center;
     background-color: #F1F1F1;
     max-width:30em;
@@ -49,38 +69,34 @@
 }
 
 @media only screen and (max-width: 450px){
-#newletter-sub {
+#mc-embedded-subscribe {
     margin-top: 10px;
     width:100%;
 }
-.btn, #inline_input{
+.btn, #mce-EMAIL{
 	width:100%;
 	box-sizing: border-box; /*problema com o padding e a margin*/
 }
 }
 </style>
-</head>
 
-<body>
+<div id="mc_embed_signup" class="box">
+<form action="//jeknowledge.us1.list-manage.com/subscribe/post?u=99ac5170563b153320f14e99e&amp;id=c79825bffd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h3 style="font-family: lato,sans-serif;">Fica a saber de novidades e dos novos artigos</h2>
+<div class="mc-field-group">
+	<input placeholder="Endereço de e-mail" class="btn box " type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    <input type="submit" value="Submeter" name="subscribe"  id="mc-embedded-subscribe" class="btn btn-sub box button"></div>
+</div>
 
-<div id="newsletter" class="box">
-<h3 style="font-family: lato,sans-serif;">Fica a saber de novidades e dos novos artigos</h1>
-	<form action="//jeknowledge.us1.list-manage.com/subscribe/post?u=99ac5170563b153320f14e99e&amp;id=c79825bffd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<span>
-		<input class="btn box " name="EMAIL" type="email" spellcheck="false" id="inline_input" placeholder="Endereço de e-mail">
-	</span>
-	
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_99ac5170563b153320f14e99e_c79825bffd" tabindex="-1" value=""></div>
     
-		<button value="Subscribe" type="submit"  name="subscribe" id="newletter-sub"class="btn btn-sub box">Submeter</button>
-	</form>		
-	<br>
-	</div>
-
-</body>
+</form>
 </div>
-<br>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-</html>
