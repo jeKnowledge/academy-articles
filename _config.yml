@@ -9,5 +9,6 @@ url: "http://jeknowledge.github.io/academy-articles" # the base hostname & proto
 # Build settings
 markdown: kramdown
 language: pt
-#gems:
+gems:
 #  - jekyll-sitemap
+   - jemoji
