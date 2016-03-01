@@ -175,8 +175,7 @@ section#header {
   color:white;
   height: initial;
   
-  background: url('/academy-articles/img/stars.png'),radial-gradient(450px circle at 50% 35%, rgb(4, 23, 76), rgba(255,255,255,0)),linear-gradient(#000104, #061E56);
-  
+  background: url('/academy-articles/img/stars.png'),radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255,255,255,0)),linear-gradient(#162141 , #1D2C4E );
 }
 section#header h3.logo {
   width: 20em;
@@ -405,7 +404,7 @@ h3 {
 
 a {
 	background-color: transparent;
-	color: #0293C9;
+	color: #445FAC;
 	text-decoration: none;
 	transition: color .2s ease;
 }
