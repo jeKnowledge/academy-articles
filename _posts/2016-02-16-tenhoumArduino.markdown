@@ -156,4 +156,4 @@ Podemos verificar se o teu código compila corretamente carregando no primeiro b
 
 Se tudo tiver corrido bem, tens agora o teu LED a piscar com a frequência que definiste! Parabéns por teres concluído o primeiro tutorial de Arduino. Na continuação deste tutorial, iremos ter vários pequenos projetos que fazem uso de outros componentes do nosso kit. 
 
-Até à próxima <span style="display: inline; margin-left: 2px; margin-right: 0px">:smile:</span>
+Até à próxima <span style="display: inline-block; margin-left: 2px; margin-right: 0px">:smile:</span>
