@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tenho um Arduino. E agora?! (Parte 1)"
+title:  "Tenho um Arduino. E agora?! <br> (Parte 1)"
 date:   2016-03-01 08:32:13
 categories: getting started arduino beginners microcontroller
 ---
