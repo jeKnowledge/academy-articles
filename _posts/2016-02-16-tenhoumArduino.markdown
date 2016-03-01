@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tenho um Arduino. E agora?!"
+title:  "Tenho um Arduino. E agora?! (Parte 1)"
 date:   2016-02-16 18:32:13
 categories: getting started arduino beginners microcontroller
 ---
@@ -9,7 +9,7 @@ Este é o primeiro de uma série de três artigos que explica os princípios bá
 
 ## Arduino 101
 
-O Arduino é uma plataforma de prototipagem baseada num microcontrolador. Com um Arduino é possível fazer inúmeros projetos de eletrónica de uma forma muito barata e rápida. Por esta razão, esta é a plataforma de eleição tanto para engenheiros, como para designers, estudantes ou meros entusisastas. A filosofia do Arduino baseia-se numa plataforma *open source* (o que significa que toda a gente pode ter acesso aos esquemáticos e ajudar no seu desenvolvimento), baseada em software e hardware simples, que toda a gente pode usar.
+O Arduino é uma plataforma de prototipagem baseada num microcontrolador. Com um Arduino é possível fazer inúmeros projetos de eletrónica de uma forma muito barata e rápida. Por esta razão, esta é a plataforma de eleição tanto para engenheiros, como para designers, estudantes ou meros entusiastas. A filosofia do Arduino baseia-se numa plataforma *open source* (o que significa que toda a gente pode ter acesso aos esquemáticos e ajudar no seu desenvolvimento), baseada em software e hardware simples, que toda a gente pode usar.
 
 É por esta razão que o Arduino é, a meu ver, ideal para quem se está a iniciar na programação. Isto deve-se, essencialmente, a duas vertentes. Primeiro, os alunos interagem com o *hardware* e montam os seus próprios circuitos. Isto é muito importante porque estamos a dar um correspondente fisico a uma coisa puramente virtual (programação) para além de que os alunos começam a familiarizar-se com conceitos de eletrónica e circuitos elétricos. De certa forma, o Arduino aproxima *hardware* e *software* de uma forma quase simbiótica (um não funciona sem o outro, embora haja a tendência de nos esquecermos disso).
 
