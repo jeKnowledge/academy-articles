@@ -174,7 +174,7 @@ section#header {
   background-color: #061033;
   color:white;
   height: initial;
-  
+
   background: url('/academy-articles/img/stars.png'),radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255,255,255,0)),linear-gradient(#162141 , #1D2C4E );
 }
 section#header h3.logo {
@@ -221,10 +221,12 @@ section#header {
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
     transform: scale(0.7);
-    width: 299px;
-    height: 116px;
+    width: 243px;
+    height: 249px;
+    background-image: url('/academy-articles/img/jkacademylogo_mobile.svg');
+    
   }
-  
+
   p {
     display: block;
     -webkit-margin-before: 0em;
@@ -352,7 +354,7 @@ html {
 	max-width: 40em;
 	margin: 3em auto;
 	padding: 1.5em;
-	
+
 }
 
 @media all and (max-width : 860px) {
