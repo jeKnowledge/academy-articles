@@ -113,7 +113,7 @@ nav a {
   /*border: none;*/
   color: white;
   /*cursor: pointer;*/
-  font-size: 1.125rem;
+  font-size: 1.2em;
   margin: 0 10px;
   padding: 10px 16px 24px;
   width: 30%;
@@ -178,8 +178,8 @@ section#header {
   background: url('/academy-articles/img/stars.png'),radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255,255,255,0)),linear-gradient(#162141 , #1D2C4E );
 }
 section#header h3.logo {
-  width: 20em;
-  height: 7em;
+  width: 26em;
+  height: 10em;
   background-image:url('/academy-articles/img/jkacademylogo.svg');
   background-size:contain;
   background-repeat:no-repeat;
