@@ -10,5 +10,5 @@ url: "http://jeknowledge.github.io/academy-articles" # the base hostname & proto
 markdown: kramdown
 language: pt
 gems:
-#  - jekyll-sitemap
-   - jemoji
+  - jekyll-sitemap
+  - jemoji
