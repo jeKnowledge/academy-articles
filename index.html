@@ -1,6 +1,5 @@
 ---
-layout: default
-title: jeKnowledge Academy Blog
+layout: default title: jeKnowledge Academy Blog
 ---
 <!--
 <style>
@@ -9,49 +8,42 @@ title: jeKnowledge Academy Blog
         width:auto;
         height:300px;
         background:url('/img/stars.svg'),linear-gradient(#000104, #061E56)
-        
     }
-    
-    
 </style>
 -->
-
 <section id="header">
-
   {% include headerMain.html %}
-  
   <section id="about">
-  <div class="width">
-   <!-- <h4>Quem somos</h4> -->
-    <!--<span class="subhead">NOSSA HISTÓRIA</span>-->
-    <p>
-    Aqui poderás encontrar uma série de tutoriais que pretendem ser uma introdução ao Arduino. Cada artigo tem por base um kit de eletrónica.
-    </p>
-  </div>
-</section>
-  
+    <div class="width">
+      <!-- <h4>Quem somos</h4> -->
+      <!--<span class="subhead">NOSSA HISTÓRIA</span>-->
+      <p>
+        Aqui poderás encontrar uma série de tutoriais que pretendem ser uma introdução ao Arduino. Cada artigo tem por base um kit de eletrónica.
+      </p>
+    </div>
+  </section>
 </section>
 
 <section id="article">
-    
-    <h1>Tutoriais</h1>
-    
-    <ul class="entries">
+
+  <h1>Tutoriais</h1>
+
+  <ul class="entries">
     {% for post in site.posts %}
-    	<li class="entry group">
-    	    <!--<img src="{{post.image}}">-->
-    		<div class="entry-date">
-    			<time datetime="{{ post.date | date_to_xmlschema }}">{% include data.html %}</time>
-    		</div>
-    		<div class="entry-title">
-    			<h2>
+    <li class="entry group">
+      <!--<img src="{{post.image}}">-->
+      <div class="entry-date">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{% include data.html %}</time>
+      </div>
+      <div class="entry-title">
+        <h2>
     			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     			</h2>
-    		</div>
-    	</li>
+      </div>
+    </li>
     {% endfor %}
   </ul>
 </section>
 
-  {% include newsletter.html %}
+{% include newsletter.html %}
 <br>
