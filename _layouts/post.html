@@ -2,7 +2,8 @@
 layout: default
 ---
 <style>
-/*
+
+  /*
 .tags, li{
     color: white;
     float: left;
@@ -12,31 +13,29 @@ layout: default
     float: left;
     list-style-type: none;
 }*/
-h3.logo {
+
+  h3.logo {
     background-image: url('/academy-articles/img/jkacademylogo.svg');
-}
+  }
 
+  nav {
+    margin: 25px 0 10px 0;
+  }
+  /* ====== Header Section */
 
-nav {
-      margin: 25px 0 10px 0;
-}
-
-/* ====== Header Section */
-section#header {
-  /*small fix for background image*/
-  padding-top: 300px;
-  margin-top: -300px;
-
-  backgound: url('/academy-articles/img/stars.png'),radial-gradient(450px circle at 10% 10%, rgb(22, 47, 117), rgba(255,255,255,0)),linear-gradient(#162141 , #1D2C4E );
-}
-
-section#header h3.logo {
-  float:left;
-}
-
+  section#header {
+    /*small fix for background image*/
+    padding-top: 300px;
+    margin-top: -300px;
+    backgound: url('/academy-articles/img/stars.png'), radial-gradient(450px circle at 10% 10%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
+  }
 
   section#header h3.logo {
-    display:block;
+    float: left;
+  }
+
+  section#header h3.logo {
+    display: block;
     margin: -0.6em 0 0.6em;
     -webkit-transform: scale(0.7);
     -moz-transform: scale(0.7);
@@ -44,77 +43,67 @@ section#header h3.logo {
     -o-transform: scale(0.7);
     transform: scale(0.7);
     width: 400px;
-  height: 97px;
+    height: 97px;
   }
 
-@media all and (max-width : 860px) {
-nav{
-	margin: 25px 0 10px 0;
-
-}
-
-.width{
-	padding: 0;
-    padding-bottom: 30px;
-
-}
-
-  section#header {
-    background: url('/academy-articles/img/stars.png'),radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255,255,255,0)),linear-gradient(#162141 , #1D2C4E);
-
-}
-
-section#header {
-    padding-top: 0;
-    margin-top: 0;
-}
-
-  section#header h3.logo {
-    background-image: url('/academy-articles/img/jkacademylogo.svg');
-    float:none;
-    display:block;
-    margin:0 auto;
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    transform: scale(0.7);
-    width: 288px;
-    height: 90px;
+  @media all and (max-width: 860px) {
+    nav {
+      margin: 25px 0 10px 0;
+    }
+    .width {
+      padding: 0;
+      padding-bottom: 30px;
+    }
+    section#header {
+      background: url('/academy-articles/img/stars.png'), radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
+    }
+    section#header {
+      padding-top: 0;
+      margin-top: 0;
+    }
+    section#header h3.logo {
+      background-image: url('/academy-articles/img/jkacademylogo.svg');
+      float: none;
+      display: block;
+      margin: 0 auto;
+      -webkit-transform: scale(0.7);
+      -moz-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      -o-transform: scale(0.7);
+      transform: scale(0.7);
+      width: 288px;
+      height: 90px;
+    }
   }
-}
 
-@media all and (max-width : 775px) {
-nav{
-	margin: 0px 0 0px 0;
-
-}
-}
-
+  @media all and (max-width: 775px) {
+    nav {
+      margin: 0px 0 0px 0;
+    }
+  }
 </style>
 
 
 <section id="header">
 
-{% include headerMain.html %}
+  {% include headerMain.html %}
 
 </section>
 
 <section id="article">
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-	<header class="post-header">
-		<time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{% include datapost.html %}</time>
-		<h1 class="post-title" style="display:inline" >{{ page.title }}</h1><div class="site-title"></div>
-	</header>
-	<br>
-	{{ content }}
-</article>
-<!--<ul class='tags'>
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{% include datapost.html %}</time>
+      <h1 class="post-title" style="display:inline">{{ page.title }}</h1>
+      <div class="site-title"></div>
+    </header>
+    <br> {{ content }}
+  </article>
+  <!--<ul class='tags'>
   {% for tags in page.tags %}
     <li>{{ tags }}</li>
   {% endfor %}
 </ul>-->
-<br>
-{% include disqus.html %}
-<a id="go-top" href="#" onclick="scrollToTop();return false">&uarr;</a>
+  <br> {% include disqus.html %}
+  <a id="go-top" href="#" onclick="scrollToTop();return false">&uarr;</a>
 </section>

@@ -4,6 +4,7 @@ title:  "Jogo da Memória"
 date:   2015-10-04 01:32:13
 categories: arduino led random serial memory game
 tags: Arduino LED Serial Jogo
+permalink: jogo-da-memoria
 ---
 
 Neste tutorial, vamos fazer um jogo da memória recorrendo ao nosso Arduino. Vamos usar 3 LEDs como indicadores luminosos (e fica, desde já, o desafio para quem quiser adicionar mais LEDs para tornar a tarefa mais complicada!) que deveremos posteriormente replicar no Serial Monitor do Arduino. Esta é a primeira vez que vamos usar o Serial Monitor diretamente embora já tenhamos usado a comunicação série no tutorial da Interface LED com Arduino e Processing. Vê abaixo o vídeo do jogo em ação!
@@ -376,7 +377,7 @@ if (Serial.available())
 
 {% endhighlight %}
 
-Fazemos isto sucessivamente até termos tantos níveis quanto os desejados. Podes fazer imensas combinações diferentes e adicionar mais LEDs para tornares o jogo mais desafiante! 
+Fazemos isto sucessivamente até termos tantos níveis quanto os desejados. Podes fazer imensas combinações diferentes e adicionar mais LEDs para tornares o jogo mais desafiante!
 
 ### Código Completo
 

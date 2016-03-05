@@ -3,6 +3,7 @@ layout: post
 title:  "Interface LED com Arduino e Processing"
 date:   2015-09-23 01:32:13
 categories: arduino led processing interface
+permalink: interface-led-com-arduino-e-processing
 ---
 
 Antes de começarmos a falar acerca deste projeto, vou responder ao desafio que tinha deixado no primeiro tutorial. Uma forma fácil de identificar se nos saiu um *double* no lançamento é colocar um LED a acender no caso dos dois números aleatórios serem iguais.

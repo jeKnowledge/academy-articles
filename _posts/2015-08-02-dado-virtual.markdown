@@ -3,6 +3,7 @@ layout: post
 title:  "Dado Virtual"
 date:   2015-08-02 01:32:13
 categories:
+permalink: dado-virtual
 ---
 
 O objetivo deste projeto é criar um dado virtual. Para isso, vamos recorrer à função `random()` e a algum *hardware* que já conhecemos, um *display* de 7 segmentos e um botão. No final, sempre que carregarmos no botão, um número aleatório é gerado e mostrado no *display*.
