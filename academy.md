@@ -21,7 +21,7 @@ title: Academy
 
 <section id="article">
 <h1>jeKnowledge Academy Event</h1>
-
+<br>
 <div id="home">
 <article>
 <!-- Video ************************ -->

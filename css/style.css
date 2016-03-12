@@ -327,7 +327,7 @@ html {
 #article {
   max-width: 40em;
   margin: 3em auto;
-  padding: 1.5em;
+  padding: 2em 1.5em 0 0;
 }
 @media all and (max-width: 860px) {
   #article {
@@ -358,8 +358,8 @@ h1, h2, h3 {
   margin: 2em 0 1em 0;
 }
 h1 {
-  font-size: 2em;
-  margin: .5em 0;
+  font-size: 1.7em;
+  margin: .5em 0 0 0;
 }
 h2 {
   font-size: 1.5em;
@@ -432,9 +432,11 @@ blockquote strong, blockquote b {
   font-weight: bold;
 }
 ol, ul {
-  line-height: 1.5em;
+
+/*  line-height: 1.5em;
   padding: 0;
-  margin: 0 0 1em 1em;
+  margin: 0 0 1em 1em;*/
+
 }
 ul {
   list-style-type: disc;
@@ -596,7 +598,7 @@ img {
 
 .entries {
   list-style: none;
-  margin: 3em 0;
+  margin: 2em 0;
   padding: 0;
 }
 .entry {
