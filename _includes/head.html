@@ -4,27 +4,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:image" content="http://jeknowledge.github.io/academy-articles/img/jekLogo.png">
 
-<!-- Mobile Browser Themes -->
-	<!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#445FAC">
-<!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#445FAC">
-<!-- iOS Safari -->
-<meta name="apple-mobile-web-app-status-bar-style" content="#445FAC">
-
 
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+	<meta name="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 	<!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>-->
 	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
 	<link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
-	<link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
-	<!-- chrome fiveicon -->
+
+
+	<!-- Mobile Browser Themes -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#445FAC">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#445FAC">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#445FAC">
+
+	<!--fiveicon -->
+	<!-- icon in the highest resolution we need it for -->
 	<link rel="icon" sizes="192x192" href="{{ site.baseurl }}/img/apple-touch-icon.png">
-	{% include twittercard.html %}
+	<!-- reuse same icon for Safari -->
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png">
+	<!-- multiple icons for IE -->
+	<meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/img/apple-touch-icon.png"> {% include twittercard.html %}
 </head>
