@@ -327,7 +327,7 @@ html {
 #article {
   max-width: 40em;
   margin: 3em auto;
-  padding: 2em 1.5em 0 0;
+  padding: 2em 1.5em 0 1.5em;
 }
 @media all and (max-width: 860px) {
   #article {
