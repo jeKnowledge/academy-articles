@@ -30,7 +30,7 @@ title: jeKnowledge Academy Blog
   <h1>Tutoriais</h1>
 
   <ul class="entries">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <li class="entry group">
       <!--<img src="{{post.image}}">-->
       <div class="entry-date">
@@ -45,6 +45,6 @@ title: jeKnowledge Academy Blog
     {% endfor %}
   </ul>
 </section>
-
+{% include paginacao.html %}
 {% include newsletter.html %}
 <br>

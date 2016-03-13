@@ -7,8 +7,11 @@ baseurl: "/academy-articles" # the subpath of your site, e.g. /blog/
 url: "http://jeknowledge.github.io/academy-articles" # the base hostname & protocol for your site
 # url: "http://0.0.0.0:4000"
 # Build settings
+paginate: 5 # specifies number os articles per page
+paginate_path: "/academy-articles/page:num/"
 markdown: kramdown
 language: pt
 gems:
   - jekyll-sitemap
   - jemoji
+  - jekyll-paginate

@@ -1,0 +1,47 @@
+<style>
+.pagination a {
+  color: #999;
+  font-size: 1em;
+  margin: 0 .5em;
+}
+em{
+      margin: 0 .5em;
+      font-weight: bold;
+}
+/*remove anoying arrows at the bottom*/
+.pagination.group {
+    display: none;
+}
+
+</style>
+
+
+<!-- Paginação -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Anterior</a>
+  {% else %}
+    <span>&laquo; Anterior</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Próxima &raquo;</a>
+  {% else %}
+    <span>Próxima &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+
+<br>
+<br>
