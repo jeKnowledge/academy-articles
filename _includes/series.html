@@ -1,0 +1,35 @@
+{% if page.series %}
+
+{% assign count = '0' %}
+  {% assign idx = '0' %}
+  {% for post in site.posts reversed %}
+      {% if post.series == page.series %}
+          {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+          {% if post.url == page.url %}
+              {% capture idx %}{{count}}{% endcapture %}
+          {% endif %}
+      {% endif %}
+  {% endfor %}
+
+<div class="box">
+          <h2>Continua a tua jornada!</h2>
+          <p>Este artigo pertence à coleção " <strong>{{page.series}}" </strong>.<br/>
+          Acabaste de ler a parte <strong>{{ idx }}</strong>/<strong>{{ count }}</strong>.</p>
+          <ul>
+          {% assign count = '0' %}
+          {% for post in site.posts reversed %}
+          {% if post.series == page.series %}
+              {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+              <li>Parte {{ count }} -
+              {% if page.url == post.url %}
+                  Este artigo
+              {% else %}
+                  <a href="{{post.url}}">{{post.title}}</a>
+              {% endif %}
+              </li>
+          {% endif %}
+          {% endfor %}
+          </ul>
+      </div>
+
+{% endif %}
