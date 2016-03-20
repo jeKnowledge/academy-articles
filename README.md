@@ -1,5 +1,9 @@
+# Academy Labs
 
-# Informação de utilização
+Este é um blog onde é disponibilizado periodicamente conteúdo em português para quem quer dar os primeiros passos em programação de hardware de uma forma fácil.
+
+
+## Informação de utilização para autores
 
 ### Permalinks
 Usar **permalink:** tag para cescolher o link dos artigos.
@@ -22,7 +26,7 @@ www.jeKnowledge.github.io/academy-articles/o-teu-link
   *Baseado no blogpost:
  http://digitaldrummerj.me//blogging-on-github-part-13-creating-an-article-series/*
 
- #### Exemplo:
+  **Exemplo:**
 ```
 ---
 layout: post
