@@ -52,6 +52,5 @@ Acabaste de ler a parte 1/1.
 Parte 1 - Este artigo
 ...
 ```
-  **Nota:** Os artigos são ordenados por ordem cronológica.
-      Futuramente será implementada ordem por tag
+  **Nota:** Os artigos são ordenados por ordem cronológica. Futuramente será implementada ordem por tag
 ---
