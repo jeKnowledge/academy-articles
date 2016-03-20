@@ -6,7 +6,7 @@ Este é um blog onde é disponibilizado periodicamente conteúdo em português p
 ## Informação de utilização para autores
 
 ### Permalinks
-Usar **permalink:** tag para cescolher o link dos artigos.
+Usar **permalink:** no cabeçalho para escolher o link dos artigos.
 
   **Exemplo:**
 ```
@@ -21,9 +21,9 @@ permalink: <o-teu-link>
 ```
 www.jeKnowledge.github.io/academy-articles/o-teu-link
 ```
-
+---
 ### Coleções
- Usar **series:** tag para criar uma coleção de artigos.
+ Usar **series:** no cabeçalho para criar uma coleção de artigos.
 
   *Baseado no blogpost:
  http://digitaldrummerj.me//blogging-on-github-part-13-creating-an-article-series/*
@@ -53,4 +53,5 @@ Parte 1 - Este artigo
 ...
 ```
   **Nota:** Os artigos são ordenados por ordem cronológica.
-  Futuramente será implementada ordem por tag
+      Futuramente será implementada ordem por tag
+---
