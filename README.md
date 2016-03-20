@@ -7,6 +7,8 @@ Este é um blog onde é disponibilizado periodicamente conteúdo em português p
 
 ### Permalinks
 Usar **permalink:** tag para cescolher o link dos artigos.
+
+  **Exemplo:**
 ```
 ---
 layout: post
@@ -20,7 +22,7 @@ permalink: <o-teu-link>
 www.jeKnowledge.github.io/academy-articles/o-teu-link
 ```
 
-### Tags
+### Coleções
  Usar **series:** tag para criar uma coleção de artigos.
 
   *Baseado no blogpost:
@@ -34,6 +36,10 @@ title: "You're up and running!"
 published: true
 series: "<nome da coleção>"
 ---
+
+...
+
+ {% include series.html %}
 ```
 
 #### OUTPUT
