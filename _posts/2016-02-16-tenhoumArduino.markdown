@@ -6,7 +6,7 @@ categories: getting started arduino beginners microcontroller
 permalink: arduino-101-parte-1
 ---
 
-Este é o primeiro de uma série de três artigos que explica os princípios básicos do Arduino. Uma das coisas que mais ouço quando se fala de Arduino é "Ah, por acaso até tenho um, mas não sei trabalhar com ele...". Vamos então começar pelo mais básico. Afinal, o que é um Arduino?
+Este é o primeiro de uma série de artigos que explica os princípios básicos do Arduino. Uma das coisas que mais ouço quando se fala de Arduino é "Ah, por acaso até tenho um, mas não sei trabalhar com ele...". Vamos então começar pelo mais básico. Afinal, o que é um Arduino?
 
 ## Arduino 101
 
