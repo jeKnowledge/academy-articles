@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: academy2016
 title: jeKnowledge Academy 2016
 permalink: /Academy2016.html
 ---
@@ -8,18 +8,18 @@ permalink: /Academy2016.html
   #top{
     min-width: initial;
     display:flex;
-    text-align: center;
    /*Ocupa o ecran todo*/
     min-height:100vh; /*min-height para nao sobrepor o conteudo original quando a janela é muito pequena*/
     flex-wrap: wrap; /*faz com que o footer não esteja paralelo com o conteudo*/
 
-    background: url('http://jeknowledge.github.io/academy-articles/img/stars.png'), radial-gradient(20rem circle at 50% 40%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
+    background: url('/academy-articles/img/stars.png'), radial-gradient(20rem circle at 50% 40%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
     background-color: #061841;
 
 }
   h1{
-
+    text-align: center;
     width:100%;
+    padding: 1em;
   }
 
 
@@ -35,22 +35,28 @@ permalink: /Academy2016.html
   .col{
     display:flex; flex-wrap: wrap;    
     min-width: 18em;   
-    padding: 20px 30px;
+    padding: 1em 2em;
   }
 
   .col-faq{
     max-width: 20em;    
-    padding: 20px 30px;
+    padding: 1em 2em;
   }
 
   .cont{
     width:50%;
-    padding: 20px 30px;
+    padding: 1em 2em;
   }
   .map{
     width:100%;
   }
 
+  #box{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 40em;
+    justify-content:center;
+  }
 
   footer{
     width: 100%;/*expande horizontalmente footer*/
@@ -59,6 +65,8 @@ permalink: /Academy2016.html
 
   .content{
         margin: auto; /*centra conteudo*/
+
+
   }
 
 </style>
@@ -75,6 +83,7 @@ permalink: /Academy2016.html
 <section id="faq" class="container" data-section-menu="section 2" style="background-color:purple;">
 
   <h1>Description 3</h1>
+  <div id="box">
   <div class="col col-faq" style="background-color:pink;">
       <h2>Para quem?</h2>
       <p>
@@ -117,6 +126,7 @@ permalink: /Academy2016.html
       <p>
         A jeKnowledge Academy vai ser na nossa sede, no Departamento de Física, no Pólo 1 da Universidade de Coimbra. O evento começa às 9h00 do dia 29 de Junho.
       </p>
+  </div>
   </div>
 </section>
 
