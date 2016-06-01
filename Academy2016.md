@@ -73,26 +73,42 @@ permalink: /Academy2016.html
 <body>
 
 <section id="top" class="container" data-section-menu="Home">
-  <h1>Description</h1>
+  <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" width="230em">
+  <h3> Dias 12, 13 e 14 de Julho</h3>
+  <nav>
+  <p>
+    <a href="/academy-articles/" class="selected">Tutoriais</a>
+    <a href="http://jeknowledge.pt/"  class="applink appstore-link" title="jeKnowledge">jeKnowledge</a>
+    <a href="https://github.com/jeKnowledge" class="applink playstore-link" title="Github">Github</a>
+  </p>
+  <p>
+    <a href="#maininfo" class="selected">Academy 2016</a>
+    <a href="#faq" class="selected">FAQ</a>
+    <a href="/academy-articles/" class="selected">Inscrições</a>
+    <a href="#contacts" class="selected">Contactos</a>
+
+  </p>
+  </nav>
+
 </section>
 
 <section id="maininfo" class="container" data-section-menu="section 1">
-  <h1>Description 2</h1>
+  <h1>jeKnowledge Academy 2016</h1>
 </section>
 
-<section id="faq" class="container" data-section-menu="section 2" style="background-color:purple;">
+<section id="faq" class="container" data-section-menu="section 2">
 
-  <h1>Description 3</h1>
+  <h1>FAQ - Respondemos algumas perguntas por ti</h1>
   <div id="box">
-  <div class="col col-faq" style="background-color:pink;">
+  <div class="col col-faq">
       <h2>Para quem?</h2>
       <p>
-        Para todos os alunos do 11º ou 12º ano com vontade de aprender e de se desafiar.
+        Para todos os alunos do 11º 12º ano com vontade de aprender e de se desafiar.
       </p>
 
       <h2>Como participo?</h2>
       <p>
-        As inscrições estão abertas até dia 23 de Junho às 23h59. Para participares basta preencheres o formulário de inscrição. Depois de submeteres o formulário receberás um e-mail nosso no endereço que indicaste com mais informações.
+        As inscrições estão abertas até dia 3 de julho às 23h59. Para participares basta preencheres o formulário de inscrição. Depois de submeteres o formulário receberás um e-mail nosso no endereço que indicaste com mais informações.
       </p>
 
       <h2>Preciso de levar computador?</h2>
@@ -105,7 +121,7 @@ permalink: /Academy2016.html
         Não precisas de qualquer conhecimento de programação ou robótica, só precisamos que tragas boa disposição e interesse em aprender.
       </p>
   </div>
-  <div class="col col-faq" style="background-color:green;">
+  <div class="col col-faq">
 
       <h2>E o ambiente?</h2>
       <p>
@@ -119,12 +135,12 @@ permalink: /Academy2016.html
 
       <h2>Quando custa?</h2>
       <p>
-        A inscrição é totalmente gratuita. O custo de participação será de 40 euros, com o objetivo de te assegurar a melhor experiência possível na jeKnowledge Academy (inclui um kit de iniciação contendo um Arduino).
+        O custo de participação será de 40 euros, com o objetivo de te assegurar a melhor experiência possível na jeKnowledge Academy (inclui um kit de iniciação contendo um Arduino e refeições).
       </p>
 
       <h2>Onde é?</h2>
       <p>
-        A jeKnowledge Academy vai ser na nossa sede, no Departamento de Física, no Pólo 1 da Universidade de Coimbra. O evento começa às 9h00 do dia 29 de Junho.
+        A jeKnowledge Academy vai ser na nossa sede, no Departamento de Física, no Pólo 1 da Universidade de Coimbra. O evento começa às 9h00 do dia 12 de Julho.
       </p>
   </div>
   </div>
