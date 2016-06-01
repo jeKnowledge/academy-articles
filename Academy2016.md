@@ -5,6 +5,10 @@ permalink: /Academy2016.html
 ---
 
 <style type="text/css">
+  body{
+    font-family: Lato;
+  }
+
   #top{
     min-width: initial;
     display:flex;
@@ -33,7 +37,6 @@ permalink: /Academy2016.html
   }
 
   .col{
-    display:flex; flex-wrap: wrap;    
     min-width: 18em;   
     padding: 1em 2em;
   }
@@ -48,7 +51,10 @@ permalink: /Academy2016.html
     padding: 1em 2em;
   }
   .map{
-    width:100%;
+  display:flex;
+  flex-wrap: wrap;  
+  width:100%;
+  padding: initial;
   }
 
   #box{
@@ -69,6 +75,10 @@ permalink: /Academy2016.html
 
   }
 
+  .section{
+    min-height:100vh;
+  }
+
 </style>
 <body>
 
@@ -85,6 +95,7 @@ permalink: /Academy2016.html
     <a href="#maininfo" class="selected">Academy 2016</a>
     <a href="#faq" class="selected">FAQ</a>
     <a href="/academy-articles/" class="selected">Inscrições</a>
+    <a href="#apoios" class="selected">Apoios</a>
     <a href="#contacts" class="selected">Contactos</a>
 
   </p>
@@ -147,7 +158,7 @@ permalink: /Academy2016.html
 </section>
 
 
-<section id="contacts" class="container" data-section-menu="section 1">
+<section id="apoios" class="container" data-section-menu="section 1">
   <h1>Description 3</h1>
   <!--metade mapa metade info -->
   <div class="col map" style="background-color:blue;"></div>
@@ -155,19 +166,23 @@ permalink: /Academy2016.html
   <div class="col cont" style="background-color:green;"></div>
 </section>
 
-<section id="apoios" class="container" data-section-menu="section 1">
+<section id="contacts" class="container" data-section-menu="section 1">
   <!--metade mapa metade info -->
   <div class="col map" style="background-color:blue;">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:100%;" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:100%; height: 60vh;" allowfullscreen></iframe>
   </div>
-  <div class="col cont" style="background-color:pink;">
-  jeKnowledge
+  <div id="box">
+  <div class="col col-faq cont" style="background-color:pink;">
+  </div>
+  <div class="col col-faq cont" style="background-color:green;">
+  <p>jeKnowledge</p>
+  <br>
+  <p>Departamento de Física sala B3</p>
+  <p>Rua Larga</p>
+  <p>P-3004-516</p>
+  </div>
 
-  Departamento de Física sala B3
-  Rua Larga
-  P-3004-516
   </div>
-  <div class="col cont" style="background-color:green;"></div>
 </section>
 
 </body>
