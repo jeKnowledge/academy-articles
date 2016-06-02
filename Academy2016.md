@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: academy2016
 title: jeKnowledge Academy 2016
 permalink: /Academy2016.html
 ---
 <style>
+body{
+  font-family: Lato;
+}
 section{
   min-height:100vh;
   padding: 1em 2em;
