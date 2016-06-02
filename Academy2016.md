@@ -32,7 +32,7 @@ permalink: /Academy2016.html
     font-size: 4vh;
     text-align: center;
     width:100%;
-    padding: 1em;
+    padding-bottom: 2vh;
     font-weight:bold;
   }
 
@@ -50,18 +50,14 @@ permalink: /Academy2016.html
   }
 
   .col{
-    min-width: 30vh;   
-    padding: 1em 2em;
-  }
-
-  .col-faq{
+    min-width: 30vh;  
     max-width: 45vh;    
-    padding: 1em 2em;
+    padding: 1vh 2vh;
   }
 
   .cont{
-    width:50%;
-    padding: 1em 2em;
+    width:30%;
+    padding: 1vh 2vh;
   }
   .map{
   display:flex;
@@ -73,7 +69,7 @@ permalink: /Academy2016.html
   #box{
     display: flex;
     flex-wrap: wrap;
-    max-width: 40em;
+    max-width: 90vh;
     justify-content:center;
   }
 
@@ -121,7 +117,9 @@ permalink: /Academy2016.html
 </section>
 
 <section id="maininfo" class="container" data-section-menu="section 1" style="display:block;">
-  <div style="padding: 2em 3em; max-width: 40em; margin:auto;">
+
+  <div style="max-width: 80vh; margin:auto;">
+  <br>
   <h1>jeKnowledge Academy 2016</h1>
   <br>
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
@@ -140,7 +138,7 @@ permalink: /Academy2016.html
   <div class="col col-faq">
       <h2>Para quem?</h2>
       <p>
-        Para todos os alunos do 11º 12º ano com vontade de aprender e de se desafiar.
+        Para todos os alunos do 11º e 12º ano com vontade de aprender e de se desafiar.
       </p>
 
       <h2>Como participo?</h2>
@@ -193,21 +191,26 @@ permalink: /Academy2016.html
 -->
 <section id="contacts" class="container" data-section-menu="section 1">
   <!--metade mapa metade info -->
-  <div class="col map" >
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:100%; height: 60vh;" allowfullscreen></iframe>
+<div class="map" >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:80vw; height: 60vh; margin: auto;" allowfullscreen></iframe>
   </div>
   <div id="box">
-  <div class="col col-faq cont" >
-  </div>
-  <div class="col col-faq cont" >
-  <p><b>Localização</b></p>
-  <p>jeKnowledge</p>
-  <br>
-  <p>Departamento de Física sala B3</p>
-  <p>Rua Larga</p>
-  <p>P-3004-516</p>
-  </div>
+    <div class="col cont" style="max-width: 15vh !important; min-width: 15vh;">
+    <p><b>Localização</b></p>
+    <p>jeKnowledge</p>
+    </div>
 
+      <div class="col cont" >
+      <p><b> . </b></p>
+      <p>Departamento de Física sala B3</p>
+      <p>Rua Larga</p>
+      <p>P-3004-516</p>
+      </div>
+
+      <div class="col cont" >
+      <p><b>Contactos</b></p>
+      <p>formacao@jeknowledge.pt</p>
+      </div>
   </div>
 </section>
 
