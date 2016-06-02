@@ -8,10 +8,13 @@ permalink: /Academy2016.html
   body{
     font-family: Lato;
   }
+  h1{
+    font-size: 3rem;
+  }
 
   nav a {
-    line-height:2em;
-    font-size: 3vw;
+    line-height:2rem;
+    font-size: 1rem;
     color: #ccc;
      fill: #ccc;
   }
@@ -28,18 +31,6 @@ permalink: /Academy2016.html
     background-color: #061841;
 
 }
-  h1{
-    font-size: 3vw;
-    text-align: center;
-    width:100%;
-    padding-bottom: 2vh;
-    font-weight:bold;
-  }
-
-  p{
-    font-size: 1em;
-  }
-
   .container{
     display: flex;
     min-height:100vh;
@@ -95,7 +86,7 @@ permalink: /Academy2016.html
   <br>
   <br>
   <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 40vh;
-    width: 40vh;">
+    width: 40vw;">
   <h2 style="color:white">12, 13 e 14 de Julho</h2>
   <br>
   <nav>
