@@ -15,6 +15,8 @@ section{
 
 h1{
   text-align:center;
+  margin: 0;
+  margin-top:1em;
 }
 
 h2{
@@ -30,7 +32,7 @@ nav a{
 }
 
 .col{
-  min-width: 13em;
+  min-width: 14em;
   max-width: 15em;
       padding-left: 2vw;
       margin-right: 2vw;
@@ -109,7 +111,7 @@ nav a{
   <p style="color: #ccc">
     <a href="#maininfo" class="selected">Academy 2016</a>
     <a href="#faq" class="selected">FAQ</a>
-    <a href="/academy-articles/" class="selected">Inscrições</a>
+    <a href="#inscricao" class="selected">Inscrições</a>
   <!--  <a href="#apoios" class="selected">Apoios</a>-->
     <a href="#contacts" class="selected">Contactos</a>
 
@@ -127,10 +129,9 @@ nav a{
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
 
   	<p>As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas.</p>
-    <span class="btn btn-sub box button"> <a href="{{ site.baseurl }}/Academy2016">Inscrição</a></span>
-    <br>
-    <br>
-    <a href="{{ site.baseurl }}/academy">Vê como foi a edição do ano passado</a>
+    <h2>Vê como foi a edição do ano passado</h2>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/141088550' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
 </div>
 </section>
 
@@ -192,9 +193,21 @@ nav a{
   <div class="col cont" style="background-color:green;"></div>
 </section>
 -->
+<section id="inscricao" class="container" data-section-menu="section 1">
+  <h1>Faz a tua inscrição</h1>
+  <br>
+  <div class="typeform-widget" data-url="https://jeknowledge.typeform.com/to/jy24kE" data-text="jeKnowledge Academy" style="width:100%;height:500px;"></div>
+  <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="https://www.typeform.com/examples/forms/?utm_campaign=jy24kE&amp;utm_source=typeform.com-602912-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=PT" style="color: #999" target="_blank">Typeform</a></div>
+
+
+</section>
+
 <section id="contacts" class="container" data-section-menu="section 1">
   <!--metade mapa metade info -->
 <div class="map" >
+<h1>Mais informações</h1>
+<br>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:100%; height: 60vh; margin: auto;" allowfullscreen></iframe>
   </div>
   <div id="box">
