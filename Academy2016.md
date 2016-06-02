@@ -17,6 +17,14 @@ h1{
   text-align:center;
 }
 
+h2{
+  color: #3a84df;
+}
+
+a{
+  color: #3a84df;
+}
+
 nav a{
   line-height: 2em;
 }
@@ -54,7 +62,8 @@ nav a{
   <br>
   <br>
   <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 40vh;">
-  <h2 style="color:white">12, 13 e 14 de Julho</h2>
+  <p style="color:white; font-weight:bold; margin-top:1em;">12, 13 e 14 de Julho</p>
+  <br>
   <br>
   <nav>
   <p>
