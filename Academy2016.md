@@ -6,6 +6,28 @@ permalink: /Academy2016.html
 <style>
 section{
   min-height:100vh;
+  padding-top: 1em 2em;
+  justify-content: center;
+}
+
+nav a{
+  line-height: 2em;
+}
+
+.col{
+  max-width: 20em;
+}
+
+.col-faq{
+  padding-left: 3em;
+  margin-right: 3em;
+}
+
+
+
+#box{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #top{
