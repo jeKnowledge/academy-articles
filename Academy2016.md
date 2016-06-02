@@ -31,7 +31,7 @@ a{
 }
 
 nav a{
-  line-height: 2em;
+  line-height: 2.5em;
 }
 
 .col{
