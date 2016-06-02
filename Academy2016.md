@@ -22,7 +22,7 @@ section{
 h1{
   text-align:center;
   margin: 0;
-  margin-top:1em;
+  margin-top: 0.3em;
 }
 
 h2{
@@ -111,7 +111,6 @@ nav a{
 
 <section id="top" class="container" data-section-menu="Home">
   <br>
-  <br>
   <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 40vh;">
   <p style="color:white; font-weight:bold; margin-top:1em; font-size:1.2em;">12, 13 e 14 de Julho</p>
   <br>
@@ -142,7 +141,6 @@ nav a{
 
   <div>
   <h1>jeKnowledge Academy 2016</h1>
-  <br>
   <br>
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
 
