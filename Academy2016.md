@@ -10,6 +10,7 @@ section{
   justify-content: center;
   max-width: 50em;
   margin:auto;
+  padding: 5vw;
 }
 
 h1{
@@ -21,12 +22,13 @@ nav a{
 }
 
 .col{
-  max-width: 20em;
+  min-width: 15em;
+      max-width: 18em;
 }
 
 .col-faq{
-  padding-left: 2em;
-  margin-right: 2em;
+  padding-left: 2vw;
+  margin-right: 2vw;
 }
 
 
@@ -54,8 +56,7 @@ nav a{
 <section id="top" class="container" data-section-menu="Home">
   <br>
   <br>
-  <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 40vh;
-    width: 40vw;">
+  <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 40vh;">
   <h2 style="color:white">12, 13 e 14 de Julho</h2>
   <br>
   <nav>
@@ -79,8 +80,8 @@ nav a{
 <section id="maininfo" class="container" data-section-menu="section 1">
 
   <div>
-  <br>
   <h1>jeKnowledge Academy 2016</h1>
+  <br>
   <br>
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
 
