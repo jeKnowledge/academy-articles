@@ -142,10 +142,12 @@ nav a{
   <div>
   <h1>jeKnowledge Academy 2016</h1>
   <br>
+<center>
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
 
   	<p>As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas.</p>
     <h2>Vê como foi a edição do ano passado</h2>
+    </center>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/141088550' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 </div>
