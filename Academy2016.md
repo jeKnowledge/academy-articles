@@ -30,11 +30,42 @@ nav a{
 }
 
 .col{
-  min-width: 15em;
-      max-width: 18em;
+  min-width: 13em;
+  max-width: 15em;
       padding-left: 2vw;
       margin-right: 2vw;
 }
+
+.btn-sub{
+    display: inline-block;
+    background: #1F3871;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 700;
+}
+	.btn:hover{
+		 opacity: .8;
+	}
+
+  .btn {
+  	font-family: lato,sans-serif;
+      font-size: 1.126rem;
+      text-decoration: none;
+
+  }
+   .box{
+  	border: 1px;
+      border-radius: 4px;
+      padding: 15px;
+  		text-align: center;
+  }
+
+  .grey{
+  	background-color: #eee;
+  }
+  .box a, .box a:visited{
+  	color: white;
+  }
 
 
 #box{
@@ -62,7 +93,7 @@ nav a{
   <br>
   <br>
   <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 40vh;">
-  <p style="color:white; font-weight:bold; margin-top:1em;">12, 13 e 14 de Julho</p>
+  <p style="color:white; font-weight:bold; margin-top:1em; font-size:1.2em;">12, 13 e 14 de Julho</p>
   <br>
   <br>
   <nav>
@@ -71,7 +102,11 @@ nav a{
     <a href="http://jeknowledge.pt/"  class="applink appstore-link" title="jeKnowledge">jeKnowledge</a>
     <a href="https://github.com/jeKnowledge" class="applink playstore-link" title="Github">Github</a>
   </p>
-  <p>
+  </nav>
+  <nav>
+  <br>
+  <br>
+  <p style="color: #ccc">
     <a href="#maininfo" class="selected">Academy 2016</a>
     <a href="#faq" class="selected">FAQ</a>
     <a href="/academy-articles/" class="selected">Inscrições</a>
@@ -93,6 +128,7 @@ nav a{
 
   	<p>As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas.</p>
     <span class="btn btn-sub box button"> <a href="{{ site.baseurl }}/Academy2016">Inscrição</a></span>
+    <br>
     <br>
     <a href="{{ site.baseurl }}/academy">Vê como foi a edição do ano passado</a>
 </div>
