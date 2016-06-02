@@ -29,7 +29,7 @@ permalink: /Academy2016.html
 
 }
   h1{
-    font-size: 4vw;
+    font-size: 2em;
     text-align: center;
     width:100%;
     padding-bottom: 2vh;
@@ -37,7 +37,7 @@ permalink: /Academy2016.html
   }
 
   p{
-    font-size: 2vw;
+    font-size: 1em;
   }
 
   .container{
