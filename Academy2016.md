@@ -24,18 +24,15 @@ nav a{
 .col{
   min-width: 15em;
       max-width: 18em;
+      padding-left: 2vw;
+      margin-right: 2vw;
 }
-
-.col-faq{
-  padding-left: 2vw;
-  margin-right: 2vw;
-}
-
 
 
 #box{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #top{
@@ -96,7 +93,7 @@ nav a{
 
   <h1>FAQ - Respondemos algumas perguntas por ti</h1>
   <div id="box">
-  <div class="col col-faq">
+  <div class="col">
       <h2>Para quem?</h2>
       <p>
         Para todos os alunos do 11º e 12º ano com vontade de aprender e de se desafiar.
@@ -117,7 +114,7 @@ nav a{
         Não precisas de qualquer conhecimento de programação ou robótica, só precisamos que tragas boa disposição e interesse em aprender.
       </p>
   </div>
-  <div class="col col-faq">
+  <div class="col">
 
       <h2>E o ambiente?</h2>
       <p>
@@ -156,19 +153,15 @@ nav a{
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:100%; height: 60vh; margin: auto;" allowfullscreen></iframe>
   </div>
   <div id="box">
-    <div class="col cont" style="max-width: 15vw !important; min-width: 15vw;">
-    <p><b>Localização</b></p>
-    <p>jeKnowledge</p>
-    </div>
-
-      <div class="col cont" >
-      <p><b> . </b></p>
+      <div class="col" style="margin-top: 2em;">
+      <p><b>Localização</b></p>
+      <p>jeKnowledge</p>
       <p>Departamento de Física sala B3</p>
       <p>Rua Larga</p>
       <p>P-3004-516</p>
       </div>
 
-      <div class="col cont" >
+      <div class="col" style="margin-top: 2em;" >
       <p><b>Contactos</b></p>
       <p>formacao@jeknowledge.pt</p>
       </div>
