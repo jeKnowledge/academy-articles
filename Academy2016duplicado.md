@@ -1,26 +1,85 @@
 ---
-layout: default
+layout: academy2016
 title: jeKnowledge Academy 2016
-permalink: /Academy2016.html
 ---
-<style>
-section{
-  min-height:100vh;
+
+<style type="text/css">
+  body{
+    font-family: Lato;
+  }
+  h1{
+    font-size: 3rem;
+  }
+
+  nav a {
+    line-height:2rem;
+    font-size: 1rem;
+    color: #ccc;
+     fill: #ccc;
+  }
+
+  #top{
+    min-width: initial;
+    display:block;
+    text-align: center;
+   /*Ocupa o ecran todo*/
+    min-height:100vh; /*min-height para nao sobrepor o conteudo original quando a janela é muito pequena*/
+    flex-wrap: wrap; /*faz com que o footer não esteja paralelo com o conteudo*/
+
+    background: url('/academy-articles/img/stars.png'), radial-gradient(20rem circle at 50% 40%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
+    background-color: #061841;
+
 }
+  .container{
+    display: flex;
+    min-height:100vh;
+    flex-wrap: wrap;
+    justify-content:center;
+    /*padding: 20px 30px;*/
+    justify-content: space-around;
+  }
 
-#top{
-  min-width: initial;
-  display:block;
-  text-align: center;
- /*Ocupa o ecran todo*/
-  min-height:100vh; /*min-height para nao sobrepor o conteudo original quando a janela é muito pequena*/
-  flex-wrap: wrap; /*faz com que o footer não esteja paralelo com o conteudo*/
+  .col{
+    min-width: 30vh;  
+    max-width: 45vh;    
+    padding: 1vh 2vh;
+  }
 
-  background: url('/academy-articles/img/stars.png'), radial-gradient(20rem circle at 50% 40%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
-  background-color: #061841;
+  .cont{
+    width:30%;
+    padding: 1vh 2vh;
+  }
+  .map{
+  display:flex;
+  flex-wrap: wrap;  
+  width:100%;
+  padding: initial;
+  }
 
-}
+  #box{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90vh;
+    justify-content:center;
+  }
+
+  footer{
+    width: 100%;/*expande horizontalmente footer*/
+    align-self: flex-end;/*footer no fim da pagina*/
+  }
+
+  .content{
+        margin: auto; /*centra conteudo*/
+
+
+  }
+
+  .section{
+    min-height:100vh;
+  }
+
 </style>
+<body>
 
 <section id="top" class="container" data-section-menu="Home">
   <br>
@@ -144,3 +203,5 @@ section{
       </div>
   </div>
 </section>
+
+</body>
