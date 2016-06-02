@@ -9,9 +9,16 @@ permalink: /Academy2016.html
     font-family: Lato;
   }
 
+  nav a {
+    line-height: 2em;
+    color: #ccc;
+     fill: #ccc;
+  }
+
   #top{
     min-width: initial;
-    display:flex;
+    display:block;
+    text-align: center;
    /*Ocupa o ecran todo*/
     min-height:100vh; /*min-height para nao sobrepor o conteudo original quando a janela é muito pequena*/
     flex-wrap: wrap; /*faz com que o footer não esteja paralelo com o conteudo*/
@@ -21,11 +28,16 @@ permalink: /Academy2016.html
 
 }
   h1{
+    font-size: 2em;
     text-align: center;
     width:100%;
     padding: 1em;
+    font-weight:bold;
   }
 
+  p{
+    font-size: 1em;
+  }
 
   .container{
     display: flex;
@@ -83,8 +95,11 @@ permalink: /Academy2016.html
 <body>
 
 <section id="top" class="container" data-section-menu="Home">
+  <br>
+  <br>
   <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" width="230em">
-  <h3> Dias 12, 13 e 14 de Julho</h3>
+  <h2 style="color:white">12, 13 e 14 de Julho</h2>
+  <br>
   <nav>
   <p>
     <a href="/academy-articles/" class="selected">Tutoriais</a>
@@ -95,7 +110,7 @@ permalink: /Academy2016.html
     <a href="#maininfo" class="selected">Academy 2016</a>
     <a href="#faq" class="selected">FAQ</a>
     <a href="/academy-articles/" class="selected">Inscrições</a>
-    <a href="#apoios" class="selected">Apoios</a>
+  <!--  <a href="#apoios" class="selected">Apoios</a>-->
     <a href="#contacts" class="selected">Contactos</a>
 
   </p>
@@ -103,8 +118,17 @@ permalink: /Academy2016.html
 
 </section>
 
-<section id="maininfo" class="container" data-section-menu="section 1">
+<section id="maininfo" class="container" data-section-menu="section 1" style="display:block;">
+  <div style="padding: 2em 3em; max-width: 40em; margin:auto;">
   <h1>jeKnowledge Academy 2016</h1>
+  <br>
+  <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
+
+  	<p>As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas.</p>
+    <span class="btn btn-sub box button"> <a href="{{ site.baseurl }}/Academy2016">Inscrição</a></span>
+    <br>
+    <a href="{{ site.baseurl }}/academy">Vê como foi a edição do ano passado</a>
+</div>
 </section>
 
 <section id="faq" class="container" data-section-menu="section 2">
@@ -157,24 +181,24 @@ permalink: /Academy2016.html
   </div>
 </section>
 
-
+<!--
 <section id="apoios" class="container" data-section-menu="section 1">
   <h1>Description 3</h1>
-  <!--metade mapa metade info -->
   <div class="col map" style="background-color:blue;"></div>
   <div class="col cont" style="background-color:pink;"></div>
   <div class="col cont" style="background-color:green;"></div>
 </section>
-
+-->
 <section id="contacts" class="container" data-section-menu="section 1">
   <!--metade mapa metade info -->
-  <div class="col map" style="background-color:blue;">
+  <div class="col map" >
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:100%; height: 60vh;" allowfullscreen></iframe>
   </div>
   <div id="box">
-  <div class="col col-faq cont" style="background-color:pink;">
+  <div class="col col-faq cont" >
   </div>
-  <div class="col col-faq cont" style="background-color:green;">
+  <div class="col col-faq cont" >
+  <p><b>Localização</b></p>
   <p>jeKnowledge</p>
   <br>
   <p>Departamento de Física sala B3</p>
