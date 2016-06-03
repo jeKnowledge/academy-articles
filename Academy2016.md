@@ -190,7 +190,7 @@ nav a{
         As refeições durante o evento (1 almoço por cada dia, bebidas e snacks) vão ser asseguradas pela jeKnowledge e estão incluídas no custo de participação.
       </p>
 
-      <h2>Quando custa?</h2>
+      <h2>Quanto custa?</h2>
       <p>
         O custo de participação será de 40 euros, com o objetivo de te assegurar a melhor experiência possível na jeKnowledge Academy (inclui um kit de iniciação contendo um Arduino e refeições).
       </p>
