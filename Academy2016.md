@@ -160,7 +160,7 @@ nav a{
   <div class="col">
       <h2>Para quem?</h2>
       <p>
-        Para todos os alunos do 11º e 12º ano com vontade de aprender e de se desafiar.
+        Para todos os alunos do 9º ao 12º ano com vontade de aprender e de se desafiar.
       </p>
 
       <h2>Como participo?</h2>
@@ -187,7 +187,7 @@ nav a{
 
       <h2>As refeições?</h2>
       <p>
-        As refeições durante o evento (3 almoços, bebidas e snacks durante o dia) vão ser asseguradas pela jeKnowledge e estão incluídas no custo de participação.
+        As refeições durante o evento (1 almoço por cada dia, bebidas e snacks) vão ser asseguradas pela jeKnowledge e estão incluídas no custo de participação.
       </p>
 
       <h2>Quando custa?</h2>
