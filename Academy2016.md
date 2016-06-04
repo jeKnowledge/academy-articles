@@ -139,7 +139,6 @@ nav a{
 
   <div>
   <h1>jeKnowledge Academy 2016</h1>
-  <br>
 <center>
   <br>
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
@@ -212,7 +211,7 @@ nav a{
 -->
 
 <div id="inscricao" class="container" data-section-menu="section 1">
-
+ <br>
   <div class="box grey" style="max-width: 40em; margin:auto;">
   <center>
   <p>Faz a tua inscrição</p>
@@ -248,5 +247,5 @@ nav a{
       <p>formacao@jeknowledge.pt</p>
       </div>
   </div>
-  
+
 </section>
