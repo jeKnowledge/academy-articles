@@ -106,6 +106,7 @@ nav a{
   background-color: #061841;
 
 }
+
 </style>
 
 <section id="top" class="container" data-section-menu="Home">
@@ -130,6 +131,7 @@ nav a{
 
   </p>
   </nav>
+</div>
 
 </section>
 
@@ -139,11 +141,12 @@ nav a{
   <h1>jeKnowledge Academy 2016</h1>
   <br>
 <center>
+  <br>
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
+	<p>As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas.</p>
 
-  	<p>As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas.</p>
-    <h2>Vê como foi a edição do ano passado</h2>
-    </center>
+  <h2>Vê como foi a edição do ano passado</h2>
+</center>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/141088550' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 </div>
@@ -207,15 +210,16 @@ nav a{
   <div class="col cont" style="background-color:green;"></div>
 </section>
 -->
-<section id="inscricao" class="container" data-section-menu="section 1">
-  <h1>Faz a tua inscrição</h1>
-  <br>
-  <div class="typeform-widget" data-url="https://jeknowledge.typeform.com/to/jy24kE" data-text="jeKnowledge Academy" style="width:100%;height:500px;"></div>
-  <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="https://www.typeform.com/examples/forms/?utm_campaign=jy24kE&amp;utm_source=typeform.com-602912-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=PT" style="color: #999" target="_blank">Typeform</a></div>
+<div id="inscricao" class="container" data-section-menu="section 1">
 
-
-</section>
+  <div class="box grey" style="max-width: 40em; margin:auto;">
+  <center>
+  <p>Faz a tua inscrição</p>
+  <a class="btn btn-sub box button" style="color:white" href="https://jeknowledge.typeform.com/to/jy24kE" data-mode="1" target="_blank">Inscrever-me</a>
+  <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+</center>
+</div>
+</div>
 
 <section id="contacts" class="container" data-section-menu="section 1">
   <!--metade mapa metade info -->
