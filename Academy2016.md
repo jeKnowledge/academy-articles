@@ -3,6 +3,7 @@ layout: academy2016
 title: jeKnowledge Academy 2016
 permalink: /Academy2016.html
 ---
+
 <style>
 body{
   font-family: Lato;
@@ -50,30 +51,29 @@ nav a{
     cursor: pointer;
     font-weight: 700;
 }
-	.btn:hover{
-		 opacity: .8;
-	}
+    .btn:hover{
+         opacity: .8;
+    }
 
   .btn {
-  	font-family: lato,sans-serif;
+      font-family: lato,sans-serif;
       font-size: 1.126rem;
       text-decoration: none;
 
   }
    .box{
-  	border: 1px;
+      border: 1px;
       border-radius: 4px;
       padding: 15px;
-  		text-align: center;
+          text-align: center;
   }
 
   .grey{
-  	background-color: #eee;
+      background-color: #eee;
   }
   .box a, .box a:visited{
-  	color: white;
+      color: white;
   }
-
 
 #box{
   display: -webkit-box;
@@ -143,7 +143,7 @@ nav a{
 <center>
   <br>
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 12, 13 e 14 de julho.</p>
-	<p>As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas.</p>
+    <p>As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas.</p>
 
   <h2>Vê como foi a edição do ano passado</h2>
 </center>
@@ -210,6 +210,7 @@ nav a{
   <div class="col cont" style="background-color:green;"></div>
 </section>
 -->
+
 <div id="inscricao" class="container" data-section-menu="section 1">
 
   <div class="box grey" style="max-width: 40em; margin:auto;">
@@ -222,11 +223,16 @@ nav a{
 </div>
 
 <section id="contacts" class="container" data-section-menu="section 1">
-  <!--metade mapa metade info -->
+
 <div class="map" >
+
 <h1>Mais informações</h1>
+
 <br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:100%; height: 60vh; margin: auto;" allowfullscreen></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0558726846093!2d-8.42665604944977!3d40.20782007614189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9098f98004b%3A0xf74b13602c7f2de3!2sDepartamento+de+F%C3%ADsica+da+Universidade+de+Coimbra!5e0!3m2!1spt-PT!2spt!4v1464274013492" frameborder="0" style="border:0; pointer-events:none; width:100%; height: 60vh; margin: auto;" allowfullscreen>
+</iframe>
+
   </div>
   <div id="box">
       <div class="col" style="margin-top: 2em;">
@@ -242,4 +248,5 @@ nav a{
       <p>formacao@jeknowledge.pt</p>
       </div>
   </div>
+  
 </section>
