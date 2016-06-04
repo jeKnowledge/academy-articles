@@ -16,7 +16,7 @@ section{
           justify-content: center;
   max-width: 50em;
   margin:auto;
-  padding: 5vw;
+  padding: 3vw;
 }
 
 h1{
@@ -25,23 +25,22 @@ h1{
   margin-top: 0.3em;
 }
 
-h2{
-  color: #3a84df;
-}
-
 a{
   color: #3a84df;
+}
+nav{
+  margin-top:1em;
 }
 
 nav a{
   line-height: 2.5em;
 }
 
-.col{
-  min-width: 14em;
-  max-width: 15em;
-      padding-left: 2vw;
-      margin-right: 2vw;
+.col {
+    min-width: 18em;
+    max-width: 19em;
+    padding-left: 4vw;
+    margin-right: 4vw;
 }
 
 .btn-sub{
@@ -111,10 +110,9 @@ nav a{
 
 <section id="top" class="container" data-section-menu="Home">
   <br>
-  <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 40vh;">
-  <p style="color:white; font-weight:bold; margin-top:1em; font-size:1.2em;">12, 13 e 14 de Julho</p>
-  <br>
-  <br>
+  <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 35vh; margin-top: 5vh;">
+  <p style="color:white; font-weight:bold; margin-top:0.8em; font-size:1.2em;">12, 13 e 14 de Julho</p>
+<br>
   <nav>
   <p>
     <a href="/academy-articles/" class="selected">Tutoriais</a>
@@ -123,8 +121,6 @@ nav a{
   </p>
   </nav>
   <nav>
-  <br>
-  <br>
   <p style="color: #ccc">
     <a href="#maininfo" class="selected">Academy 2016</a>
     <a href="#faq" class="selected">FAQ</a>
@@ -155,7 +151,7 @@ nav a{
 
 <section id="faq" class="container" data-section-menu="section 2">
 
-  <h1>FAQ - Respondemos algumas perguntas por ti</h1>
+  <h1>FAQ - Respondemos a algumas perguntas por ti</h1>
   <div id="box">
   <div class="col">
       <h2>Para quem?</h2>
