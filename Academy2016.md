@@ -5,6 +5,7 @@ permalink: /Academy2016.html
 ---
 
 <style>
+
 body{
   font-family: Lato;
 }
@@ -12,7 +13,6 @@ section{
   min-height:100vh;
   padding: 1em 2em;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 50em;
@@ -77,14 +77,11 @@ nav a{
 
 #box{
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -96,11 +93,12 @@ nav a{
   max-width: 100vw;
  /*Ocupa o ecran todo*/
   min-height:100vh; /*min-height para nao sobrepor o conteudo original quando a janela é muito pequena*/
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; /*faz com que o footer não esteja paralelo com o conteudo*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; /*faz com que o footer não esteja paralelo com o conteudo*/
 
   background: url('/academy-articles/img/stars.png'), -webkit-radial-gradient(50% 40%, 20rem circle, rgb(22, 47, 117), rgba(255, 255, 255, 0)), -webkit-linear-gradient(#162141, #1D2C4E);
+
+  background: url('/academy-articles/img/stars.png'), -webkit-radial-gradient(20rem circle at 50% 40%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), -webkit-linear-gradient(#162141, #1D2C4E);
 
   background: url('/academy-articles/img/stars.png'), radial-gradient(20rem circle at 50% 40%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
   background-color: #061841;
