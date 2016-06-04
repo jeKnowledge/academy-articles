@@ -151,12 +151,12 @@ nav a{
 
 <section id="faq" class="container" data-section-menu="section 2">
 
-  <h1>FAQ - Respondemos algumas perguntas por ti</h1>
+  <h1>FAQ - Respondemos a algumas perguntas por ti</h1>
   <div id="box">
   <div class="col">
       <h2>Para quem?</h2>
       <p>
-        Para todos os alunos do 11º e 12º ano com vontade de aprender e de se desafiar.
+        Para todos os alunos do 9º ao 12º ano com vontade de aprender e de se desafiar.
       </p>
 
       <h2>Como participo?</h2>
@@ -183,10 +183,10 @@ nav a{
 
       <h2>As refeições?</h2>
       <p>
-        As refeições durante o evento (3 almoços, bebidas e snacks durante o dia) vão ser asseguradas pela jeKnowledge e estão incluídas no custo de participação.
+        As refeições durante o evento (almoço, bebidas e snacks durante o dia) vão ser asseguradas pela jeKnowledge e estão incluídas no custo de participação.
       </p>
 
-      <h2>Quando custa?</h2>
+      <h2>Quanto custa?</h2>
       <p>
         O custo de participação será de 40 euros, com o objetivo de te assegurar a melhor experiência possível na jeKnowledge Academy (inclui um kit de iniciação contendo um Arduino e refeições).
       </p>
