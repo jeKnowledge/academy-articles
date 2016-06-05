@@ -16,7 +16,7 @@ section{
           justify-content: center;
   max-width: 50em;
   margin:auto;
-  padding: 5vw;
+  padding: 3em;
 }
 
 h1{
@@ -35,9 +35,9 @@ nav a{
 
 .col {
     min-width: 18em;
-    max-width: 19em;
-    padding-left: 2vw;
-    margin-right: 2vw;
+    max-width: 18em;
+    padding-left: 2em;
+    margin-right: 2em;
 }
 
 .btn-sub{
