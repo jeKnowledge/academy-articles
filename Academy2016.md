@@ -8,7 +8,7 @@ body{
   font-family: Lato;
 }
 section{
-  min-height:100vh;
+  min-height:auto;
   padding: 1em 2em;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
