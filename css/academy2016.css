@@ -82,7 +82,7 @@ nav a{
 
 #top{
   min-width: initial;
-  display:block;
+  display: flex;
   text-align: center;
   max-width: 100vw;
  /*Ocupa o ecran todo*/

@@ -4,7 +4,7 @@ title: jeKnowledge Academy 2016
 permalink: /Academy2016.html
 ---
 <section id="top" class="container" data-section-menu="Home">
-  <br>
+  <div style="align-self: center">
   <img src="http://jeknowledge.github.io/academy-articles/img/jkacademylogo_mobile.svg" style="height: 40vh;">
   <p style="color:white; font-weight:bold; margin-top:1em; font-size:1.2em;">12, 13 e 14 de Julho</p>
   <br>
@@ -28,7 +28,7 @@ permalink: /Academy2016.html
 
   </p>
   </nav>
-
+  </div>
 </section>
 
 <section id="maininfo" class="container" data-section-menu="section 1">
@@ -94,6 +94,11 @@ permalink: /Academy2016.html
         A jeKnowledge Academy vai ser na nossa sede, no Departamento de Física, no Pólo 1 da Universidade de Coimbra. O evento começa às 9h00 do dia 12 de Julho.
       </p>
   </div>
+
+      <h2>Ainda não estás convencido?</h2>
+      <p style="max-width: 36em;">
+        O staff do evento é formado por alunos da FCTUC das mais diversas áreas e é uma forma de ficares a conhecer um pouco do que se faz em cada curso. Estamos prontos para qualquer dúvida que tenhas!
+      </p>
   </div>
 </section>
 
@@ -136,6 +141,8 @@ permalink: /Academy2016.html
       <div class="col" style="margin-top: 2em;" >
       <p><b>Contactos</b></p>
       <p>formacao@jeknowledge.pt</p>
+      <p>+351 914 291 234 (Interno)</p>
+      <p>+351 916 633 324 (Tecnologia)</p>
       </div>
   </div>
 </section>
