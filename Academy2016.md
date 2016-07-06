@@ -23,9 +23,8 @@ permalink: /Academy2016.html
     <a href="#maininfo" class="selected">Academy 2016</a>
     <a href="#faq" class="selected">FAQ</a>
     <a href="#inscricao" class="selected">Inscrições</a>
-  <!--  <a href="#apoios" class="selected">Apoios</a>-->
     <a href="#contacts" class="selected">Contactos</a>
-
+    <a href="#apoios" class="selected">Apoios</a>
   </p>
   </nav>
   </div>
@@ -145,4 +144,30 @@ permalink: /Academy2016.html
       <p>+351 916 633 324 (Tecnologia)</p>
       </div>
   </div>
+</section>
+
+<section id="apoios" class="container">
+<h1>Apoios</h1>
+<div id="box">
+<div class="col">
+  <a href="http://www.weareredlight.com/" target="_blank"><img src="{{ site.baseurl }}/img/jkacademy-redlight-site.png" alt="RedLight Software">
+  </a>
+</div>
+<div class="col">
+  <a href="http://www.whitesmith.co" target="_blank"><img src="{{ site.baseurl }}/img/jkacademy-whitesmith-site.png" alt="Whitesmith">
+  </a>
+</div>
+<div class="col">
+  <a href="http://www.flag.pt" target="_blank"><img src="{{ site.baseurl }}/img/jkacademy-flag-site.png?" alt="FLAG">
+  </a>
+</div>
+<div class="col">
+  <a href="http://www.uc.pt/fctuc" target="_blank"><img src="{{ site.baseurl }}/img/jkacademy-fctuc-site.png?" alt="Faculdade de Ciências e Tecnologias da Universidade de Coimbra">
+  </a>
+</div>
+<div class="col">
+  <a href="http://www.portugal.gov.pt/pt/os-ministerios/ministerio-da-educacao-e-ciencia.aspx" target="_blank"><img src="{{ site.baseurl }}/img/jkacademy-dge-site.png?" alt="Ministério da Educação">
+  </a>
+</div>
+<div>
 </section>
