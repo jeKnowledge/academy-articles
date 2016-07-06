@@ -110,8 +110,5 @@ title: Academy
 </section>
 </div>
 <p><br></p>
-</div>
 
 </article>
-
-</section>
