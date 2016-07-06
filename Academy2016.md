@@ -169,4 +169,5 @@ permalink: /Academy2016.html
   <a href="http://www.portugal.gov.pt/pt/os-ministerios/ministerio-da-educacao-e-ciencia.aspx" target="_blank"><img src="{{ site.baseurl }}/img/jkacademy-dge-site.png?" alt="Ministério da Educação">
   </a>
 </div>
+</div>
 </section>
