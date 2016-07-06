@@ -170,4 +170,3 @@ permalink: /Academy2016.html
   </a>
 </div>
 </div>
-</section>
