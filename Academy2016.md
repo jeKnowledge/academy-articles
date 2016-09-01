@@ -170,7 +170,7 @@ permalink: /Academy2016.html
   </a>
 </div>
 <div class="col">
-  <a href="http://www.ipdj.pt/" target="_blank"><img width="256px" height="85px" src="{{ site.baseurl }}/img/ipdj_black.png?" alt="Instituto Português do Desporto e Juventude">
+  <a href="http://www.ipdj.pt/" target="_blank"><img width="256px" height="85px" src="{{ site.baseurl }}/img/ipdj.png?" alt="Instituto Português do Desporto e Juventude">
   </a>
 </div>
 </div>
