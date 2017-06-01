@@ -35,39 +35,31 @@ permalink: /Academy2017.html
 
   <div>
   <h1>jeKnowledge Academy 2017</h1>
-<center>
+
   <br>
-  <p>O jeKnowledge Academy está de volta, desta vez nos dias 7, 8 e 9 de julho de 2017.
-    As inscrições para a edição do jeKnowledge Academy deste ano já estão abertas. Tens até dia 30 de Junho para te inscreveres.</p>
-<!--
-  <h2>Vê como foi a edição do ano passado</h2>
-  -->
-</center>
+  <p>O jeKnowledge Academy está de volta, desta vez nos dias 7, 8 e 9 de julho de 2017.</p>
+  <p>As inscrições para a quarta edição do jeKnowledge Academy deste ano já estão abertas. Tens até dia 30 de Junho para te inscreveres.</p>
+  <p>
+  Serão 3 dias onde poderás aprender a programar um jogo em python, o teu próprio site em HTML/CSS e os conceitos básicos de eletrónica e Arduino.
+  </p>
+<!--<h2>Vê como foi a edição do ano passado</h2>-->
 <!--
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/141088550' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 -->
 </div>
 
   <h2>Horário</h2>
-  <ul>
-    <li>
-    As actividades iniciam-se às 9h e terminam às 17h dos dias 7, 8 e 9 mas estará um membro da organizaçã no local 1h antes e depois dos horários marcados.
-    </li>
-  </ul>
+  <p>
+    As actividades iniciam-se às 9h e terminam às 17h dos dias 7, 8 e 9. No entanto, estará um membro da organização no local 1h antes e depois dos horários marcados.
+  </p>
   <h2>Almoços</h2>
-  <ul>
-    <li>
-    Os almoços são realizados nas cantinas da Universidade de Coimbra. São compostos por sopa, pão, água ou sumo concentrado e sobremesa. Prato de peixe, prato de carne ou prato vegetariano.
-    </li>
-  </ul>
+  <p>
+    Os almoços são realizados nas cantinas da Universidade de Coimbra, sendo compostos por sopa, pão, água ou sumo concentrado e sobremesa. Prato de peixe, prato de carne ou prato vegetariano.
+  </p>
   <h2>Lanches</h2>
-  <ul>
-    <li>
+  <p>
     Os lanches são dados pela organização e são compostos por sandes com fiambre e/ou queijo, limonada, água, bolachas, fruta da época e pastelaria regional.
-    </li>
-  </ul>
-
-
+  </p>
 </section>
 
 <section id="faq" class="container" data-section-menu="section 2">
@@ -94,13 +86,13 @@ permalink: /Academy2017.html
       <p>
         Não precisas de qualquer conhecimento de programação ou robótica, só precisamos que tragas boa disposição e interesse em aprender.
       </p>
-  </div>
-  <div class="col">
 
       <h2>E o ambiente?</h2>
       <p>
-        Entra em contacto com um ambiente empresarial, aprende connosco e faz-nos aprender contigo também. Não penses que um ambiente empresarial e sinónimo de aborrecimento, vem e verifica que pode ser exatamente o contrário.
+        Entra em contacto com um ambiente empresarial, aprende connosco e faz-nos aprender contigo também. Não penses que um ambiente empresarial é sinónimo de aborrecimento. Vem e verifica que pode ser exatamente o contrário.
       </p>
+  </div>
+  <div class="col">
 
       <h2>As refeições?</h2>
       <p>
@@ -109,33 +101,35 @@ permalink: /Academy2017.html
 
       <h2>Quanto custa?</h2>
       <p>
-        O custo de participação será de 35€, inclui os lanches e almoços.
+        O custo de participação será de 35€ incluindo lanches e almoços.
         Caso pretendas adquirir o kit de eletrónica o custo de participação é 55€.
       </p>
-      <p>
-        <b>Nota:</b>
-        Para participar na actividade não é obrigatório adquirir o kit sendo o mesmo emprestado pela organização.
-        O kit inclui:
-        -Arduino Uno
-        -Cabo de ligação A/B
-        -Placa de ensaios (BreadBoard)
-        -Fios deligação
-        -Resistências
-        -3 Leds coloridos
-        -Visor de 7 segmentos
-        -Botão de pressão
-      </p>
+      <p> O kit inclui:</p>
+        <p>
+        <li>Arduino Uno</li>
+        <li>Cabo de ligação A/B</li>
+        <li>Placa de ensaios (BreadBoard)</li>
+        <li>Fios deligação</li>
+        <li>Resistências</li>
+        <li>Fotoresitência</li>
+        <li>3 Leds coloridos</li>
+        <li>Visor de 7 segmentos</li>
+        <li>Botão de pressão</li>
+        </p>
+        <p><i>
+        Nota: Para participar na actividade não é obrigatório adquirir o kit sendo o mesmo emprestado pela organização.
+        </i></p>
 
       <h2>Onde é?</h2>
       <p>
-        A jeKnowledge Academy vai ser na nossa sede, no Departamento de Física, no Pólo 1 da Universidade de Coimbra. O evento começa às 9h00 do dia 7 de Julho.
+        A jeKnowledge Academy irá realizar-se na nossa sede, no Departamento de Física, no Pólo 1 da Universidade de Coimbra. O evento começa às 9h00 do dia 7 de Julho.
       </p>
-  </div>
 
       <h2>Ainda não estás convencido?</h2>
       <p style="max-width: 36em;">
         O staff do evento é formado por alunos da FCTUC das mais diversas áreas e é uma forma de ficares a conhecer um pouco do que se faz em cada curso. Estamos prontos para qualquer dúvida que tenhas!
       </p>
+  </div>
   </div>
 </section>
 
@@ -180,7 +174,7 @@ permalink: /Academy2017.html
       </div>
   </div>
 </section>
-<!--
+
 <section id="apoios" class="container">
 <h1>Apoios</h1>
 <div id="box">
@@ -188,6 +182,7 @@ permalink: /Academy2017.html
   <a href="http://www.weareredlight.com/" target="_blank"><img src="{{ site.baseurl }}/img/jkacademy-redlight-site.png" alt="RedLight Software">
   </a>
 </div>
+<!--
 <div class="col">
   <a href="http://www.whitesmith.co" target="_blank"><img src="{{ site.baseurl }}/img/jkacademy-whitesmith-site.png" alt="Whitesmith">
   </a>
@@ -208,5 +203,5 @@ permalink: /Academy2017.html
   <a href="http://www.ipdj.pt/" target="_blank"><img width="256px" height="85px" src="{{ site.baseurl }}/img/ipdj.png?" alt="Instituto Português do Desporto e Juventude">
   </a>
 </div>
-</div>
 -->
+</div>
