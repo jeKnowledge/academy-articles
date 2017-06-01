@@ -38,7 +38,7 @@ permalink: /Academy2017.html
 
   <br>
   <p>O jeKnowledge Academy está de volta, desta vez nos dias 7, 8 e 9 de julho de 2017.</p>
-  <p>As inscrições para a quarta edição do jeKnowledge Academy deste ano já estão abertas. Tens até dia 30 de Junho para te inscreveres.</p>
+  <p>As inscrições para o jeKnowledge Academy já estão abertas. Tens até dia 30 de Junho para te inscreveres.</p>
   <p>
   Serão 3 dias onde poderás aprender a programar um jogo em python, o teu próprio site em HTML/CSS e os conceitos básicos de eletrónica e Arduino.
   </p>
