@@ -3,17 +3,18 @@ layout: post
 title:  "Interface LED com Arduino e Processing"
 date:   2015-09-23 01:32:13
 categories: arduino led processing interface
+permalink: interface-led-com-arduino-e-processing
 ---
 
 Antes de começarmos a falar acerca deste projeto, vou responder ao desafio que tinha deixado no primeiro tutorial. Uma forma fácil de identificar se nos saiu um *double* no lançamento é colocar um LED a acender no caso dos dois números aleatórios serem iguais.
 
-Agora que já resolvemos esse ponto, venho então apresentar-vos este segundo tutorial que é um pouco diferente já que se baseia praticamente todo em software. Apresento-vos então o [Processing](https://processing.org/ "Processing"). Criado no MIT em 2001, o Processing é uma linguagem de programação em contexto visual, isto é, vocês programam o que aparece no ecrã. Basicamente, desenhar com código. Escolhi dois vídeos de projetos que achei muito interessantes e que provavelmente vão gostar de ver.
-
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/658158' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+Agora que já resolvemos esse ponto, venho então apresentar-vos este segundo tutorial que é um pouco diferente já que se baseia praticamente todo em software. Apresento-vos então o [Processing](https://processing.org/ "Processing"). Criado no MIT em 2001, o Processing é uma linguagem de programação em contexto visual, isto é, vocês programam o que aparece no ecrã. Basicamente, desenhar com código. No vídeo abaixo, podem ver um exemplo do que se pode fazer com Processing.
 
 <style>.embed-container { margin-top: 20px; margin-bottom: 20px; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/1747316' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
-Mas, perguntam vocês, o que tem tudo isto a ver com Arduino? Ora, tudo! Neste projeto, vamos criar uma interface em *Processing* com 3 botões que nos irão permitir controlar os nossos 3 LEDs coloridos. Vamos ainda aprender a enviar informação do Processing para o Arduino!
+Mas, perguntam vocês, o que tem tudo isto a ver com Arduino? Ora, tudo! Neste projeto, vamos criar uma interface em *Processing* com 3 botões que nos irão permitir controlar os nossos 3 LEDs coloridos. Vamos ainda aprender a enviar informação do Processing para o Arduino! No vídeo abaixo, podem ver o resultado final deste tutorial.
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/146688640' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 ## Hardware
 
@@ -316,13 +317,12 @@ O que este código faz é o seguinte: se o botão verde for premido e estiver a 
 
 ## Finalmente, vamos testar a nossa interface!
 
-Quando tiveres tanto o código em Processing como o código do Arduino pronto, estamos prontos a testar. Não te esqueças de montar os LEDs de acordo com o esquema elétrico no início deste tutorial! Para pormos a nossa interface a funcionar, começamos por ligar o nosso Arduino ao computador e fazer upload do sketch. Depois de fazermos isto, basta fazer "Play" do nosso sketch de *Processing* e a nossa interface irá aparecer. Se tudo correr bem, quando clicares num dos botões, o LED da cor corresponde irá acender! Se estiveres a obter um erro da parte do *Processing* tem provavelmente a haver com a porta que está definida. Se tiveres 1 coloca um 0 e vice-versa. Abaixo, algumas imagens da interface a funcionar e também um vídeo!
+Quando tiveres tanto o código em Processing como o código do Arduino pronto, estamos prontos a testar. Não te esqueças de montar os LEDs de acordo com o esquema elétrico no início deste tutorial! Para pormos a nossa interface a funcionar, começamos por ligar o nosso Arduino ao computador e fazer upload do sketch. Depois de fazermos isto, basta fazer "Play" do nosso sketch de *Processing* e a nossa interface irá aparecer. Se tudo correr bem, quando clicares num dos botões, o LED da cor corresponde irá acender! Se estiveres a obter um erro da parte do *Processing* tem provavelmente a haver com a porta que está definida. Se tiveres 1 coloca um 0 e vice-versa. Abaixo, algumas imagens da interface a funcionar!
 
 ![]({{ site.baseurl}}/img/20150912_145232.jpg)
 
 ![]({{ site.baseurl}}/img/20150912_145238.jpg)
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/146688640' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
 ## Código completo de Processing
 

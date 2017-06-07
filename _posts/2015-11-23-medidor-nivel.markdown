@@ -3,6 +3,7 @@ layout: post
 title:  "Medidor de Nível com Arduino e Processing"
 date:   2015-11-23 18:32:13
 categories: arduino processing sensing water interface
+permalink: medidor-de-nivel-com-arduino-e-processing
 ---
 
 Neste tutorial, vamos fazer um medidor de nível que mostra a informação em tempo real através de uma interface em Processing. Recomenda-se que já tenham feito o tutorial "Interface LED com Arduino e Processing", uma vez que não irei explicar tão pormenorizadamente certos aspetos relacionados com o Processing. Podes ver como irá ser a nossa interface, e o que nos propomos a fazer neste tutorial, no vídeo abaixo!
@@ -25,7 +26,7 @@ Com um copo medidor, ou se não tiveres um, um copo de plástico de 0.2L (dos ma
 
 Vai adicionando água para fazeres as marcações dos 0.4L, dos 0.6L e dos 0.8L. Quando tiveres acabado, é tempo de começar a colocar os fios! Mas antes, um pequeno esclarecimento.
 
-## Como é que o nosso medidor de nível funciona? 
+## Como é que o nosso medidor de nível funciona?
 
 O nosso medidor de nível irá ser capaz de detetar cinco estados diferentes: vazio, 0.2L, 0.4L, 0.6L e 0.8L. Este medidor é um modelo em pequena escala de um medidor de nível de varetas que é bastante usado a nível industrial. Este medidor não nos diz exatamente a capacidade contida no recipiente, mas é capaz de nos dar uma ideia bastante razoável do líquido que contém, na forma de um intervalo.
 
@@ -35,7 +36,7 @@ Assim, se o nosso medidor mostrar 0.4L, então sabemos que o medidor contém ent
 
 Agora que já entendemos o que se vai passar e que já temos suporte para montar os nossos fios, vamos a isso! Vamos precisar de 5 fios de ligação relativamente compridos (30 a 50 cm cada um) para podermos colocá-los dentro do nosso recipiente e ligá-los à breadboard. Para isso, dobra a extremidade de cada fio, num ângulo de 90º, para que fique perfeitamente alinhado com a marcação. Cola a extremidade do fio com patafix, que acaba por ser a melhor forma de fixação, já que é bastante resistente à água. Quando acabares, deves ter 4 fios de um dos lados, em cada uma das marcações, e um quinto fio até ao fundo que irá debitar os +5 Volts.
 
-![]({{ site.baseurl}}/img/monitorNivel/monitor4.jpg) 
+![]({{ site.baseurl}}/img/monitorNivel/monitor4.jpg)
 
 Começamos então por ligar o nosso fio solto aos +5V do Arduino e um outro fio ao Ground.
 
@@ -43,13 +44,13 @@ Como as portas analógicas estão sujeitas a muito ruído (medições que não n
 
 Podem ver como montar as resistências *pull-down* abaixo.
 
-![]({{ site.baseurl}}/img/monitorNivel/monitor1.jpg) 
+![]({{ site.baseurl}}/img/monitorNivel/monitor1.jpg)
 
-![]({{ site.baseurl}}/img/monitorNivel/monitor2.jpg) 
+![]({{ site.baseurl}}/img/monitorNivel/monitor2.jpg)
 
 Não te esqueças de ligar as alimentações!
 
-![]({{ site.baseurl}}/img/monitorNivel/monitor4.jpg) 
+![]({{ site.baseurl}}/img/monitorNivel/monitor4.jpg)
 
 E estamos prontos para começar a programar!
 
@@ -101,10 +102,10 @@ void loop() {
     }
 }
 {% endhighlight %}
- 
+
 Completa os outros três casos para as restantes três variáveis! A vantagem deste tipo de estrutura é que a cada iteração do loop, as variáveis voltam a ter o valor inicial de `false`.
 
-> PRO TIP: Se o teu código começar a ficar com uma indentação estranha 
+> PRO TIP: Se o teu código começar a ficar com uma indentação estranha
 (espaçamento das várias secções de código), prime Ctrl+T e o IDE do Arduino organiza o teu código por ti!
 
 Depois disto, o teu `void loop()` deve ser semelhante ao código que se segue.
@@ -146,7 +147,7 @@ Por exemplo, para o nível 4 que corresponde aos 0.8L, ou seja, todas as leitura
 if (leitura4 && leitura3 && leitura2 && leitura1)
 {
   Serial.println('4');
-} 
+}
 {% endhighlight %}
 
 Ou seja, se `leitura4`, `leitura3`, `leitura2` e `leitura1` forem `true`, então a condição é satisfeita e o Arduino faz print do número 4 para o *Serial Monitor*. É isto que o operador `&&` faz. Se todas as condições forem cumpridas, então o resultado total é `true`. Bastaria que uma das leituras fosse `false` para a condição não se verificar.
@@ -161,7 +162,7 @@ Da parte do Arduino está tudo, vamos agora avançar para o Processing!
 
 Agora que o nosso Arduino "já sabe" o nível de água dentro do nosso recipiente, vamos enviar esta informação para o Processing e esperar que a nossa interface nos devolva uma representação gráfica do nível de água no recipiente.
 
-Abrimos um novo *sketch* de Processing e começamos por preencher o `void setup()`. 
+Abrimos um novo *sketch* de Processing e começamos por preencher o `void setup()`.
 
 Começamos por criar uma janela com a instrução `size(width, height)`. Neste caso, desenhámos uma janela com as dimensões 450x650 pixeis. Vamos ainda adicionar os atributos do texto, ou seja, como queremos que este seja mostrado. Isto inclui tamanho e alinhamento. Vamos ainda adicionar uma função, `smooth()` que toma como argumento um inteiro e que serve para esbater as fronteiras das formas. Vai nos ser útil quando quisermos mostrar o indicador de *status* do medidor.
 
@@ -175,16 +176,16 @@ void setup()
   // Definir atributos do texto
   textAlign(CENTER);
   textSize(26);
-  // Esbater os contornos das formas 
+  // Esbater os contornos das formas
   smooth(2);
 }
 {% endhighlight %}
 
-Seguimos agora para o `void draw()`. É aqui que vamos desenhar o nosso medidor de nível. Começamos por selecionar um fundo preto. Esta é a primeira instrução e serve para que, a cada iteração do loop, tudo seja apagado e desenhado novamente para evitar que as formas se sobreponham. 
+Seguimos agora para o `void draw()`. É aqui que vamos desenhar o nosso medidor de nível. Começamos por selecionar um fundo preto. Esta é a primeira instrução e serve para que, a cada iteração do loop, tudo seja apagado e desenhado novamente para evitar que as formas se sobreponham.
 
 Além do nosso fundo preto, adicionamos ainda o título da nossa interface "Arduino Level Monitor" assim como a designação de "Status" do lado direito. Este fornecerá uma indicação na forma de cor, que vai de vermelho a verde, acerca do nível medido.
 
-Temos então, 
+Temos então,
 
 {% highlight c++ %}
 void draw() {
@@ -197,7 +198,7 @@ void draw() {
   // Escrever "Status"
   text("Status", 350, 270);
 }
-{% endhighlight %} 
+{% endhighlight %}
 
 Vamos agora adicionar a representação do nosso medidor que acaba por ser, somente, um retângulo com um fundo azul.
 
@@ -211,7 +212,7 @@ Vamos agora adicionar a representação do nosso medidor que acaba por ser, some
 
 Depois disto, queremos adicionar as marcas e as indicações que nos indicam onde fica cada capacidade. Para adicionarmos as marcas, usamos a função `line ()` onde especificamos as coordenadas iniciais e as coordenadas finais dos dois pontos que constituem o segmento de reta. Vamos ainda usar as funções `stroke()` e `strokeWeight()`. A primeira, recebe como argumento a cor da linha e a segunda recebe a espessura da linha. No nosso caso, selecionámos preto para a primeira `stroke(0)` e `strokeWeight(4)` para a segunda.
 
-No final, não nos podemos esquecer de chamar a função `noStroke()`. Se não o fizermos, todas as linhas terão mais espessura. 
+No final, não nos podemos esquecer de chamar a função `noStroke()`. Se não o fizermos, todas as linhas terão mais espessura.
 
 {% highlight c++ %}
 
@@ -226,13 +227,13 @@ No final, não nos podemos esquecer de chamar a função `noStroke()`. Se não o
   fill(0);
   stroke(0);
   strokeWeight(4);
-  
+
   // Linhas da esquerda
   line(60, 170, 100, 170);
   line(60, 270, 100, 270);
   line(60, 370, 100, 370);
   line(60, 470, 100, 470);
-  
+
   // Linhas da direita
   line(200, 170, 240, 170);
   line(200, 270, 240, 270);
@@ -313,11 +314,11 @@ Logo quando o Arduino estiver a enviar um 1, então sabemos que a marca dos 0.2L
 
 Ainda não podes correr o teu código, mas se tudo correr bem no final, para 0.2L a representação será esta.
 
-![]({{ site.baseurl}}/img/monitorNivel/level1.PNG) 
+![]({{ site.baseurl}}/img/monitorNivel/level1.PNG)
 
 Agora que já sabes como fazer, basta preencheres o código que falta para os estados 2, 3 e 4. Para o indicador de status, podes usar verde para o estado 4 (0.8L), amarelo para o estado 3 (0.6L) e laranja para o estado 2 (0.4L). Repara que para desenharmos um círculo, usamos a função `ellipse()` já que uma circunferência é uma elipse cuja altura e largura são iguais. Não te esqueças de usar `else if()` para exprimires as outras condições. Afinal de contas, só queres escolher um dos estados.
 
-Para o estado 0, optou-se por uma interface um pouco diferente. Irá aparecer um ponto de interrogação no lugar do círculo debaixo do *Status* e uma inscrição a dizer "NO LEVEL DETECTED!" na parte de baixo. Aqui fica o código referente a essa parte. 
+Para o estado 0, optou-se por uma interface um pouco diferente. Irá aparecer um ponto de interrogação no lugar do círculo debaixo do *Status* e uma inscrição a dizer "NO LEVEL DETECTED!" na parte de baixo. Aqui fica o código referente a essa parte.
 
 {% highlight c++ %}
 void serialEvent (Serial myPort)
@@ -335,7 +336,7 @@ void serialEvent (Serial myPort)
 
 Deves visualizar algo deste género quando tiveres tudo pronto.
 
-![]({{ site.baseurl}}/img/monitorNivel/nolevel.PNG) 
+![]({{ site.baseurl}}/img/monitorNivel/nolevel.PNG)
 
 Podes ver como fica a função `void serialEvent()` no final deste tutorial. E pronto, estamos quase no fim! Agora que já escrevemos toda a função `void serialEvent()`, basta chamá-la para o objeto que criámos inicialmente.
 
@@ -446,10 +447,10 @@ void setup()
   // Definir comunicacao serie  
   String nomePorta = Serial.list()[0];
   minhaPorta = new Serial(this, nomePorta, 9600);
-  // Esbater os contornos das formas 
+  // Esbater os contornos das formas
   smooth(2);
 }
-  
+
 void serialEvent (Serial myPort)
 {
   // Guardar valor na porta serie numa variavel char
@@ -463,8 +464,8 @@ void serialEvent (Serial myPort)
     // Desenhar circulo vermelho
     fill(255, 0, 0);
     ellipse(350, 320, 40, 40);
-  } 
-  
+  }
+
   else if (medida == '2')
   {
     // Desenhar agua ate aos 0.4L
@@ -473,8 +474,8 @@ void serialEvent (Serial myPort)
     // Desenhar circulo amarelo torrado
     fill(255, 165, 0);
     ellipse(350, 320, 40, 40);
-  } 
-  
+  }
+
   else if (medida == '3')
   {
     // Desenhar agua ate aos 0.6L
@@ -483,8 +484,8 @@ void serialEvent (Serial myPort)
     // Desenhar circulo amarelo
     fill(255, 255, 0);
     ellipse(350, 320, 40, 40);
-  } 
-  
+  }
+
   else if (medida == '4')
   {
     // Desenhar agua ate aos 0.8L
@@ -493,8 +494,8 @@ void serialEvent (Serial myPort)
     // Desenhar circulo verde
     fill(0, 255, 0);
     ellipse(350, 320, 40, 40);
-  } 
-  
+  }
+
   else if (medida == '0')
   {
     // Escrever a amarelo torrado que o nivel nao foi detetado
@@ -504,7 +505,7 @@ void serialEvent (Serial myPort)
     text("?", 350, 320);
   }
 }
- 
+
 void draw() {
 
   // Atualizar o background a cada iteração para nao ocorrer overwrite
@@ -530,13 +531,13 @@ void draw() {
   fill(0);
   stroke(0);
   strokeWeight(4);
-  
+
   // Linhas da esquerda
   line(60, 170, 100, 170);
   line(60, 270, 100, 270);
   line(60, 370, 100, 370);
   line(60, 470, 100, 470);
-  
+
   // Linhas da direita
   line(200, 170, 240, 170);
   line(200, 270, 240, 270);
@@ -544,12 +545,12 @@ void draw() {
   line(200, 470, 240, 470);
   // Fechar o stroke
   noStroke();
-  
+
   // Se estiver a ser enviado algo pela porta serie..
   while (minhaPorta.available() > 0) {  
     serialEvent(minhaPorta);
   }
-  
+
   // Esperar 3 segundos
   delay(3000);
 }

@@ -6,7 +6,7 @@ title: Academy
 <section id="header">
 
   {% include headerMain.html %}
-  
+
   <section id="about">
   <div class="width">
    <!-- <h4>Quem somos</h4> -->
@@ -16,15 +16,15 @@ title: Academy
     </p>
   </div>
 </section>
-  
+
 </section>
 
 <section id="article">
 <h1>jeKnowledge Academy Event</h1>
-
+<br>
 <div id="home">
 <article>
-<!-- Video ************************ --> 
+<!-- Video ************************ -->
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/141088550' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 <br>
 <p>
@@ -81,37 +81,34 @@ title: Academy
 
 <div class="logos-container" style="text-align:center">
 <section class="partner-logo">
-  <a href="http://www.uc.pt/fctuc" target="_blank"><img src="https://github.com/SimaoDias/academy-articles/blob/gh-pages/img/jkapoio1.png?raw=true" alt="Faculdade de Ciências e Tecnologia da UC">
+  <a href="http://www.uc.pt/fctuc" target="_blank"><img src="{{ site.baseurl }}/img/jkapoio1.png?raw=true" alt="Faculdade de Ciências e Tecnologia da UC">
   </a>
 </section>
 <section class="partner-logo">
-  <a href="http://www.flag.pt" target="_blank"><img src="https://github.com/SimaoDias/academy-articles/blob/gh-pages/img/jkapoio2.png?raw=true" alt="Flag">
+  <a href="http://www.flag.pt" target="_blank"><img src="{{ site.baseurl }}/img/jkapoio2.png?raw=true" alt="Flag">
   </a>
 </section>
 <section class="partner-logo">
-  <a href="http://www.ipn.pt" target="_blank"><img src="https://github.com/SimaoDias/academy-articles/blob/gh-pages/img/jkapoio3.png?raw=true" alt="Instituto Pedro Nunes">
+  <a href="http://www.ipn.pt" target="_blank"><img src="{{ site.baseurl }}/img/jkapoio3.png?raw=true" alt="Instituto Pedro Nunes">
   </a>
 </section>
 <section class="partner-logo">
-  <a href="http://www.portugal.gov.pt/pt/os-ministerios/ministerio-da-educacao-e-ciencia.aspx" target="_blank"><img src="https://github.com/SimaoDias/academy-articles/blob/gh-pages/img/jkapoio4.jpg?raw=true" alt="Ministério da Educação">
+  <a href="http://www.portugal.gov.pt/pt/os-ministerios/ministerio-da-educacao-e-ciencia.aspx" target="_blank"><img src="{{ site.baseurl }}/img/jkapoio4.jpg?raw=true" alt="Ministério da Educação">
   </a>
 </section>
 <section class="partner-logo">
-  <a href="http://www.mixtronica.com" target="_blank"><img src="https://github.com/SimaoDias/academy-articles/blob/gh-pages/img/jkapoio5.png?raw=true" alt="Mixtrónica">
+  <a href="http://www.mixtronica.com" target="_blank"><img src="{{ site.baseurl }}/img/jkapoio5.png?raw=true" alt="Mixtrónica">
   </a>
 </section>
 <section class="partner-logo">
-  <a href="http://www.weareredlight.com/" target="_blank"><img src="https://github.com/SimaoDias/academy-articles/blob/gh-pages/img/jkapoio6.jpg?raw=true" alt="RedLight Software">
+  <a href="http://www.weareredlight.com/" target="_blank"><img src="{{ site.baseurl }}/img/jkapoio6.jpg?raw=true" alt="RedLight Software">
   </a>
 </section>
 <section class="partner-logo">
-  <a href="http://www.whitesmith.co" target="_blank"><img src="https://github.com/SimaoDias/academy-articles/blob/gh-pages/img/jkapoio7.png?raw=true" alt="whitesmith">
+  <a href="http://www.whitesmith.co" target="_blank"><img src="{{ site.baseurl }}/img/jkapoio7.png?raw=true" alt="whitesmith">
   </a>
 </section>
 </div>
 <p><br></p>
-</div>
 
 </article>
-
-</section>

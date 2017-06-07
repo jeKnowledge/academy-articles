@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Tenho um Arduino. E agora?! (Parte 1)"
+title:  "Tenho um Arduino. E agora?! <br> (Parte 1)"
 date:   2016-03-01 08:32:13
 categories: getting started arduino beginners microcontroller
+permalink: arduino-101-parte-1
 ---
 
-Este é o primeiro de uma série de três artigos que explica os princípios básicos do Arduino. Uma das coisas que mais ouço quando se fala de Arduino é "Ah, por acaso até tenho um, mas não sei trabalhar com ele...". Vamos então começar pelo mais básico. Afinal, o que é um Arduino?
+Este é o primeiro de uma série de artigos que explica os princípios básicos do Arduino. Uma das coisas que mais ouço quando se fala de Arduino é "Ah, por acaso até tenho um, mas não sei trabalhar com ele...". Vamos então começar pelo mais básico. Afinal, o que é um Arduino?
 
 ## Arduino 101
 
@@ -23,7 +24,7 @@ Existem imensos tipos diferentes de Arduino, para as mais variadas funções e n
 
 ## O que preciso para começar a programar?
 
-Ao nível mais básico, precisas de um computador (claro!), o IDE do Arduino (onde vais programar), um Arduino e um cabo USB A to B (se estiveres a usar um Arduino Uno) ou um cabo micro USB (se estiveres a usar um Arduino Leonardo). 
+Ao nível mais básico, precisas de um computador (claro!), o IDE do Arduino (onde vais programar), um Arduino e um cabo USB A to B (se estiveres a usar um Arduino Uno) ou um cabo micro USB (se estiveres a usar um Arduino Leonardo).
 
 > PRO TIP: Os Arduinos nunca vêm com cabo (a não ser que tenhas comprado um kit). Se não tiveres um cabo USB A to B, fica a saber que este é o tipo de cabo que a grande maioria das impressoras usa.
 
@@ -53,7 +54,7 @@ Entrarei em detalhes sobre cada um dos componentes no próximo artigo. Por agora
 
 A primeira coisa a fazer é instalar o IDE do Arduino. IDE significa *Integrated Development Environment* e é o programa onde vais escrever o teu código. O IDE está disponível para Windows, OSX e Linux. Podes fazer o download [aqui](https://www.arduino.cc/en/Main/Software).
 
-Depois de teres feito o download e instalado o programa, podemos começar. Mas ainda não temos nada montado! Se não tiveres um LED, ignora esta secção  (mas não a explicação abaixo!). Começa por pegar na tua *breadboard*. Esta placa é o suporte físico de todas as ligações elétricas. Como podes ver existem quatro corredores horizontais e 63 ligações na vertical. Os quatro corredores destinam-se às alimentações e é recomendável seguires a convenção de azul para o GRD (terra) e vermelho para +5V. O Arduino tanto pode fornecer +5V como +3.3V. O Ground (GRD) é a referência da alimentação. Se seguires sempre a regra das cores, é muito menos provável enganares-te a montar o teu circuito. 
+Depois de teres feito o download e instalado o programa, podemos começar. Mas ainda não temos nada montado! Se não tiveres um LED, ignora esta secção  (mas não a explicação abaixo!). Começa por pegar na tua *breadboard*. Esta placa é o suporte físico de todas as ligações elétricas. Como podes ver existem quatro corredores horizontais e 63 ligações na vertical. Os quatro corredores destinam-se às alimentações e é recomendável seguires a convenção de azul para o GRD (terra) e vermelho para +5V. O Arduino tanto pode fornecer +5V como +3.3V. O Ground (GRD) é a referência da alimentação. Se seguires sempre a regra das cores, é muito menos provável enganares-te a montar o teu circuito.
 
 ![]({{ site.baseurl}}/img/tenhoArduino/breadboard.jpg)
 
@@ -70,15 +71,15 @@ Temos então, e por ordem:
 
 Abaixo dos pins de alimentação, temos os pins analógicos. A distinção entre analógico e digital é muito importante. Uma grandeza analógica é algo que pode tomar vários valores. Por exemplo, a temperatura de uma sala. Já uma grandeza digital é binária, ou seja, só pode tomar dois valores: 0 ou 1, *true* ou *false*. Existem 6 pins analógicos à tua disposição no UNO. Do lado direito, podes ver os pins digitais, 14 no UNO. Se prestares atenção, consegues ver que ao lado dos pinos 0 e 1 existem duas inscrições, RX e TX. RX significa "Receber" e TX "Transmitir". Estes pins são usados na Comunicação Série que iremos discutir no próximo artigo. Outra marca, na qual poderás ter eventualmente reparado, são uns pequenos tils (~) ao lado de alguns pins. Estes pins têm capacidade PWM, que significa *Pulse Width Modulation*, e que se irá revelar muito útil e da qual iremos falar em artigos futuros.
 
-> FUN FACT: Reparaste na forma como os pins estão numerados? A numeração começa no zero pois, em programação, começamos sempre a contar a partir do zero e não do um! 
+> FUN FACT: Reparaste na forma como os pins estão numerados? A numeração começa no zero pois, em programação, começamos sempre a contar a partir do zero e não do um!
 
 No entanto, ainda não falámos da parte mais importante do nosso Arduino! Aquele chip com 28 ligações que imediatamente à direita dos pins analógicos é aquilo a que chamamos um microcontrolador. Um microcontrolador é um computador muito pequenino, que processa, possui memória e entradas e saídas. Tudo no mesmo chip e, por isso, se diz que um microcontrolador é um sistema embebido. Provavelmente nunca ouviste este termo, mas fica a saber que se trata de um dos avanços tecnológicos mais importantes do último século. Os sistemas embebidos estão por todo o lado: desde o teu telemóvel aos sensores de um carro!
 
 Na verdade, programar um microcontrolador é uma tarefa algo complicada que exige uma compreensão profunda do modo com este funciona. Esta é uma das razões pela qual o Arduino é a plataforma de eleição: a tarefa de o programar é extremamente facilitada por uma série de funções já fornecidas.
 
-Antes de começarmos a montar o circuito, é importante que tenhas algumas noções de Eletrónica. Um LED é um Díodo Emissor de Luz. Um Díodo é um componente eletrónico no qual a corrente flui apenas num sentido. O sentido da corrente é do Ânodo (elétrodo positivo) para o Cátodo (elétrodo negativo). Uma boa forma de te lembrares desta convenção é pensares numa cascata: a água passa da parte mais alta para a mais baixa. Aqui é precisamente o mesmo caso. O mais interessante desta analogia é que o princípio de funcionamento de um LED baseia-se precisamente numa diferença de potencial. 
+Antes de começarmos a montar o circuito, é importante que tenhas algumas noções de Eletrónica. Um LED é um Díodo Emissor de Luz. Um Díodo é um componente eletrónico no qual a corrente flui apenas num sentido. O sentido da corrente é do Ânodo (elétrodo positivo) para o Cátodo (elétrodo negativo). Uma boa forma de te lembrares desta convenção é pensares numa cascata: a água passa da parte mais alta para a mais baixa. Aqui é precisamente o mesmo caso. O mais interessante desta analogia é que o princípio de funcionamento de um LED baseia-se precisamente numa diferença de potencial.
 
-Mas como sabemos qual é o Ânodo e qual é o Cátodo? Pela diferença do comprimento das ligações do LED! Se reparares, um dos encaixes é mais longo: esse é o Ânodo. Podes ver na imagem abaixo, com mais atenção, a diferença. 
+Mas como sabemos qual é o Ânodo e qual é o Cátodo? Pela diferença do comprimento das ligações do LED! Se reparares, um dos encaixes é mais longo: esse é o Ânodo. Podes ver na imagem abaixo, com mais atenção, a diferença.
 
 ![]({{ site.baseurl}}/img/tenhoArduino/led.jpg)
 
@@ -150,8 +151,10 @@ void loop() {
 }
 {% endhighlight %}
 
-Podemos verificar se o teu código compila corretamente carregando no primeiro botão da Barra de Ferramentas do Arduino IDE e, de seguida, usando o segundo botão para fazermos download do programa para o Arduino. 
+Podemos verificar se o teu código compila corretamente carregando no primeiro botão da Barra de Ferramentas do Arduino IDE e, de seguida, usando o segundo botão para fazermos download do programa para o Arduino.
 
-![]({{ site.baseurl}}/img/tenhoArduino/botoes.jpg)
+![]({{ site.baseurl}}/img/tenhoArduino/botoes.PNG)
 
-Se tudo tiver corrido bem, tens agora o teu LED a piscar com a frequência que definiste! Parabéns por teres concluído o primeiro tutorial de Arduino. Na continuação deste tutorial, iremos ter vários pequenos projetos que fazem uso de outros componentes do nosso kit. Até à próxima ;)
+Se tudo tiver corrido bem, tens agora o teu LED a piscar com a frequência que definiste! Parabéns por teres concluído o primeiro tutorial de Arduino. Na continuação deste tutorial, iremos ter vários pequenos projetos que fazem uso de outros componentes do nosso kit.
+
+Até à próxima <span style="display: inline-block; margin-left: 2px; margin-right: 0px">:smile:</span>

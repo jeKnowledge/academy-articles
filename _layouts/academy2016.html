@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/academy2016.css">
+	<link rel="icon" href="{{ site.baseurl }}/img/favicon-32.png" sizes="32x32">
+  	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@jeKnowledge">
+	<meta name="twitter:title" content="jeKnowledge Academy">
+	<meta name="twitter:description" content="Inscrições já abertas, dias 7, 8 e 9 de Julho">
+	<meta name="twitter:image" content="{{ site.url }}/img/favicon-152.png">
+  	<meta name="twitter:width" content="152" />
+ 	<meta name="twitter:height" content="152" />
+
+	<meta property="og:title" content="jeKnowledge Academy 2017">
+	<meta property="og:image" content="{{ site.url }}/img/600x600_2.png">
+	<meta name="og:description" content="Inscrições já abertas, dias dias 7, 8 e 9 de Julho">
+
+
+	<!-- Mobile Browser Themes -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#162F75">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#162F75">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<body>
+	<div class="content" role="main">
+		{{ content }}
+	</div>
+	{% if paginator %}
+	<!--
+	<nav class="pagination group" role="navigation">
+		{% if paginator.next_page %}
+		<a href="{{paginator.next_page_path}}">&larr;</a> {% endif %} {% if paginator.previous_page %}
+		<a href="{{paginator.previous_page_path}}">&rarr;</a> {% endif %}
+	</nav>
+-->
+	{% endif %}
+	{% include footer.html %}
+	{% include analytics.html %}
+</body>
+
+</html>
