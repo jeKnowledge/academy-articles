@@ -10,7 +10,8 @@ section{
           justify-content: center;
   max-width: 50em;
   margin:auto;
-  padding: 3em;
+  /*! padding: 3em; */
+  margin-top: 2em;
 }
 
 h1{
@@ -28,11 +29,29 @@ nav a{
   line-height: 2.5em;
 }
 
+.nav-2{
+  line-height: 0em;
+  font-size: 0.8em;
+}
+
 .col {
-    min-width: 18em;
-    max-width: 18em;
+    min-width: 23em;
+    max-width: 23em;
+    /*! padding-left: 2em; */
+    /*! margin-right: 2em; */
+}
+
+#contacts p{
+    margin-bottom:0;
+}
+
+
+.col-esq {
+    padding-right: 2em; 
+}
+
+.col-dir {
     padding-left: 2em;
-    margin-right: 2em;
 }
 
 .btn-sub{
@@ -97,4 +116,19 @@ nav a{
   background: url('/academy-articles/img/stars.png'), radial-gradient(20rem circle at 50% 40%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
   background-color: #061841;
 
+  margin-top: 0em;
+  margin-bottom: 4em;
+}
+
+@media all and (max-width: 830px) {
+    .col {
+        max-width: 50em;
+    }
+    .col-esq {
+    padding-right: 0em; 
+    }
+
+    .col-dir {
+        padding-left: 0em;
+    }
 }

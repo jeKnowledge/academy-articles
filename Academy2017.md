@@ -66,7 +66,7 @@ permalink: /Academy2017.html
 
   <h1>FAQ - Respondemos a algumas perguntas por ti</h1>
   <div id="box">
-  <div class="col">
+  <div class="col col-esq">
       <h2>Para quem?</h2>
       <p>
         Para todos os alunos do 10º ao 12º ano (do ano lectivo 2016/2017) com vontade de aprender e de se desafiar.
@@ -92,7 +92,7 @@ permalink: /Academy2017.html
         Entra em contacto com um ambiente empresarial, aprende connosco e faz-nos aprender contigo também. Não penses que um ambiente empresarial é sinónimo de aborrecimento. Vem e verifica que pode ser exatamente o contrário.
       </p>
   </div>
-  <div class="col">
+  <div class="col col-dir">
 
       <h2>As refeições?</h2>
       <p>
@@ -105,7 +105,7 @@ permalink: /Academy2017.html
         Caso pretendas adquirir o kit de eletrónica o custo de participação é 55€.
       </p>
       <p> O kit inclui:</p>
-        <p>
+        <ul>
         <li>Arduino Uno</li>
         <li>Cabo de ligação A/B</li>
         <li>Placa de ensaios (BreadBoard)</li>
@@ -115,7 +115,7 @@ permalink: /Academy2017.html
         <li>3 Leds coloridos</li>
         <li>Visor de 7 segmentos</li>
         <li>Botão de pressão</li>
-        </p>
+        </ul>
         <p><i>
         Nota: Para participar na actividade não é obrigatório adquirir o kit sendo o mesmo emprestado pela organização.
         </i></p>
