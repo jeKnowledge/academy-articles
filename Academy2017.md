@@ -16,7 +16,7 @@ permalink: /Academy2017.html
     <a href="https://github.com/jeKnowledge" class="applink playstore-link" title="Github">Github</a>
   </p>
   </nav>
-  <nav>
+  <nav class="nav-2">
   <br>
   <br>
   <p style="color: #ccf">
@@ -42,10 +42,11 @@ permalink: /Academy2017.html
   <p>
   Serão 3 dias onde poderás aprender a programar um jogo em python, o teu próprio site em HTML/CSS e os conceitos básicos de eletrónica e Arduino.
   </p>
-<!--<h2>Vê como foi a edição do ano passado</h2>-->
-<!--
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/141088550' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
--->
+  <br>
+
+<h1>Vê como foi a edição do ano passado</h1>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/221651214' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 </div>
 
   <h2>Horário</h2>
