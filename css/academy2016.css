@@ -35,7 +35,7 @@ nav a{
 }
 
 .col {
-    min-width: 23em;
+    /*min-width: 23em; */
     max-width: 23em;
     /*! padding-left: 2em; */
     /*! margin-right: 2em; */
@@ -47,7 +47,7 @@ nav a{
 
 
 .col-esq {
-    padding-right: 2em; 
+    padding-right: 2em;
 }
 
 .col-dir {
@@ -125,7 +125,7 @@ nav a{
         max-width: 50em;
     }
     .col-esq {
-    padding-right: 0em; 
+    padding-right: 0em;
     }
 
     .col-dir {
