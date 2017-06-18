@@ -18,9 +18,6 @@ a {
   color: #40A4C4;
   text-decoration: none;
   -webkit-transition: color .2s ease-out;
-  -moz-transition: color .2s ease-out;
-  -ms-transition: color .2s ease-out;
-  -o-transition: color .2s ease-out;
   transition: color .2s ease-out;
 }
 a .icon {
@@ -47,7 +44,6 @@ h5 {
   border-bottom: 3px solid #E0F0F5;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -92,7 +88,6 @@ nav {
   display: block;
   -webkit-touch-callout: element;
   -webkit-user-select: element;
-  -khtml-user-select: element;
   -moz-user-select: element;
   -ms-user-select: element;
   user-select: element;
@@ -113,9 +108,6 @@ nav a {
   width: 30%;
   font-weight: bold;
   -webkit-transition: all .1s ease-out;
-  -moz-transition: all .1s ease-out;
-  -ms-transition: all .1s ease-out;
-  -o-transition: all .1s ease-out;
   transition: all .1s ease-out;
 }
 @media all and (max-width: 500px) {
@@ -162,6 +154,7 @@ section#header {
   background-color: #061033;
   color: white;
   height: initial;
+  background: url('/academy-articles/img/stars.png'), radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), -webkit-gradient(linear, left top, left bottom, from(#162141), to(#1D2C4E));
   background: url('/academy-articles/img/stars.png'), radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
 }
 section#header h3.logo {
@@ -181,9 +174,6 @@ section#header h3.logo {
   display: block;
   margin: 0 auto;
   -webkit-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  -o-transform: scale(0.7);
   transform: scale(0.7);
 }
 section#header {
@@ -206,9 +196,6 @@ section#header {
     display: block;
     margin: 0 auto;
     -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
     transform: scale(0.7);
     width: 243px;
     height: 249px;
@@ -347,7 +334,6 @@ html {
 }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 h1, h2, h3 {
@@ -371,6 +357,7 @@ a {
   background-color: transparent;
   color: #445FAC;
   text-decoration: none;
+  -webkit-transition: color .2s ease;
   transition: color .2s ease;
 }
 a:visited {
@@ -395,7 +382,6 @@ blockquote, q {
   /*font-style: italic;*/
   quotes: none;
   -webkit-hyphens: none;
-  -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
 }
@@ -489,7 +475,6 @@ code, kbd, pre, samp {
 	word-spacing: normal;
 	word-wrap: normal;*/
   -webkit-hyphens: none;
-  -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
   -moz-tab-size: 4;
@@ -538,8 +523,8 @@ hr {
   border: none;
   height: 1px;
   margin: 2em 0;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 del {
   color: #999;
@@ -872,6 +857,7 @@ img {
   width: 1em;
   height: 1em;
   text-align: center;
+  -webkit-transition: right .3s ease;
   transition: right .3s ease;
 }
 #go-top:hover {

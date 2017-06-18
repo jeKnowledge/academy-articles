@@ -25,7 +25,7 @@ permalink: /Academy2017.html
     <a href="#faq" class="selected">FAQ</a>
     <a href="#inscricao" class="selected">Inscrições</a>
     <a href="#contacts" class="selected">Contactos</a>
-  <!--  <a href="#apoios" class="selected">Apoios</a>-->
+    <a href="#apoios" class="selected">Apoios</a>
   </p>
   </nav>
   </div>
