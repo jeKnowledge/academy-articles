@@ -170,8 +170,6 @@ permalink: /Academy2017.html
       <div class="col col-dir" style="margin-top: 2em;" >
       <p><b>Contactos</b></p>
       <p>formacao@jeknowledge.pt</p>
-      <p>+351 914 291 234 (Interno)</p>
-      <p>+351 916 633 324 (Tecnologia)</p>
       </div>
   </div>
 </section>
