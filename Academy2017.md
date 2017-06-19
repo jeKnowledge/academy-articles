@@ -20,8 +20,7 @@ permalink: /Academy2017.html
   <br>
   <br>
   <p style="color: #ccf">
-    <a href="#maininfo" class="selected">Academy 2017</a>
-    <a href="#info" class="selected">Informações sobre o Evento</a>
+    <a href="#maininfo" class="selected">Informações sobre o Evento</a>
     <a href="#faq" class="selected">FAQ</a>
     <a href="#inscricao" class="selected">Inscrições</a>
     <a href="#contacts" class="selected">Contactos</a>

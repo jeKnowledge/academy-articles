@@ -35,6 +35,7 @@ a:hover .icon {
   margin: 0 auto;
   padding: 20px;
 }
+
 h5 {
   margin: 40px auto 10px;
   width: 260px;
@@ -122,7 +123,7 @@ nav a:hover {
   border-bottom: 2px solid white;
   color: white;
   cursor: pointer;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-decoration: none;
 }
 nav a:active {
@@ -154,8 +155,8 @@ section#header {
   background-color: #061033;
   color: white;
   height: initial;
-  background: url('/academy-articles/img/stars.png'), radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), -webkit-gradient(linear, left top, left bottom, from(#162141), to(#1D2C4E));
-  background: url('/academy-articles/img/stars.png'), radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(255, 255, 255, 0)), linear-gradient(#162141, #1D2C4E);
+  background: url('/academy-articles/img/stars.png'), radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(7, 4, 53, 0)), -webkit-gradient(linear, left top, left bottom, from(#162141), to(#1D2C4E));
+  background: url('/academy-articles/img/stars.png'), radial-gradient(450px circle at 50% 35%, rgb(22, 47, 117), rgba(7, 4, 53, 0)), linear-gradient(#162141, #1D2C4E);
 }
 section#header h3.logo {
   width: 26em;
@@ -269,6 +270,10 @@ footer .copyright {
     clear: both;
     width: 100%;
     text-align: center;
+  }
+
+  nav a:hover {
+    padding-bottom: 4px;
   }
 }
 .clear {
