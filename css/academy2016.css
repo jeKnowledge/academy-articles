@@ -128,4 +128,10 @@ nav a{
     .col-dir {
         padding-left: 0em;
     }
+
+   #contacts #box {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+    }
 }

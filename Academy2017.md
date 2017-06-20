@@ -54,7 +54,7 @@ permalink: /Academy2017.html
   </p>
   <h2>Almoços</h2>
   <p>
-    Os almoços são realizados nas cantinas da Universidade de Coimbra, sendo compostos por sopa, pão, água ou sumo concentrado e sobremesa. Prato de peixe, prato de carne ou prato vegetariano.
+    Os almoços são realizados nas cantinas da Universidade de Coimbra, sendo compostos por sopa, pão, água ou sumo concentrado e sobremesa, prato de peixe, prato de carne ou prato vegetariano.
   </p>
   <h2>Lanches</h2>
   <p>
@@ -109,7 +109,7 @@ permalink: /Academy2017.html
         <li>Arduino Uno</li>
         <li>Cabo de ligação A/B</li>
         <li>Placa de ensaios (BreadBoard)</li>
-        <li>Fios deligação</li>
+        <li>Fios de ligação</li>
         <li>Resistências</li>
         <li>Fotoresitência</li>
         <li>3 Leds coloridos</li>
